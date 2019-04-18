@@ -2,6 +2,16 @@
 
 I love Programming. One of the aims I had when I started ```in28minutes``` was to make learning programming easy.
 
+Welcome to this book on "Learning Java In 150 Steps"**. I am **Ranga Karanam**, and I have more than two decades of programming experience. 
+
+At **In28Minutes**, we ask ourselves one question every day: "how do we create awesome learning experiences?" 
+
+In this book, you will learn to write **object** **oriented** code with Java. You will be exposed to a lot of examples, exercises and tips. We will take up a lot of examples, and try and see how to write code for those in Java. 
+
+We would be using  **Eclipse** as the IDE. 
+
+## Our Approach
+
 We did a study on why students give up on programming?
 
 The popular answer was
@@ -38,26 +48,26 @@ This is the approach we took to writing this guide and develop our introductory 
 > The first 3 hours of our Java Course is available [here](https://courses.in28minutes.com/p/java-tutorial-for-beginner-in-250-steps).
 
 
-Table of Contents
+## Table of Contents
 
-* [Introduction to Programming with Print-Multiplication-Table](#introduction-to-programming-with-print-multiplication-table)
-* [Understanding Methods](#understanding-methods)
-* [Understanding the Java Platform](#understanding-the-java-platform)
-* [Eclipse](#eclipse)
-* [Object Oriented Progamming (OOP)](#object-oriented-progamming--oop-)
-* [Primitive Data Types](#primitive-data-types)
-* [Introducing Conditionals - if, switch and more](#introducing-conditionals---if--switch-and-more)
-* [Loops](#loops)
-* [Reference Types](#reference-types)
-* [Arrays and ArrayList](#arrays-and-arraylist)
-* [Object Oriented Programming (*OOP*) - Revisited](#object-oriented-programming---oop-----revisited)
-* [Introducing Collections](#introducing-collections)
-* [Introducing Generics](#introducing-generics)
-* [Introduction to Functional Programming](#introduction-to-functional-programming)
-* [Threads and Concurrency](#threads-and-concurrency)
-* [Introduction To Exception handling](#introduction-to-exception-handling)
-* [File Operations](#file-operations)
-* [Concurrency : Advanced Topics](#concurrency---advanced-topics)
+* [Chapter 01 - Introduction to Programming with Print-Multiplication-Table](#introduction-to-programming-with-print-multiplication-table)
+* [Chapter 02 - Understanding Methods](#understanding-methods)
+* [Chapter 03 - Understanding the Java Platform](#understanding-the-java-platform)
+* [Chapter 04 - Eclipse](#eclipse)
+* [Chapter 05 - Object Oriented Progamming (OOP)](#object-oriented-progamming--oop-)
+* [Chapter 06 - Primitive Data Types](#primitive-data-types)
+* [Chapter 07 - Introducing Conditionals - if, switch and more](#introducing-conditionals---if--switch-and-more)
+* [Chapter 08 - Loops](#loops)
+* [Chapter 09 - Reference Types](#reference-types)
+* [Chapter 10 - Arrays and ArrayList](#arrays-and-arraylist)
+* [Chapter 11 - Object Oriented Programming (*OOP*) - Revisited](#object-oriented-programming---oop-----revisited)
+* [Chapter 12 - Introducing Collections](#introducing-collections)
+* [Chapter 13 - Introducing Generics](#introducing-generics)
+* [Chapter 14 - Introduction to Functional Programming](#introduction-to-functional-programming)
+* [Chapter 15 - Threads and Concurrency](#threads-and-concurrency)
+* [Chapter 16 - Introduction To Exception handling](#introduction-to-exception-handling)
+* [Chapter 17 - File Operations](#file-operations)
+* [Chapter 18 - Concurrency : Advanced Topics](#concurrency---advanced-topics)
 
 ## Introduction to Programming with Print-Multiplication-Table
 
