@@ -2,7 +2,7 @@
 
 I love Programming. One of the aims I had when I started ```in28minutes``` was to make learning programming easy.
 
-Welcome to this book on "Learning Java In 150 Steps"**. I am **Ranga Karanam**, and I have more than two decades of programming experience. 
+Welcome to this book on **"Learning Java In 150 Steps"**. I am **Ranga Karanam**, and I have more than two decades of programming experience. 
 
 At **In28Minutes**, we ask ourselves one question every day: "how do we create awesome learning experiences?" 
 
