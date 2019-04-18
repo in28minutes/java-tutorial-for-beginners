@@ -1,10 +1,12 @@
 # Java Tutorial For Beginners
 
-I love Programming. One of the aims I had when I started ```in28minutes``` was to make learning programming easy.
+Welcome to this book on **"Learning Java In 150 Steps"**. 
 
-Welcome to this book on **"Learning Java In 150 Steps"**. I am **Ranga Karanam**, and I have more than two decades of programming experience. 
+I am **Ranga Karanam**, and I have more than two decades of programming experience. 
 
-At **In28Minutes**, we ask ourselves one question every day: "how do we create awesome learning experiences?" 
+I love Programming. One of the aims I had when I started ```in28minutes``` was to make learning programming easy. Thanks for helping us provide amazing courses to 300,000 learners across the world.
+
+At **In28Minutes**, we ask ourselves one question every day: "How do we create awesome learning experiences?" 
 
 In this book, you will learn to write **object** **oriented** code with Java. You will be exposed to a lot of examples, exercises and tips. We will take up a lot of examples, and try and see how to write code for those in Java. 
 
@@ -18,7 +20,7 @@ The popular answer was
 
 > Difficulty in writing their first program
 
-Look at this typical ```Java Hello World Example```
+Put yourselves in the shoes of a beginner and look at this typical ```Java Hello World Example```.
 
 ```java
 package com.in28minutes.firstjavaproject; 
@@ -30,22 +32,22 @@ public class HelloWorld
 }
 ```
 
-A ```Programming Beginner``` will be overwhelmed by this.
+A ```Programming Beginner``` will be overwhelmed by this. I remember how I felt when I saw this almost 20 years back. Stunned.
 
 Why?
-
-- There are a number of concepts to explain - package, public, class, static, void, String[] and a lot more..
+- There are a number of keywords and concepts - package, public, class, static, void, String[] and a lot more..
 - What if the programmer makes a typo? Will he be able to fix it?
 
-We believe programming has to be learnt one step at a time.
 
-> Why don't we learn programming step by step? Why should it not be a lot of fun? 
+**We believe that there has to be a better way to learn programming.**
 
-> Why don't we solve a lot of problems and learn programming as a result?
+- Why don't we learn programming step by step? 
+- Why should it not be a lot of fun? 
+- Why don't we solve a lot of problems and learn programming as a result?
 
 This is the approach we took to writing this guide and develop our introductory programming courses for Java and Python. 
 
-> The first 3 hours of our Java Course is available [here](https://courses.in28minutes.com/p/java-tutorial-for-beginner-in-250-steps).
+> Do you know? The first 3 hours of our Java Course is available [here](https://courses.in28minutes.com/p/java-tutorial-for-beginner-in-250-steps).
 
 
 ## Table of Contents
