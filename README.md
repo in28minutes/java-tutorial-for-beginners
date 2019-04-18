@@ -37,6 +37,9 @@ This is the approach we took to writing this guide and develop our introductory 
 
 > The first 3 hours of our Java Course is available [here](https://courses.in28minutes.com/p/java-tutorial-for-beginner-in-250-steps).
 
+
+Table of Contents
+
 * [Introduction to Programming with Print-Multiplication-Table](#introduction-to-programming-with-print-multiplication-table)
 * [Understanding Methods](#understanding-methods)
 * [Understanding the Java Platform](#understanding-the-java-platform)
