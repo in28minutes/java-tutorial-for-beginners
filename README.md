@@ -13653,7 +13653,7 @@ TODO
 
 TODO
 
-### Introducing Collections
+# Introducing Collections
 
 Arrays are not dynamic data structures. They can store only a fixed maximum number of elements.
 
