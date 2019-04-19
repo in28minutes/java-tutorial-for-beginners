@@ -10,7 +10,7 @@ At **In28Minutes**, we ask ourselves one question every day: "How do we create a
 
 In this book, you will learn to write **object** **oriented** code with Java. You will be exposed to a lot of examples, exercises and tips. We will take up a lot of examples, and try and see how to write code for those in Java. 
 
-We would be using  **Eclipse** as the IDE. 
+Help us improve this guide - **Fork, Pull Requests, Shares and Likes are recommended**!
 
 ## Table of Contents
 
