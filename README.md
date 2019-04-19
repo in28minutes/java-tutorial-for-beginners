@@ -12,6 +12,27 @@ In this book, you will learn to write **object** **oriented** code with Java. Yo
 
 We would be using  **Eclipse** as the IDE. 
 
+## Table of Contents
+
+* [Chapter 01 - Introduction to Programming with Print-Multiplication-Table](#introduction-to-programming-with-print-multiplication-table)
+* [Chapter 02 - Understanding Methods](#understanding-methods)
+* [Chapter 03 - Understanding the Java Platform](#understanding-the-java-platform)
+* [Chapter 04 - Eclipse](#eclipse)
+* [Chapter 05 - Object Oriented Progamming (OOP)](#object-oriented-progamming--oop-)
+* [Chapter 06 - Primitive Data Types](#primitive-data-types)
+* [Chapter 07 - Introducing Conditionals - if, switch and more](#introducing-conditionals---if--switch-and-more)
+* [Chapter 08 - Loops](#loops)
+* [Chapter 09 - Reference Types](#reference-types)
+* [Chapter 10 - Arrays and ArrayList](#arrays-and-arraylist)
+* [Chapter 11 - Object Oriented Programming (*OOP*) - Revisited](#object-oriented-programming---oop-----revisited)
+* [Chapter 12 - Introducing Collections](#introducing-collections)
+* [Chapter 13 - Introducing Generics](#introducing-generics)
+* [Chapter 14 - Introduction to Functional Programming](#introduction-to-functional-programming)
+* [Chapter 15 - Threads and Concurrency](#threads-and-concurrency)
+* [Chapter 16 - Introduction To Exception handling](#introduction-to-exception-handling)
+* [Chapter 17 - File Operations](#file-operations)
+* [Chapter 18 - Concurrency : Advanced Topics](#concurrency---advanced-topics)
+
 ## Our Approach
 
 We did a study on why students give up on programming?
@@ -50,26 +71,6 @@ This is the approach we took to writing this guide and develop our introductory 
 > Do you know? The first 3 hours of our Java Course is available [here](https://courses.in28minutes.com/p/java-tutorial-for-beginner-in-250-steps).
 
 
-## Table of Contents
-
-* [Chapter 01 - Introduction to Programming with Print-Multiplication-Table](#introduction-to-programming-with-print-multiplication-table)
-* [Chapter 02 - Understanding Methods](#understanding-methods)
-* [Chapter 03 - Understanding the Java Platform](#understanding-the-java-platform)
-* [Chapter 04 - Eclipse](#eclipse)
-* [Chapter 05 - Object Oriented Progamming (OOP)](#object-oriented-progamming--oop-)
-* [Chapter 06 - Primitive Data Types](#primitive-data-types)
-* [Chapter 07 - Introducing Conditionals - if, switch and more](#introducing-conditionals---if--switch-and-more)
-* [Chapter 08 - Loops](#loops)
-* [Chapter 09 - Reference Types](#reference-types)
-* [Chapter 10 - Arrays and ArrayList](#arrays-and-arraylist)
-* [Chapter 11 - Object Oriented Programming (*OOP*) - Revisited](#object-oriented-programming---oop-----revisited)
-* [Chapter 12 - Introducing Collections](#introducing-collections)
-* [Chapter 13 - Introducing Generics](#introducing-generics)
-* [Chapter 14 - Introduction to Functional Programming](#introduction-to-functional-programming)
-* [Chapter 15 - Threads and Concurrency](#threads-and-concurrency)
-* [Chapter 16 - Introduction To Exception handling](#introduction-to-exception-handling)
-* [Chapter 17 - File Operations](#file-operations)
-* [Chapter 18 - Concurrency : Advanced Topics](#concurrency---advanced-topics)
 
 ## Introduction to Programming with Print-Multiplication-Table
 
