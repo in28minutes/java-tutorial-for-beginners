@@ -18,20 +18,20 @@ Help us improve this guide - **Fork, Pull Requests, Shares and Likes are recomme
 * [Chapter 02 - Understanding Methods](#understanding-methods)
 * [Chapter 03 - Understanding the Java Platform](#understanding-the-java-platform)
 * [Chapter 04 - Eclipse](#eclipse)
-* [Chapter 05 - Object Oriented Progamming (OOP)](#object-oriented-progamming--oop-)
+* [Chapter 05 - Object Oriented Progamming (OOP)](#object-oriented-progamming-oop)
 * [Chapter 06 - Primitive Data Types](#primitive-data-types)
-* [Chapter 07 - Introducing Conditionals - if, switch and more](#introducing-conditionals---if--switch-and-more)
+* [Chapter 07 - Introducing Conditionals - if, switch and more](#introducing-conditionals---if-switch-and-more)
 * [Chapter 08 - Loops](#loops)
 * [Chapter 09 - Reference Types](#reference-types)
 * [Chapter 10 - Arrays and ArrayList](#arrays-and-arraylist)
-* [Chapter 11 - Object Oriented Programming (*OOP*) - Revisited](#object-oriented-programming---oop-----revisited)
+* [Chapter 11 - Object Oriented Programming (*OOP*) - Revisited](#object-oriented-programming-oop---revisited)
 * [Chapter 12 - Introducing Collections](#introducing-collections)
 * [Chapter 13 - Introducing Generics](#introducing-generics)
 * [Chapter 14 - Introduction to Functional Programming](#introduction-to-functional-programming)
 * [Chapter 15 - Threads and Concurrency](#threads-and-concurrency)
 * [Chapter 16 - Introduction To Exception handling](#introduction-to-exception-handling)
 * [Chapter 17 - File Operations](#file-operations)
-* [Chapter 18 - Concurrency : Advanced Topics](#concurrency---advanced-topics)
+* [Chapter 18 - Concurrency : Advanced Topics](#concurrency--advanced-topics)
 
 ## Our Approach
 
@@ -78,7 +78,7 @@ This is the approach we took to writing this guide and develop our introductory 
 
 Learning to program is a lot like learning to ride a bicycle. The first few steps are the most challenging ones. 
 
-Once you use this Step wise approach to solve a few problems, it becomes a habit. 
+Once you use this stepwise approach to solve a few problems, it becomes a habit. 
 
 In this book, we will introduce you to Java programming by taking on a few simple problems to start off. 
 
@@ -163,8 +163,8 @@ You can launch JShell by typing ```jshell``` at your terminal.
 
 	in28minutes$>jshell
 
-	|  Welcome to JShell version x.0.1_
- 	|  For an introduction type: /help intro_	
+	|  Welcome to JShell version x.0.1
+ 	|  For an introduction type: /help intro
 	jshell>
 
 ```
@@ -220,7 +220,7 @@ The ```/exit``` command terminates the ```JShell``` program, and we are back to 
 ```java
 
 	jshell> /exit
-	|  Goodbye_
+	|  Goodbye
 	
 	in28minutes$>
 
@@ -235,9 +235,9 @@ You can now effortlessly launch, feed code to, and exit from  ```JShell```!
 
 	in28minutes$> jshell
 	
-	|  Welcome to JShell version 9.0.1_
+	|  Welcome to JShell version 9.0.1
 	|  For an introduction type: /help intro
-	jshell>** /exit
+	jshell> /exit
 	|  Goodbye
 	
 	in28minutes$>
@@ -440,23 +440,22 @@ Let's type in ```5 ** 6``` followed by ```5 $ 6``` in JShell
 	| Illegal start of expression
 	| 5 ** 6
 	|     ^
+
 	jshell> 5 $ 6 
 	| Error:
 	| ';' expected
-	| 5 $ 5
+	| 5 $ 6
 	|  ^
 	| Error:
 	| not a statement
-	| 5 $ 5
+	| 5 $ 6
 	|   ^
 	| Error:
 	| ';' expected
-	| 5 $ 5
+	| 5 $ 6
 	|    ^
-	| Error:
-	| missing return statement
-	| 5 $ 5
-	| ^---^jshell> 5 */ 6
+
+	jshell> 5 */ 6
 	| Error:
 	| Illegal start of expression
 	| 5 */ 6
@@ -771,18 +770,21 @@ Java is case sensitive.
 	| package system does not exist
 	| system.out.println("Hello World")
 	| ^-------^
+
 	jshell> System.Out.println("Hello World")
 	| Error:
 	| cannot find symbol
 	| symbol: variable Out
 	| System.Out.println("Hello World")
 	| ^------------^
+
 	jshell> System.out.Println("Hello World")
 	| Error:
 	| cannot find symbol
 	| symbol: method Println(java.lang.string)
 	| System.out.Println("Hello World")
 	| ^---------------------^
+
 	jshell>
 
 ```
@@ -808,7 +810,8 @@ If you want to print the string **delimiter**, the ```"``` character, you need t
 	| Error:
 	| ')' expected
 	| System.out.println("Hello "World")
-	|____________________________^
+	|                            ^
+
 	jshell> System.out.println("Hello \"World")
 	Hello "World
 	jshell>
@@ -1423,7 +1426,8 @@ An assignment to a constant literal is **not allowed**.
 	| required : variable
 	| found : value
 	| 20 = var
-	|___^
+	| ^^
+
 	jshell>
 
 ```
@@ -1459,7 +1463,7 @@ Let's now see what kinds of errors the compiler throws if you violate these nami
 	| Error:
 	| ';' expected
 	| int test-test
-	|_______^
+	|         ^
 
 ```
 
@@ -1471,21 +1475,22 @@ Let's now see what kinds of errors the compiler throws if you violate these nami
 	| Error:
 	| '.class' expected 
 	| int 2test
-	|_____^
+	|     ^
 	| Error:
 	| not a statement
 	| int 2test
-	|_____^----^
+	|      ^--^
 	| Error:
 	| unexpected type
 	| required: value
 	| found: class
 	| int 2test
-	|^--^
+	| ^--^
 	| Error:
 	| missing return statement
 	| int 2test
-	|^--------^
+	| ^-------^
+
 	jshell>
 
 ```
@@ -1497,21 +1502,21 @@ In Java, certain special words are called ```keywords```. For example, some of t
 ```java
 
 	jshell> int int
-	......>;	
+	   ...> ;	
 	| Error:
 	| '.class' expected
 	| int int
-	|_____^
+	|     ^
 	| Error:
 	| unexpected type
 	| required: value
 	| found: class
 	| int int
-	|^--^
+	| ^--^
 	| Error:
 	| missing return statement
 	| int int
-	|^------...
+	| ^------...
 
 ```
 
@@ -1604,7 +1609,7 @@ The only difference among the integer types is their storage capacity.
 
 ```java
 
-	shell>byte b = 5
+	jshell> byte b = 5
 	b ==> 5
 	jshell> short s = 128
 	s ==> 128
@@ -1639,8 +1644,7 @@ If this suffix ```f``` is omitted, a floating-point  number is assumed to be a `
 	| Error:
 	| incompatible types: possible lossy conversion from double to float
 	| float f2 = 4.0
-	|__________^-^
-	jshell>
+	|            ^-^
 
 ```
 
@@ -1667,13 +1671,13 @@ Following are a few char declaration errors: Not using single quotes and trying 
 	| cannot find symbol
 	| symbol: variable A
 	| char ch = A
-	|__________^
+	|           ^
+
 	jshell> char cab = 'AB'
 	| Error:
 	| unclosed character literal
 	| char cab = 'AB'
-	|___________^--^
-	jshell>
+	|            ^
 
 ```
 
@@ -1692,13 +1696,14 @@ The concept of a ```boolean``` type is rooted in mathematical logic. The data ty
 	| cannot find symbol
 	| symbol: variable True
 	| boolean isFalse = True
-	|_________________^---^
+	|                   ^--^
+
 	jshell> isFalse = False
 	| Error:
 	| cannot find symbol
 	| symbol: variable False
 	| isFalse = False
-	|__________^----^
+	|           ^---^
 
 ```
 
@@ -1723,9 +1728,9 @@ Consider a sports broadcaster that writes a program to track football scores. In
 
 ```java
 
-	jshell>short numTeamAGoals = 0
+	jshell> short numTeamAGoals = 0
 	numTeamAGoals ==> 0
-	jshell>short numTeamBGoals = 0
+	jshell> short numTeamBGoals = 0
 	numTeamBGoals ==> 0
 	jshell>
 
@@ -1902,15 +1907,15 @@ Operator ```++``` can be applied only to variables of integer types, which are `
 
 ```java
 
-	jshell>int number = 5
+	jshell> int number = 5
 	number ==> 5
-	jshell>number++
+	jshell> number++
 	$1 ==> 5
-	jshell>number
+	jshell> number
 	number ==> 6
-	jshell>++number
+	jshell> ++number
 	$2 ==> 7
-	jshell>number
+	jshell> number
 	number ==> 7
 	jshell>
 
@@ -1920,13 +1925,13 @@ Operator ```++``` can be applied only to variables of integer types, which are `
 
 ```java
 
-	jshell>number--
+	jshell> number--
 	$3 ==> 7
-	jshell>number
+	jshell> number
 	number ==> 6
-	jshell>--number
+	jshell> --number
 	$4 ==> 5
-	jshell>number
+	jshell> number
 	number ==> 5
 	jshell>
 
@@ -2081,11 +2086,11 @@ While in school, you probably used the ```=``` symbol to compare numbers.
 
 ```java
 
-	jshell>int i = 10
+	jshell> int i = 10
 	i ==> 10
-	jshell>i == 10
+	jshell> i == 10
 	$1 ==> true
-	jshell>i == 11
+	jshell> i == 11
 	$2 ==> false
 
 ```
@@ -2093,9 +2098,9 @@ While in school, you probably used the ```=``` symbol to compare numbers.
 These are other comparison operators as well, such as ```<``` and ```>```. 
 ```java
 
-	jshell>i < 5
+	jshell> i < 5
 	$3 ==> false
-	jshell>i > 5
+	jshell> i > 5
 	$4 ==> true
 
 ```
@@ -2104,11 +2109,11 @@ These are other comparison operators as well, such as ```<``` and ```>```.
 
 ```java
 
-	jshell>i <= 5
+	jshell> i <= 5
 	$4 ==> false
-	jshell>i <= 10
+	jshell> i <= 10
 	$5 ==> true
-	jshell>i >= 10
+	jshell> i >= 10
 	$6 ==> true
 	jshell>
 
@@ -2181,17 +2186,19 @@ Just as we can compare a variable with a literal, it is possible to compare the 
 
 ```java
 
-	jshell>int number1 = 5
+	jshell> int number1 = 5
 	number1 ==> 5
-	jshell>int number2 = 7
+	jshell> int number2 = 7
 	number2 ==> 7
-	jshell>if (number2 > number1)
-	   ...>System.out.println("number2 is greater than number1");
+	jshell> if (number2 > number1)
+	   ...> System.out.println("number2 is greater than number1");
 	number2 is greater than number1
-	jshell>number2 = 3
+
+	jshell> number2 = 3
 	number2 ==> 3
-	jshell>if (number2 > number1)
-	   ...>System.out.println("number2 is greater than number1");
+	jshell> if (number2 > number1)
+	   ...> System.out.println("number2 is greater than number1");
+
 	jshell>
 
 ```
@@ -2230,8 +2237,9 @@ In this step, we:
 	jshell> int d = 3
 	d ==> 3
 	jshell> if (a + b > c + d)
-	   ...>System.out.println("a and b together tower above c plus d");
+	   ...> System.out.println("a and b together tower above c plus d");
 	a and b together tower above c plus d
+
 	jshell>
 
 ```
@@ -2249,10 +2257,12 @@ In this step, we:
 	jshell> if (angleOne + angleTwo + angleThree == 180)
 	   ...> System.out.println("The three angles together form a triangle");
 	The three angles together form a triangle
+
 	jshell> angleThree = 75
 	angleOne ==> 55
 	jshell> if (angleOne + angleTwo + angleThree == 180)
 	   ...> System.out.println("The three angles together form a triangle");
+
 	jshell>
 
 ```
@@ -2264,12 +2274,14 @@ In this step, we:
 	jshell> int num = 10
 	num ==> 10
 	jshell> if (num % 2 == 0)
-	   ...>System.out.println("The number is even");
+	   ...> System.out.println("The number is even");
 	The number is even
+
 	jshell> num++
 	num ==> 11
 	jshell> if (num % 2 == 0)
 	   ...> System.out.println("The number is even");
+
 	jshell>
 ```
 
@@ -2296,6 +2308,7 @@ Let's add two statements to the second line.
 	   ...> System.out.println("i is odd"); System.out.println("i is prime");
 	i is odd
 	i is prime
+
 	jshell>
 
 ``` 
@@ -2310,6 +2323,7 @@ Let's change value of ```i``` to ```6``` and execute again.
 	jshell> if (i == 5)
 	   ...> System.out.println("i is odd"); System.out.println("i is prime");
 	i is prime
+
 	jshell>
 
 ```
@@ -2341,12 +2355,14 @@ They are used to group a sequence of statements together, into a **block**. Depe
 	   ...> }
 	i is odd
 	i is prime
+
 	jshell> i = 6
 	i ==> 6
 	jshell> if (i == 5) {
 	   ...> System.out.println("i is odd");
 	   ...> System.out.println("i is prime");
 	   ...> }
+
 	jshell>
 
 ```
@@ -2414,7 +2430,7 @@ This loop, when executed, prints the message "Hello World" on a separate line, f
 
 ##### Snippet-1 : *PMT-Challenge* Solution
 
-We need to replace the "Hello World" message with the console print of a table entry. This print is controlled by ``i``` taking values from ```1``` through ```10```.
+We need to replace the "Hello World" message with the console print of a table entry. This print is controlled by ```i``` taking values from ```1``` through ```10```.
 
 ```java
 
@@ -2433,7 +2449,6 @@ We need to replace the "Hello World" message with the console print of a table e
 	5 * 8 = 40
 	5 * 9 = 45
 	5 * 10 = 50
-	jshell>
 
 ```
 
@@ -2491,6 +2506,7 @@ In this step, we:
 	6 * 8 = 48
 	6 * 9 = 54
 	6 * 10 = 60
+
 	jshell> i = 0
 	i ==> 0
 	jshell> for (i=0; i<=10; i++) {
@@ -2506,7 +2522,6 @@ In this step, we:
 	10 * 8 = 80
 	10 * 9 = 90
 	10 * 10 = 100
-	jshell>
 
 ```
 
@@ -2527,7 +2542,6 @@ In this step, we:
 	8
 	9
 	10
-	jshell>
 
 ```
 
@@ -2550,7 +2564,6 @@ This is the first time we are using ```i--```. Isn't this interesting?
 	3
 	2
 	1
-	jshell>
 
 ```
 
@@ -2571,7 +2584,6 @@ This is the first time we are using ```i--```. Isn't this interesting?
 	64
 	81
 	100
-	jshell>
 
 ```
 
@@ -2594,7 +2606,6 @@ This is the first time we are using ```i--```. Isn't this interesting?
 	256
 	324
 	400
-	jshell>
 
 ```
 
@@ -2603,8 +2614,8 @@ This is the first time we are using ```i--```. Isn't this interesting?
 ```java
 
 	jshell> for (int i=1; i<=19; i += 2) {
-   ...> System.out.printf(i*i).println();
-   ...> }
+	   ...> System.out.printf(i*i).println();
+	   ...> }
 	1
 	9
 	25
@@ -2615,7 +2626,6 @@ This is the first time we are using ```i--```. Isn't this interesting?
 	225
 	289
 	361
-	jshell>
 
 ```
 
@@ -2691,7 +2701,7 @@ It can only be terminated externally with a keyboard interrupt (```CTRL + c```).
 
 	jshell> for (;;);
 
-	^C_
+	^C
 	jshell>
 
 ```
@@ -2717,7 +2727,6 @@ As in case of the ```if``` conditional statement, we can have statement blocks i
 	No 2
 	No 1
 	No 2
-	jshell>
 
 ```
 
@@ -2816,7 +2825,6 @@ We will start off, by writing a simple method that prints "```Hello World```" tw
 	   ...> System.out.println("Hello World");
 	   ...> }
 	| created method sayHelloWorldTwice()
-	jshell>
 
 ```
 
@@ -2839,11 +2847,11 @@ Let's look at a few examples for **method calls**.
 	| cannot find symbol
 	| symbol: variable sayHelloWorldTwice
 	| sayHelloWorldTwice
-	|^------------------------^
+	| ^----------------^
+
 	jshell> sayHelloWorldTwice()
 	Hello World
 	Hello World
-	jshell>
 	
 ``` 
 
@@ -2890,11 +2898,11 @@ Let's now reinforce our basic understanding of methods, by trying out a few exer
 	   ...> System.out.println("Hello World");
 	   ...> }
 	| created method sayHelloWorldThrice()
+
 	jshell> sayHelloWorldThrice()
 	Hello World
 	Hello World
 	Hello World
-	jshell>
 
 ```
  
@@ -2909,12 +2917,12 @@ Let's now reinforce our basic understanding of methods, by trying out a few exer
 	   ...> System.out.println("I'm excited to learn Java");
 	   ...> }
 	| created method sayFourThings()
+
 	jshell> sayFourThings()
 	I've created my first variable
 	I've created my first loop
 	I've created my first method
 	I'm excited to learn Java
-	jshell>
 
 ```
 
@@ -3155,12 +3163,12 @@ Java is a strongly typed language, with strict rules laid out for type compatibi
 	| Error:
 	| incompatible types: java.lang.String cannot be converted to int
 	| sayHelloWorld("value")
-	|_______________^-----^
+	|               ^-----^
 	jshell> sayHelloWorld(4.5)
 	| Error:
 	| incompatible types: possibly lossy conversion from double to int
 	| sayHelloWorld(4.5)
-	|______________^--^
+	|               ^-^
 	jshell>
 
 ```
@@ -3236,7 +3244,6 @@ Here's what we did earlier:
 	5 * 8 = 40
 	5 * 9 = 45
 	5 * 10 = 50
-	jshell>
 
 ```
 
