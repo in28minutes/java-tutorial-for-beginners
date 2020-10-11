@@ -15723,7 +15723,7 @@ Why take our word for all this? Let's put this code into an IDE, and then run it
 									 (num1, num2) -> {
 														System.out.println(num1 + " " + num2);
 														return num1 + num2;
-													 }
+													 });
 			System.out.println("Even Numbers Sum: " + sum);		
 		}
 	}
