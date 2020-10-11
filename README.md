@@ -15596,14 +15596,14 @@ The ```reduce()``` method acts on a pair of elements at a time. The *initial-val
 			printFPOddSum(numbers);
 		}
 
-		void printFPEvenSum(List<Integer> numbers) {
+		static printFPEvenSum(List<Integer> numbers) {
 			int sum = numbers.stream()
 							 .filter(elem -> elem %2 == 0)
 							 .reduce(0, (num1, num2) -> num1 + num2);
 			System.out.println("Even Numbers Sum: " + sum);
 		}
 
-		void printFPOddSum(List<Integer> numbers) {
+		static printFPOddSum(List<Integer> numbers) {
 			int sum = numbers.stream()
 							 .filter(elem -> elem %2 == 1)
 							 .reduce(0, (num1, num2) -> num1 + num2);
