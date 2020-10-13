@@ -16218,8 +16218,8 @@ Let's implement a `SysOutConsumer`.
 		public static void main(String[] args) {
 			List<Integer> numbers = List.of(23, 12, 34, 45, 36, 48);
 			//List<Integer> evens = numbers.stream()
-										   .filter(n -> n%2==0)
-										   .collect(Collectors.toList());
+										   //.filter(n -> n%2==0)
+										   //.collect(Collectors.toList());
 
 			List<Integer> evensToo = numbers.stream()
 										    .filter(new EvenNumberPredicate())
