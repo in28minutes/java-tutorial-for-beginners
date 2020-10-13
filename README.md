@@ -16543,7 +16543,7 @@ On a `String`, `String::length` is the same as `s -> s.length()`.
 			System.out.println(maximum);
 		}
 
-		public static booelan isEven(Integer number) {
+		public static boolean isEven(Integer number) {
 			return (number %2 == 0);
 		}
 	}
