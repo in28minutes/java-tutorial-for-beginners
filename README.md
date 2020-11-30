@@ -19451,6 +19451,7 @@ V computeIfPresent(K key,
 
 	public class ConcurrentMapRunner {
 		public static void main(String[] args) {
+		            ConcurrentMap<Character, LongAdder> occurances = new ConcurrentHashMap<>();
 			    String str = "ABCD ABCD ABCD";
 			    for(char character:str.toCharArray()) {
 			      LongAdder longAdder = occurances.get(character);
