@@ -19271,7 +19271,7 @@ After adding `synchronized` keyword to the method `increment`, only one thread w
 			counter.incrementI();
 			counter.incrementJ();
 			counter.incrementI();
-			System.out.println(counter.get());
+			System.out.println(counter.getI());
 		}
 	}
 
@@ -19304,15 +19304,15 @@ Let's look at another synchronization option - `Locks`
 		private Lock LockForJ = new ReentrantLock();
 
 		public void incrementI() {
-			lockForI.lock();
+			LockForI.lock();
 			i++;
-			lockForI.unlock();
+			LockForI.unlock();
 		}
 
 		public void incrementJ() {
-			lockForJ.lock();
+			LockForJ.lock();
 			j++;
-			lockForJ.unlock();
+			LockForJ.unlock();
 		}
 
 		public int getI() {
