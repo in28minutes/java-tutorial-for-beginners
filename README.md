@@ -10431,23 +10431,13 @@ We can implement the aggregate ```list-of-marks``` as an array.
 		}
 
 		public int getMaximumMark() {
-			int max = Integer.MIN_VALUE;
-			for(int mark:marks) {
-				if(mark > max) {
-					max = mark;				
-				}
-			}
-			return max;
+			Arrays.sort(marks);
+			return marks[marks.length-1];
 		}
 
-		public int getMinimumMark() {	
-			int min = Integer.MAX_VALUE;
-			for(int mark:marks) {
-				if(mark < min) {
-					min = mark;
-				}
-			}
-			return min;
+		public int getMinimumMark() {
+			Arrays.sort(marks);
+			return marks[0];
 		}
 	}
 
