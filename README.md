@@ -8757,6 +8757,7 @@ _default_
 		public static void puzzleFour() {
 			int number = 10;
 			switch(number) {
+				default:
 				System.out.println("default");
 				break;
 				case 1:
@@ -8768,7 +8769,7 @@ _default_
 				case 3:
 					System.out.println(3);
 					break;
-				default:	
+				
 			}
 		}
 	}
