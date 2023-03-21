@@ -1178,6 +1178,32 @@ In this step, we:
 * Discovered the uses of whitespace characters
 * Learned about Java escape sequences 
 
+
+#### Quiz
+What happens when you use whitespace around string literals in Java?
+a) It is ignored by the compiler
+b) It produces a syntax error
+Correct answer: a) It is ignored by the compiler
+
+Is Java case sensitive?
+a) Yes
+b) No
+Correct answer: a) Yes
+
+What is the role of the backslash character in Java?
+a) It is a special symbol used for escape sequences
+b) It is used to indicate a syntax error
+Correct answer: a) It is a special symbol used for escape sequences
+
+#### Hands-on exercise:
+Write a Java program that prints the following output to the console:
+````
+Hello
+World
+````
+
+Hint: You can use the escape sequence "\n" to insert a newline and "\t" to insert a tab.
+
 ### Step 11: More On Method Calls
 
 Let's look at method calls with a few more examples.
