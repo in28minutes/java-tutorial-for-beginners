@@ -291,7 +291,7 @@ In this step, we learned:
 * How to launch ```JShell``` from our terminal, and run a few commands on it
 * How to run Java code on the ```JShell``` prompt
 
-#### Here are the three multiple choice questions based on the given steps:
+#### Quiz:
 
 What is JShell?
 A. A programming tool
@@ -311,7 +311,7 @@ B. /exit
 C. /quit
 Answer: B
 
-#### Here's a hands-on exercise:
+#### Hands-on exercise:
 
 Exercise: Launch JShell and Evaluate an Expression
 
