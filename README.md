@@ -877,6 +877,34 @@ In this step, we:
 * Were introduced to the ```System.out.println()``` method for console output
 * Used this utility to print a single *PMT-Challenge* table entry
 
+#### Quiz
+
+Question 1: What is the syntax for calling the System.out.println() method in Java?
+a) System.out.println
+b) println.System.out
+c) System.out.print
+
+Correct answer: a) System.out.println
+
+Question 2: What is a String literal in Java?
+a) A sequence of characters enclosed within double quotes
+b) A method call used to display text on the console
+c) A variable used to store numeric values
+
+Correct answer: a) A sequence of characters enclosed within double quotes
+
+Question 3: How do you display the text "5 * 2 = 10" on the console in Java?
+a) System.out.println(5 * 2 = 10)
+b) System.out.println("5 * 2 = 10")
+c) System.out.print("5 * 2 = 10")
+
+Correct answer: b) System.out.println("5 * 2 = 10")
+
+#### Hands-on exercise:
+
+Write a Java program that computes the product of two integers, and displays the result in the format "a * b = c", where a and b are the input integers, and c is their product. Use the System.out.println() method to display the result on the console.
+
+
 ### Step 08: Programming Exercise PE-02
 
 Try and solve the following exercises:
