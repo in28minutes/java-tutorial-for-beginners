@@ -748,6 +748,37 @@ In this step, we:
 * Learned that result of operation depends on operand types
 * Understood what operator precedence means
 * Used parentheses to group parts of an expression
+
+
+
+#### Quiz
+
+What is the result of the expression 5 / 2?
+a) 2
+b) 2.5
+c) Error
+Correct answer: a) 2
+
+Which of the following operators has the highest precedence?
+a) +
+b) *
+c) %
+Correct answer: b) *
+
+Which of the following is the correct way to group the sub-expressions in the expression 5 + 5 * 6?
+a) 5 + (5 * 6)
+b) (5 + 5) * 6
+c) 5 + 5 * 6
+Correct answer: a) 5 + (5 * 6)
+
+#### Hands-on Exercise:
+Write a Java program that takes two integers as input from the user and performs the following operations on them:
+
+* Addition
+* Subtraction
+* Multiplication
+* Division
+Make sure to display the results of each operation to the user. Use parentheses to group the sub-expressions in each operation for better readability.
  
 ### Step 07: Introducing Console Output 
 
