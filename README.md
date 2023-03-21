@@ -924,6 +924,46 @@ Try and solve the following exercises:
 	* Operands
 	* Method calls
 
+
+#### Quiz:
+
+Question 1: What is the first exercise in Programming Exercise PE-02?
+a) Print the calculated value of 5 * 3
+b) Print the number of seconds in a day
+c) Print Hello World onto the console
+
+Answer: c) Print Hello World onto the console
+
+Question 2: What do you need to identify in your code when doing a syntax revision for the exercises in Programming Exercise PE-02?
+a) Loops and conditionals
+b) Numeric and string literals, expressions, operators, operands, and method calls
+c) Classes and objects
+
+Answer: b) Numeric and string literals, expressions, operators, operands, and method calls
+
+Question 3: What should be printed when you execute the code for the second exercise in Programming Exercise PE-02?
+a) "5 * 3"
+b) "15"
+c) 5 * 3
+
+Answer: a) "5 * 3"
+
+#### Hands-on Exercise:
+
+Write a Java program to print the following:
+
+- Your name
+- The year you were born
+- The year you will turn 30
+
+Do a syntax revision for your code, and identify the following elements:
+
+- Numeric and string literals
+- Expressions
+- Operators
+- Operands
+- Method calls
+
 ### Step 09: Solutions to PE-02
 
 #### Solution 1
