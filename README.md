@@ -123,6 +123,44 @@ In this step, we:
 * Stated our first programming challenge, *PMT-Challenge*
 * Identified basic Java concepts to learn, to solve this challenge
 
+Quiz:
+
+Question 1: What is the aim of the PMT-Challenge?
+a) To solve a mathematical equation
+b) To read out a multiplication table
+c) To learn basic Java concepts
+
+Answer: b) To read out a multiplication table
+
+Question 2: What are some basic Java concepts that will be introduced in the PMT-Challenge?
+a) Numbers and alphabets
+b) Loops and conditionals
+c) Colors and shapes
+
+Answer: b) Loops and conditionals
+
+Question 3: Which of the following is NOT a basic Java concept introduced in the PMT-Challenge?
+a) Variables
+b) Methods
+c) Booleans
+Answer: c) Booleans
+
+Hands-on Exercise:
+
+Write a Java program to compute the multiplication table for 7, with entries from 1 to 12. Display this table in the following format:
+7 * 1 = 7
+7 * 2 = 14
+7 * 3 = 21
+7 * 4 = 28
+7 * 5 = 35
+7 * 6 = 42
+7 * 7 = 49
+7 * 8 = 56
+7 * 9 = 63
+7 * 10 = 70
+7 * 11 = 77
+7 * 12 = 84
+
 ### Step 02: Introducing ```JShell```
 - - - 
 
