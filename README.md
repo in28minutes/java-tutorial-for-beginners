@@ -1002,6 +1002,34 @@ Do a syntax revision for your code, and identify the following elements:
 
 ```
 
+#### Quiz:
+
+Question 1: What is the output of Solution 1?
+a) "5 * 3"
+b) "Hello World"
+c) 15
+
+Answer: b) "Hello World"
+
+Question 2: What is the output of Solution 2?
+a) "15"
+b) "5 * 3"
+c) Syntax Error
+
+Answer: b) "5 * 3"
+
+Question 3: What is the output of Solution 4?
+a) 86400
+b) 5184000
+c) 3600
+
+Answer: a) 86400
+
+#### Hands-on Exercise:
+
+Write a Java program to print the following sentence using the System.out.println() statement:
+- "Java is a programming language."
+
 ### Step 10: Whitespace, Case sensitiveness and Escape Characters
 The term *whitespace* refers to any sequence of continuous space, tab or newline characters.
 
