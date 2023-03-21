@@ -320,6 +320,40 @@ Type 2+3 at the JShell prompt and press enter.
 Observe the output.
 Type /exit to exit JShell.
 
+
+## Response 2
+
+Multiple Choice Quiz
+Step 02: Introducing JShell
+JShell is a programming tool, introduced in Java SE 9. JShell is a REPL interface. The term REPL refers to this:
+
+'R' stands for Read; Read the input Java code
+'E' means Eval; Evaluate the source code
+'P' translates to Print; Print out the result
+'L' indicates Loop; Loop around, and wait for the next input
+Quiz Questions:
+
+What does REPL stand for?
+A) Read, Edit, Print, Loop
+B) Read, Eval, Print, Loop (Correct)
+C) Run, Evaluate, Print, Loop
+How do you launch JShell?
+A) jshell command (Correct)
+B) java -version command
+C) /help intro command
+What does JShell allow you to do?
+A) Execute Python code
+B) Execute JavaScript code
+C) Execute Java code and get immediate results (Correct)
+Hands-on Exercise:
+
+Write a JShell command to assign the value 10 to a variable named x, and then print the value of x to the console.
+
+java
+Copy code
+jshell> int x = 10;
+jshell> System.out.println(x);
+
 ### Step 03: Welcome to Problem Solving
 
 Lets try to break down the *PMT-Challenge* problem to be able to solve it.
