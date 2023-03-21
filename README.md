@@ -123,7 +123,7 @@ In this step, we:
 * Stated our first programming challenge, *PMT-Challenge*
 * Identified basic Java concepts to learn, to solve this challenge
 
-Quiz:
+#### Quiz:
 
 Question 1: What is the aim of the PMT-Challenge?
 a) To solve a mathematical equation
@@ -145,7 +145,7 @@ b) Methods
 c) Booleans
 Answer: c) Booleans
 
-Hands-on Exercise:
+#### Hands-on Exercise:
 
 Write a Java program to compute the multiplication table for 7, with entries from 1 to 12. Display this table in the following format:
 7 * 1 = 7
