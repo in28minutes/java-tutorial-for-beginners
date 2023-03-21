@@ -321,45 +321,6 @@ Observe the output.
 Type /exit to exit JShell.
 
 
-## Response 2
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Codebeautify.org Text to HTML Converter</title>
-	</head>
-	<body>
-		<p>Here are the three multiple choice questions based on the given steps: 
- 
-What is JShell? 
-A. A programming tool 
-B. A game 
-C. A text editor 
-Answer: A 
- 
-What does REPL stand for? 
-A. Read, Evaluate, Print, Loop 
-B. Run, Edit, Print, Launch 
-C. Record, Edit, Play, Loop 
-Answer: A 
- 
-How do you exit JShell? 
-A. /terminate 
-B. /exit 
-C. /quit 
-Answer: B 
- 
-Here's a hands-on exercise: 
- 
-Exercise: Launch JShell and Evaluate an Expression 
- 
-Launch JShell on your terminal. 
-Type 2+3 at the JShell prompt and press enter. 
-Observe the output. 
-Type /exit to exit JShell.</p>
-	</body>
-</html>
-
 ### Step 03: Welcome to Problem Solving
 
 Lets try to break down the *PMT-Challenge* problem to be able to solve it.
@@ -388,6 +349,50 @@ Here is how our draft steps look like
 In this step, we:
 
 * Broke down the *PMT-Challenge* problem into sub-problems
+
+#### Quiz:
+
+Question 1: What is the aim of breaking down a problem into sub-problems?
+a) To make the problem more complicated
+b) To make the problem easier to solve
+c) To avoid solving the problem altogether
+
+Answer: b) To make the problem easier to solve
+
+Question 2: How many times do we need to perform the calculation in the PMT-Challenge?
+a) Five times
+b) Ten times
+c) Fifteen times
+
+Answer: b) Ten times
+
+Question 3: What is the first step to solve the PMT-Challenge according to the draft steps?
+a) Print 5 * 3 = 15
+b) Calculate 5 * 3 and print result as 15
+c) Do this ten times
+
+Answer: b) Calculate 5 * 3 and print result as 15
+
+#### Hands-on Exercise:
+
+Write a Java program to compute the multiplication table for 9, with entries from 1 to 15. Use the draft steps mentioned above to solve the problem. Display this table in the following format:
+```
+9 * 1 = 9
+9 * 2 = 18
+9 * 3 = 27
+9 * 4 = 36
+9 * 5 = 45
+9 * 6 = 54
+9 * 7 = 63
+9 * 8 = 72
+9 * 9 = 81
+9 * 10 = 90
+9 * 11 = 99
+9 * 12 = 108
+9 * 13 = 117
+9 * 14 = 126
+9 * 15 = 135
+```
 
 ### Step 04: Introducing Expressions 
 
