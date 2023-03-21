@@ -291,6 +291,35 @@ In this step, we learned:
 * How to launch ```JShell``` from our terminal, and run a few commands on it
 * How to run Java code on the ```JShell``` prompt
 
+#### Here are the three multiple choice questions based on the given steps:
+
+What is JShell?
+A. A programming tool
+B. A game
+C. A text editor
+Answer: A
+
+What does REPL stand for?
+A. Read, Evaluate, Print, Loop
+B. Run, Edit, Print, Launch
+C. Record, Edit, Play, Loop
+Answer: A
+
+How do you exit JShell?
+A. /terminate
+B. /exit
+C. /quit
+Answer: B
+
+#### Here's a hands-on exercise:
+
+Exercise: Launch JShell and Evaluate an Expression
+
+Launch JShell on your terminal.
+Type 2+3 at the JShell prompt and press enter.
+Observe the output.
+Type /exit to exit JShell.
+
 ### Step 03: Welcome to Problem Solving
 
 Lets try to break down the *PMT-Challenge* problem to be able to solve it.
