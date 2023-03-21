@@ -510,6 +510,31 @@ In this step, we:
 * Learned how to construct numeric expressions
 * Discovered that operators are predefined symbols
 * Combined several operators to form larger expressions
+
+
+#### Quiz:
+
+What is an expression in Java programming?
+a) A set of instructions to be executed
+b) A combination of operands and operators that results in a value
+c) A way to define a variable
+Answer: b
+
+Which symbol is used for multiplication in Java programming?
+a) X
+b) *
+c) /
+Answer: b
+
+What does the modulo operator do in Java programming?
+a) Adds two numbers
+b) Subtracts two numbers
+c) Gives the remainder when integer division is performed
+Answer: c
+
+#### Hands-on exercise:
+
+Create a Java program that calculates the product of two numbers and displays the result. Use the multiplication operator (*) to perform the calculation.
  
 ### Step 05: Programming Exercise PE-1 (With Solutions)
 
@@ -538,6 +563,42 @@ Okay, here comes a couple of programming exercises.
 $jshell>60 * 60 * 24
 
 $1 ==> 86400
+```
+
+#### Quiz:
+
+Question 1: What is the purpose of Step 05 in this book?
+a) To learn basic math concepts
+b) To practice evaluating Java expressions
+c) To explore advanced Java programming concepts
+
+Answer: b) To practice evaluating Java expressions
+
+Question 2: What is the expression to calculate the number of minutes in a day?
+a) 60 * 24
+b) 60 + 24
+c) 24 * 60 * 60
+
+Answer: a) 60 * 24
+
+Question 3: What is the expression to calculate the number of seconds in a day?
+a) 60 * 60
+b) 60 * 60 * 24
+c) 24 / 60 / 60
+
+Answer: b) 60 * 60 * 24
+
+#### Hands-on Exercise:
+
+Write a Java expression to calculate the number of milliseconds in a day.
+Display the result using System.out.println() method.
+
+Solution:
+1000 (milliseconds in a second) multiplied by 60 (seconds in a minute) multiplied by 60 (minutes in an hour) multiplied by 24 (hours in a day)
+
+```
+long millisecondsInADay = 1000L * 60 * 60 * 24;
+System.out.println("Number of milliseconds in a day: " + millisecondsInADay);
 ```
 
 ### Step 06: Operators
