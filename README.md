@@ -148,6 +148,7 @@ Answer: c) Booleans
 #### Hands-on Exercise:
 
 Write a Java program to compute the multiplication table for 7, with entries from 1 to 12. Display this table in the following format:
+```
 7 * 1 = 7
 7 * 2 = 14
 7 * 3 = 21
@@ -160,6 +161,7 @@ Write a Java program to compute the multiplication table for 7, with entries fro
 7 * 10 = 70
 7 * 11 = 77
 7 * 12 = 84
+```
 
 ### Step 02: Introducing ```JShell```
 - - - 
