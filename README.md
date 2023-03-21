@@ -778,6 +778,7 @@ Write a Java program that takes two integers as input from the user and performs
 * Subtraction
 * Multiplication
 * Division
+<br/>
 Make sure to display the results of each operation to the user. Use parentheses to group the sub-expressions in each operation for better readability.
  
 ### Step 07: Introducing Console Output 
