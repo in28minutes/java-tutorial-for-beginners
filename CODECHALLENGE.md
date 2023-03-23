@@ -318,3 +318,72 @@ product ==> 15
 jshell> System.out.println(num1 + " * " + num2 + " = " + product);
 5 * 3 = 15
 ```
+
+
+
+
+### Programming Exercise PE-02
+
+
+
+#### Exercise 1
+
+Using JShell, write a program that prints out the message "Hello World" onto the console.
+
+##### Solution
+
+```
+System.out.println("Hello World");
+```
+
+#### Syntax Revision
+
+```
+//Numeric and string literals
+System.out.println("Hello World");
+
+//Expressions
+//There are no expressions in this code.
+
+//Operators
+//There are no operators in this code.
+
+//Operands
+//There are no operands in this code.
+
+//Method calls
+System.out.println();
+```
+
+#### Exercise 2
+
+Using JShell, write a program that prints out the result of the expression 5 * 3, both as an expression and as the calculated value.
+
+##### Solution
+
+```
+//Print the expression
+System.out.println("5 * 3");
+
+//Print the calculated value
+System.out.println(5 * 3);
+```
+
+#### Syntax Revision
+
+```
+//Numeric and string literals
+System.out.println("5 * 3");
+
+//Expressions
+System.out.println(5 * 3);
+
+//Operators
+//The * operator is used to multiply 5 and 3.
+
+//Operands
+//The operands in this code are 5 and 3.
+
+//Method calls
+System.out.println();
+```
