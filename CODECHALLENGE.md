@@ -196,4 +196,37 @@ jshell> System.out.println("Volume of the rectangular prism is: " + volume);
 Volume of the rectangular prism is: 120
 
 jshell> /exit
-````
+```
+
+### Step 05: Programming Exercise PE-1 (With Solutions)
+
+
+####  Exercise 1
+
+Write a JShell command to calculate the average of three integers: 10, 20, and 30.
+
+##### Solution:
+
+```
+jshell> int num1 = 10;
+jshell> int num2 = 20;
+jshell> int num3 = 30;
+jshell> int average = (num1 + num2 + num3) / 3;
+jshell> average
+average ==> 20
+```
+
+####  Exercise 2
+
+Write a JShell command to convert a temperature of 75 degrees Fahrenheit to Celsius.
+
+##### Solution:
+
+```
+jshell> double fahrenheit = 75.0;
+jshell> double celsius = (fahrenheit - 32) * 5 / 9;
+jshell> celsius
+celsius ==> 23.88888888888889
+```
+
+Note: The formula to convert Fahrenheit to Celsius is: (°F - 32) * 5/9 = °C
