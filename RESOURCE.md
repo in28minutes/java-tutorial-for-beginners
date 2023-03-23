@@ -1,6 +1,6 @@
-# Java Multiple Choice Quiz & Code Challenge
+## Java Multiple Choice Quiz & Code Challenge
 
-# Step 01: First Challenge : The Print-Multiplication-Table (PMT-Challenge)
+### Step 01: First Challenge : The Print-Multiplication-Table (PMT-Challenge)
 
 1.  What is the objective of the PMT-Challenge?
     
@@ -34,11 +34,11 @@
 
 
 
-## Exercise 1: PMT Challenge Using For Loop
+#### Exercise 1: PMT Challenge Using For Loop
 
 Using JShell, write a program to display the multiplication table for 7, with entries from 1 to 10 using a for loop.
 
-### Solution
+###### Solution
 
 Launch JShell and enter the following commands:
 
@@ -63,11 +63,11 @@ Copy code
 7 * 9 = 63
 7 * 10 = 70` 
 
-## Exercise 2: PMT Challenge Using While Loop
+#### Exercise 2: PMT Challenge Using While Loop
 
 Using JShell, write a program to display the multiplication table for 3, with entries from 1 to 5 using a while loop.
 
-### Solution
+###### Solution
 
 Launch JShell and enter the following commands:
 
