@@ -231,3 +231,52 @@ celsius ==> 23.88888888888889
 ```
 
 Note: The formula to convert Fahrenheit to Celsius is: (°F - 32) * 5/9 = °C
+
+
+###  Step 06: Operators
+
+#### Exercise 1: Operator Practice
+
+Write a Java program using JShell that takes two integers as input and prints their sum, difference, product, and quotient. Use appropriate operators to perform these operations.
+
+#####  Solution
+
+```
+// Use JShell to declare variables and perform arithmetic operations
+int num1 = 10;
+int num2 = 5;
+
+// Calculate and print sum, difference, product, and quotient
+System.out.println("Sum: " + (num1 + num2));
+System.out.println("Difference: " + (num1 - num2));
+System.out.println("Product: " + (num1 * num2));
+System.out.println("Quotient: " + (num1 / num2));
+```
+
+#### Exercise 2: Operator Precedence
+
+Write a Java program using JShell that takes three integers as input and calculates the value of the following expression:
+
+`(num1 + num2) * num3 / 2`
+
+##### Solution
+
+```
+// Use JShell to declare variables and perform arithmetic operations
+int num1 = 5;
+int num2 = 10;
+int num3 = 2;
+
+// Calculate the value of the expression
+int result = (num1 + num2) * num3 / 2;
+
+// Print the result
+System.out.println("Result: " + result);
+
+```
+
+Explanation:
+
+-   First, the expressions inside the parentheses `(num1 + num2)` are evaluated, resulting in the sum of `num1` and `num2`.
+-   Next, the result of the previous step is multiplied by `num3`, giving `(num1 + num2) * num3`.
+-   Finally, the result of the previous step is divided by `2`, resulting in the final value of the expression.
