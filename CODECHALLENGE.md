@@ -280,3 +280,41 @@ Explanation:
 -   First, the expressions inside the parentheses `(num1 + num2)` are evaluated, resulting in the sum of `num1` and `num2`.
 -   Next, the result of the previous step is multiplied by `num3`, giving `(num1 + num2) * num3`.
 -   Finally, the result of the previous step is divided by `2`, resulting in the final value of the expression.
+
+
+### Step 07: Introducing Console Output
+
+
+#### Exercise 1:
+
+Challenge: Write a Java program that takes a user's name as input and greets the user by printing "Hello, [name]!" to the console using JShell.
+
+##### Solution:
+
+```
+jshell> String name = "Alice";
+name ==> "Alice"
+
+jshell> System.out.println("Hello, " + name + "!");
+Hello, Alice!
+``` 
+
+#### Exercise 2:
+
+Challenge: Write a Java program that takes two numbers as input and prints their product in the format "[num1] * [num2] = [product]" to the console using JShell.
+
+##### Solution:
+
+```
+jshell> int num1 = 5;
+num1 ==> 5
+
+jshell> int num2 = 3;
+num2 ==> 3
+
+jshell> int product = num1 * num2;
+product ==> 15
+
+jshell> System.out.println(num1 + " * " + num2 + " = " + product);
+5 * 3 = 15
+```
