@@ -322,7 +322,7 @@ jshell> System.out.println(num1 + " * " + num2 + " = " + product);
 
 
 
-### 8. Programming Exercise PE-02
+### Step 08: Programming Exercise PE-02
 
 
 
