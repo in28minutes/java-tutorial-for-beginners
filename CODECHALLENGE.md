@@ -398,7 +398,6 @@ Create a program in JShell that displays the sum of 2 and 3.
 
 **Solution:**
 
-pythonCopy code
 
 ```
 jshell> int sum = 2 + 3;
@@ -420,4 +419,59 @@ jshell> double fahrenheit = (celsius * 1.8) + 32;
 fahrenheit ==> 68.0
 jshell> System.out.println(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.");
 20.0 degrees Celsius is equal to 68.0 degrees Fahrenheit.
+```
+
+
+### Step 10: Whitespace, Case sensitiveness and Escape Characters
+
+#### Exercise 1: Whitespace Counter
+
+Write a program that takes a string input and counts the number of whitespace characters in it. Use JShell to test your program with the following inputs:
+
+Input 1:
+
+
+`"The quick brown fox jumps over the lazy dog."` 
+
+Expected Output 1:
+
+`8` 
+
+Input 2:
+
+`"Java  Programming  is  Fun!"` 
+
+Expected Output 2:
+
+`6` 
+
+##### Solution:
+
+
+
+```
+int whitespaceCount = 0;
+String input = "The quick brown fox jumps over the lazy dog.";
+for (int i = 0; i < input.length(); i++) {
+    if (Character.isWhitespace(input.charAt(i))) {
+        whitespaceCount++;
+    }
+}
+System.out.println(whitespaceCount);
+```
+
+#### Exercise 2: Escape Sequence Example
+
+Write a program that uses escape sequences to print the following message exactly as shown below:
+
+
+`Java is a "programming" language.` 
+
+Use JShell to test your program.
+
+##### Solution:
+
+
+```
+System.out.println("Java is a \"programming\" language.");
 ```
