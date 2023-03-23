@@ -179,7 +179,7 @@ Write a Java program using JShell to calculate the volume of a rectangular prism
 
 ##### Solution:
 
-````
+```
 jshell> int length = 4;
 length ==> 4
 
@@ -196,6 +196,7 @@ jshell> System.out.println("Volume of the rectangular prism is: " + volume);
 Volume of the rectangular prism is: 120
 
 jshell> /exit
+
 ```
 
 ### Step 05: Programming Exercise PE-1 (With Solutions)
