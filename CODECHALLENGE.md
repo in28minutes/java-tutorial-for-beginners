@@ -387,3 +387,37 @@ System.out.println(5 * 3);
 //Method calls
 System.out.println();
 ```
+
+
+
+### Step 09: Solutions to PE-02
+
+#### Exercise 1
+
+Create a program in JShell that displays the sum of 2 and 3.
+
+**Solution:**
+
+pythonCopy code
+
+```
+jshell> int sum = 2 + 3;
+sum ==> 5
+jshell> System.out.println("The sum of 2 and 3 is: " + sum);
+The sum of 2 and 3 is: 5
+``` 
+
+#### Exercise 2
+
+Create a program in JShell that converts a temperature from Celsius to Fahrenheit. The formula for converting Celsius to Fahrenheit is F = (C * 1.8) + 32.
+
+**Solution:**
+
+```
+jshell> double celsius = 20.0;
+celsius ==> 20.0
+jshell> double fahrenheit = (celsius * 1.8) + 32;
+fahrenheit ==> 68.0
+jshell> System.out.println(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.");
+20.0 degrees Celsius is equal to 68.0 degrees Fahrenheit.
+```
