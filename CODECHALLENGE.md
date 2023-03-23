@@ -74,10 +74,10 @@ Create a JShell snippet that defines a variable `myNumber` with a value of 10, t
 
 ```
 
-`jshell> int myNumber = 10;
+jshell> int myNumber = 10;
 myNumber ==> 10
  jshell> myNumber * myNumber
-$1 ==> 100` 
+$1 ==> 100
 ```
 
 #### Exercise 2:
@@ -88,7 +88,7 @@ Create a JShell snippet that defines a method called `isEven` that takes an inte
 
 ```
 
-`jshell> boolean isEven(int n) {
+jshell> boolean isEven(int n) {
    ...>     return n % 2 == 0;
    ...> }
 |  created method isEven(int)
@@ -97,7 +97,7 @@ jshell> isEven(7)
 $1 ==> false
 
 jshell> isEven(12)
-$2 ==> true`
+$2 ==> true
 ```
 
 
@@ -113,11 +113,11 @@ Using JShell, write a Java code snippet to calculate and print the result of mul
 
 ```
 
-`jshell> int result = 7 * 4;
+jshell> int result = 7 * 4;
 result ==> 28
 
 jshell> System.out.println(result);
-28` 
+28
 ```
 
 #### Java Coding Exercise 2
@@ -128,7 +128,7 @@ Using JShell, write a Java code snippet to print the multiplication table for 9,
 
 ```
 
-`jshell> for (int i = 1; i <= 5; i++) {
+jshell> for (int i = 1; i <= 5; i++) {
    ...>     int result = 9 * i;
    ...>     System.out.println("9 * " + i + " = " + result);
    ...> }
@@ -136,7 +136,7 @@ Using JShell, write a Java code snippet to print the multiplication table for 9,
 9 * 2 = 18
 9 * 3 = 27
 9 * 4 = 36
-9 * 5 = 45` 
+9 * 5 = 45
 ```
 
 Note: The above solution uses a for loop to execute the code 5 times, once for each table entry, and prints the result of each calculation.
