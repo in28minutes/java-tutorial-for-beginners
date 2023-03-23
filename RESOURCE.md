@@ -44,15 +44,15 @@ Launch JShell and enter the following commands:
 
 javaCopy code
 
-`for(int i = 1; i <= 10; i++) {
+```for(int i = 1; i <= 10; i++) {
     System.out.println("7 * " + i + " = " + (7*i));
-}` 
+}``` 
 
 Output:
 
 Copy code
 
-`7 * 1 = 7
+```7 * 1 = 7
 7 * 2 = 14
 7 * 3 = 21
 7 * 4 = 28
@@ -61,7 +61,7 @@ Copy code
 7 * 7 = 49
 7 * 8 = 56
 7 * 9 = 63
-7 * 10 = 70` 
+7 * 10 = 70``` 
 
 #### Exercise 2: PMT Challenge Using While Loop
 
@@ -73,18 +73,18 @@ Launch JShell and enter the following commands:
 
 javaCopy code
 
-`int i = 1;
+```int i = 1;
 while(i <= 5) {
     System.out.println("3 * " + i + " = " + (3*i));
     i++;
-}` 
+}```
 
 Output:
 
 Copy code
 
-`3 * 1 = 3
+```3 * 1 = 3
 3 * 2 = 6
 3 * 3 = 9
 3 * 4 = 12
-3 * 5 = 15`
+3 * 5 = 15```
