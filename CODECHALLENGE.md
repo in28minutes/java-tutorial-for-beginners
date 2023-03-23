@@ -61,3 +61,82 @@ Output:
 3 * 4 = 12
 3 * 5 = 15
 ```
+
+
+### Step 02: Introducing JShell
+
+
+#### Exercise 1:
+
+Create a JShell snippet that defines a variable `myNumber` with a value of 10, then use an expression to calculate and display the square of `myNumber`.
+
+##### Solution:
+
+```
+
+`jshell> int myNumber = 10;
+myNumber ==> 10
+ jshell> myNumber * myNumber
+$1 ==> 100` 
+```
+
+#### Exercise 2:
+
+Create a JShell snippet that defines a method called `isEven` that takes an integer argument `n` and returns a boolean value indicating whether `n` is even or not. Then, call the method with an integer value of your choice and display the result.
+
+##### Solution:
+
+```
+
+`jshell> boolean isEven(int n) {
+   ...>     return n % 2 == 0;
+   ...> }
+|  created method isEven(int)
+
+jshell> isEven(7)
+$1 ==> false
+
+jshell> isEven(12)
+$2 ==> true`
+```
+
+
+
+### Step 03: Welcome to Problem Solving
+
+
+#### Java Coding Exercise 1
+
+Using JShell, write a Java code snippet to calculate and print the result of multiplying 7 by 4.
+
+##### Solution
+
+```
+
+`jshell> int result = 7 * 4;
+result ==> 28
+
+jshell> System.out.println(result);
+28` 
+```
+
+#### Java Coding Exercise 2
+
+Using JShell, write a Java code snippet to print the multiplication table for 9, with entries from 1 to 5.
+
+#####  Solution
+
+```
+
+`jshell> for (int i = 1; i <= 5; i++) {
+   ...>     int result = 9 * i;
+   ...>     System.out.println("9 * " + i + " = " + result);
+   ...> }
+9 * 1 = 9
+9 * 2 = 18
+9 * 3 = 27
+9 * 4 = 36
+9 * 5 = 45` 
+```
+
+Note: The above solution uses a for loop to execute the code 5 times, once for each table entry, and prints the result of each calculation.
