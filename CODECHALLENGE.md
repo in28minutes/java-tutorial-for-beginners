@@ -475,3 +475,59 @@ Use JShell to test your program.
 ```
 System.out.println("Java is a \"programming\" language.");
 ```
+
+
+### Step 11: More On Method Calls
+
+
+#### Exercise 1: JShell Math Practice
+
+Create a program using JShell that does the following:
+
+1.  Generates a random integer between 1 and 10 inclusive using the Math.random() method.
+2.  Prints out the random integer.
+3.  Calculates the square root of the random integer using the Math.sqrt() method.
+4.  Prints out the square root.
+
+##### Solution:
+
+```
+jshell> int randomNum = (int)(Math.random() * 10 + 1)
+randomNum ==> 6
+
+jshell> double sqrtNum = Math.sqrt(randomNum)
+sqrtNum ==> 2.449489742783178
+
+jshell> System.out.println("Random integer: " + randomNum);
+Random integer: 6
+
+jshell> System.out.println("Square root of random integer: " + sqrtNum);
+Square root of random integer: 2.449489742783178
+```
+
+#### Exercise 2: Max of Three Numbers
+
+Create a program using JShell that finds the maximum of three numbers using the Math.max() method.
+
+1.  Declare three integer variables and assign them values.
+2.  Call the Math.max() method with the three variables as parameters.
+3.  Print out the result.
+
+##### Solution:
+
+```
+jshell> int num1 = 10;
+num1 ==> 10
+
+jshell> int num2 = 15;
+num2 ==> 15
+
+jshell> int num3 = 8;
+num3 ==> 8
+
+jshell> int maxNum = Math.max(Math.max(num1, num2), num3);
+maxNum ==> 15
+
+jshell> System.out.println("Maximum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + maxNum);
+Maximum of 10, 15, and 8 is: 15
+```
