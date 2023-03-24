@@ -1,4 +1,4 @@
-## Java Multiple Choice Quiz & Code Challenge
+## Java Code Challenge
 
 ### Step 01: First Challenge : The Print-Multiplication-Table (PMT-Challenge)
 
