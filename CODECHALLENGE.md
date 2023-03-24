@@ -698,3 +698,64 @@ jshell> i = 6
 i ==> 6
 jshell> System.out.printf("%d * %d = %d
 ```
+
+
+
+
+### Step 14: Programming Exercise PE-03 (With solution)
+
+
+
+#### Exercise 1: JShell Basics
+
+1.  Open JShell and declare an integer variable called `myNum` with a value of 10.
+2.  Print the value of `myNum`.
+3.  Change the value of `myNum` to 15 and print it again.
+
+##### Solution to Exercise 1:
+
+```
+jshell> int myNum = 10;
+myNum ==> 10
+ jshell> System.out.println(myNum);
+10
+ jshell> myNum = 15;
+myNum ==> 15
+ jshell> System.out.println(myNum);
+15
+```
+
+#### Exercise 2: Looping with JShell
+
+1.  Use a for loop to print the numbers from 1 to 10.
+2.  Create a new variable called `sum` and initialize it to 0.
+3.  Use a for loop to add the numbers from 1 to 10 to `sum`.
+4.  Print the value of `sum`.
+
+##### Solution to Exercise 2:
+
+```
+jshell> for (int i = 1; i <= 10; i++) {
+   ...>     System.out.println(i);
+   ...> }
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+jshell> int sum = 0;
+sum ==> 0
+
+jshell> for (int i = 1; i <= 10; i++) {
+   ...>     sum += i;
+   ...> }
+
+jshell> System.out.println(sum);
+55
+```
