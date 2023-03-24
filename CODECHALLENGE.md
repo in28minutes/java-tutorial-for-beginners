@@ -590,3 +590,111 @@ Output:
 ```
 
 Explanation: The program declares three double variables `a`, `b`, and `c`, and initializes them with the values 3.5, 2.8, and 1.9 respectively. It then calculates the sum of these variables and stores it in the `sum` variable. Finally, it uses the printf method to print the output with one decimal point using the `%f` format specifier and the `%.1f` modifier. `%n` is used to print a newline character.
+
+
+### Step 13: Introducing Variables
+
+
+#### Exercise 1: Simple Variable Assignment
+
+In this exercise, you will use JShell to create a variable and assign a value to it. You will then modify the value of the variable and print out the new value.
+
+1.  Open up JShell in your command prompt or terminal.
+2.  Define an integer variable named "number" and assign it a value of 5.
+3.  Print out the value of the "number" variable.
+4.  Change the value of the "number" variable to 10.
+5.  Print out the new value of the "number" variable.
+
+##### Solution:
+
+1.  Open up JShell in your command prompt or terminal.
+    
+2.  Define an integer variable named "number" and assign it a value of 5.
+    
+
+```
+jshell> int number = 5
+number ==> 5
+```
+
+3.  Print out the value of the "number" variable.
+
+```
+jshell> System.out.println(number)
+5
+```
+
+4.  Change the value of the "number" variable to 10.
+
+```
+jshell> number = 10
+number ==> 10
+```
+
+5.  Print out the new value of the "number" variable.
+
+```
+jshell> System.out.println(number)
+10
+```
+
+#### Exercise 2: Multiplication Table with Variables
+
+In this exercise, you will use JShell to create a multiplication table using variables. You will define a variable "i" and use it to print out the multiplication table for the number 5.
+
+1.  Open up JShell in your command prompt or terminal.
+2.  Define an integer variable named "i" and assign it a value of 1.
+3.  Print out the multiplication table for the number 5 using the "i" variable.
+4.  Change the value of the "i" variable to 2 and print out the corresponding multiplication table.
+5.  Repeat step 4 for the values of "i" from 3 to 10.
+
+##### Solution:
+
+1.  Open up JShell in your command prompt or terminal.
+    
+2.  Define an integer variable named "i" and assign it a value of 1.
+    
+
+```
+jshell> int i = 1
+i ==> 1
+```
+
+3.  Print out the multiplication table for the number 5 using the "i" variable.
+
+```
+jshell> System.out.printf("%d * %d = %d\n", 5, i, 5*i)
+5 * 1 = 5
+```
+
+4.  Change the value of the "i" variable to 2 and print out the corresponding multiplication table.
+
+```
+jshell> i = 2
+i ==> 2
+jshell> System.out.printf("%d * %d = %d\n", 5, i, 5*i)
+5 * 2 = 10
+```
+
+5.  Repeat step 4 for the values of "i" from 3 to 10.
+
+```
+jshell> i = 3
+i ==> 3
+jshell> System.out.printf("%d * %d = %d\n", 5, i, 5*i)
+5 * 3 = 15
+
+jshell> i = 4
+i ==> 4
+jshell> System.out.printf("%d * %d = %d\n", 5, i, 5*i)
+5 * 4 = 20
+
+jshell> i = 5
+i ==> 5
+jshell> System.out.printf("%d * %d = %d\n", 5, i, 5*i)
+5 * 5 = 25
+
+jshell> i = 6
+i ==> 6
+jshell> System.out.printf("%d * %d = %d
+```
