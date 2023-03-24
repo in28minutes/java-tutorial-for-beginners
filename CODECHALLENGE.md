@@ -759,3 +759,37 @@ jshell> for (int i = 1; i <= 10; i++) {
 jshell> System.out.println(sum);
 55
 ```
+
+
+### Step 15: Using Variables
+
+#### Java Coding Exercise 1
+
+Write a Java program using JShell to declare an integer variable called "age" and assign it a value of 25. Then, print the value of "age" on the console.
+
+##### Solution:
+
+```
+jshell> int age = 25;
+age ==> 25
+
+jshell> System.out.println(age);
+25
+```
+
+#### Java Coding Exercise 2
+
+Write a Java program using JShell to declare two variables, "name" and "age". Assign your name to the variable "name" and your age to the variable "age". Then, print the values of both variables on the console in the following format: "My name is [name] and I am [age] years old."
+
+##### Solution:
+
+```
+jshell> String name = "John Doe";
+name ==> "John Doe"
+
+jshell> int age = 30;
+age ==> 30
+
+jshell> System.out.println("My name is " + name + " and I am " + age + " years old.");
+My name is John Doe and I am 30 years old.
+```
