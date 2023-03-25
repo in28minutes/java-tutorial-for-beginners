@@ -122,67 +122,74 @@ $1 ==> 54
 3.  Verify that the result is displayed as `54`
 4.  Exit JShell using `/exit` command
 
-shellCopy code
-
-`jshell> /exit
-|  Goodbye`
+```
+jshell> /exit
+|  Goodbye
+```
 
 
 
 ### Step 04: Introducing Expressions
 
 
-#### Exercise 1: 
-Write a Java program using JShell to calculate the area of a square with side length of 7 units. Use the appropriate Java operators and follow the steps below:
 
-1.  Start JShell.
-2.  Define a variable `sideLength` with a value of 7.
-3.  Calculate the area of the square and store it in a variable called `area`.
-4.  Print the value of `area`.
-5.  Exit JShell.
+#### Exercise 1: Simple Division using JShell
 
-##### Solution:
+In this exercise, you will use JShell to perform a simple division.
 
-```
+#### Problem
 
-jshell> int sideLength = 7;
-sideLength ==> 7
- jshell> int area = sideLength * sideLength;
-area ==> 49
- jshell> System.out.println("Area of the square is: " + area);
-Area of the square is: 49
- jshell> /exit
- ```
+1.  Launch JShell
+2.  Type `10 / 2` and press enter
+3.  Verify that the result is displayed as `5`
+4.  Exit JShell using `/exit` command
 
-#### Exercise 2: 
-Write a Java program using JShell to calculate the volume of a rectangular prism with length, width, and height of 4, 5, and 6 units respectively. Use the appropriate Java operators and follow the steps below:
+##### Solution
 
-1.  Start JShell.
-2.  Define three variables `length`, `width`, and `height` with values of 4, 5, and 6 respectively.
-3.  Calculate the volume of the rectangular prism and store it in a variable called `volume`.
-4.  Print the value of `volume`.
-5.  Exit JShell.
-
-##### Solution:
+1.  Launch JShell
+2.  Type `10 / 2` and press enter
 
 ```
-jshell> int length = 4;
-length ==> 4
+jshell> 10 / 2
+$1 ==> 5
+```
 
-jshell> int width = 5;
-width ==> 5
+3.  Verify that the result is displayed as `5`
+4.  Exit JShell using `/exit` command
 
-jshell> int height = 6;
-height ==> 6
-
-jshell> int volume = length * width * height;
-volume ==> 120
-
-jshell> System.out.println("Volume of the rectangular prism is: " + volume);
-Volume of the rectangular prism is: 120
-
+```
 jshell> /exit
+|  Goodbye
+```
 
+#### Exercise 2: Simple Modulus using JShell
+
+In this exercise, you will use JShell to perform a simple modulus.
+
+#### Problem
+
+1.  Launch JShell
+2.  Type `25 % 7` and press enter
+3.  Verify that the result is displayed as `4`
+4.  Exit JShell using `/exit` command
+
+##### Solution
+
+1.  Launch JShell
+2.  Type `25 % 7` and press enter
+
+```
+jshell> 25 % 7
+$1 ==> 4
+```
+
+3.  Verify that the result is displayed as `4`
+4.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
 ```
 
 ### Step 05: Programming Exercise PE-1 (With Solutions)
