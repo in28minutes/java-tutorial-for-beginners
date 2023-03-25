@@ -194,35 +194,64 @@ jshell> /exit
 ### Step 05: Programming Exercise PE-1 (With Solutions)
 
 
-####  Exercise 1
+#### Exercise 1: Simple Expression using JShell
 
-Write a JShell command to calculate the average of three integers: 10, 20, and 30.
+In this exercise, you will use JShell to calculate an expression.
 
-##### Solution:
+#### Problem
 
-```
-jshell> int num1 = 10;
-jshell> int num2 = 20;
-jshell> int num3 = 30;
-jshell> int average = (num1 + num2 + num3) / 3;
-jshell> average
-average ==> 20
-```
+1.  Launch JShell
+2.  Write an expression to calculate the area of a rectangle with length 10 and width 5
+3.  Verify that the result is displayed as `50`
+4.  Exit JShell using `/exit` command
 
-####  Exercise 2
+##### Solution
 
-Write a JShell command to convert a temperature of 75 degrees Fahrenheit to Celsius.
-
-##### Solution:
+1.  Launch JShell
+2.  Write an expression to calculate the area of a rectangle with length 10 and width 5: `10 * 5`
 
 ```
-jshell> double fahrenheit = 75.0;
-jshell> double celsius = (fahrenheit - 32) * 5 / 9;
-jshell> celsius
-celsius ==> 23.88888888888889
+jshell> 10 * 5
+$1 ==> 50
 ```
 
-Note: The formula to convert Fahrenheit to Celsius is: (°F - 32) * 5/9 = °C
+3.  Verify that the result is displayed as `50`
+4.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+
+#### Exercise 2: Celsius to Fahrenheit Conversion using JShell
+
+In this exercise, you will use JShell to convert a temperature in Celsius to Fahrenheit.
+
+#### Problem
+
+1.  Launch JShell
+2.  Write an expression to convert 30 degrees Celsius to Fahrenheit
+3.  Verify that the result is displayed as `86`
+4.  Exit JShell using `/exit` command
+
+##### Solution
+
+1.  Launch JShell
+2.  Write an expression to convert 30 degrees Celsius to Fahrenheit: `(30 * 9/5) + 32`
+
+```
+jshell> (30 * 9/5) + 32
+$1 ==> 86
+```
+
+3.  Verify that the result is displayed as `86`
+4.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
 
 
 ###  Step 06: Operators
