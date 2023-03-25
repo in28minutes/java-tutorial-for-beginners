@@ -1066,3 +1066,261 @@ jshell> for (int i = 0; i < exponent; i++) {
 jshell> result;
 result ==> 8
 ```
+
+
+
+### Step 21: Assignment Puzzles, and PMT-Challenge revisited
+
+
+
+#### Exercise 1: Pre- and Post- Increment and Decrement with JShell
+
+**Problem:**
+
+Using JShell, create a variable called `count` and initialize it with the value `10`. Then, apply pre- and post-increment and pre- and post-decrement operators. Print the value of the `count` variable after each operation to observe the differences.
+
+**Solution:**
+
+```
+jshell> int count = 10
+count ==> 10
+
+jshell> ++count
+$1 ==> 11
+
+jshell> count
+count ==> 11
+
+jshell> count++
+$2 ==> 11
+
+jshell> count
+count ==> 12
+
+jshell> --count
+$3 ==> 11
+
+jshell> count
+count ==> 11
+
+jshell> count--
+$4 ==> 11
+
+jshell> count
+count ==> 10
+```
+
+#### Exercise 2: Compound Assignment Operators with JShell
+
+**Problem:**
+
+Using JShell, create a variable called `value` and initialize it with the value `8`. Apply various compound assignment operators on `value` and print its value after each operation.
+
+**Solution:**
+
+```
+jshell> int value = 8
+value ==> 8
+
+jshell> value += 4
+$1 ==> 12
+
+jshell> value
+value ==> 12
+
+jshell> value -= 2
+$2 ==> 10
+
+jshell> value
+value ==> 10
+
+jshell> value *= 3
+$3 ==> 30
+
+jshell> value
+value ==> 30
+
+jshell> value /= 2
+$4 ==> 15
+
+jshell> value
+value ==> 15
+
+jshell> value %= 4
+$5 ==> 3
+
+jshell> value
+value ==> 3
+```
+
+
+
+
+### Step 22: Some  `JShell`  Usage Tips
+
+#### Exercise 1
+
+#### Problem
+
+Write a short program in JShell to calculate the area of a rectangle using the given length and width. Use JShell internal variables to store the results of your calculations. Finally, print the area of the rectangle.
+
+##### Solution
+
+1.  Open JShell by typing `jshell` in your command prompt or terminal.
+2.  Enter the following commands one by one in JShell:
+
+```
+int length = 10
+int width = 5
+int area = length * width
+System.out.println("Area of the rectangle: " + area)
+```
+
+3.  You should see the output: `Area of the rectangle: 50`
+
+#### Exercise 2
+
+#### Problem
+
+Create a simple program in JShell to add two numbers and print their sum. Then, use JShell shortcuts to modify the previous input and calculate the sum of two different numbers.
+
+##### Solution
+
+1.  Open JShell by typing `jshell` in your command prompt or terminal.
+2.  Enter the following commands one by one in JShell:
+
+```
+int num1 = 3
+int num2 = 7
+int sum = num1 + num2
+System.out.println("Sum of the numbers: " + sum)
+```
+
+3.  You should see the output: `Sum of the numbers: 10`
+4.  Now, use the up-arrow key to navigate back to the `int num1 = 3` line and modify the value of `num1`:
+
+```
+int num1 = 5
+```
+
+5.  Use the up-arrow key again to navigate back to the `int num2 = 7` line and modify the value of `num2`:
+
+```
+int num2 = 9
+```
+
+6.  Finally, use the up-arrow key to navigate back to the `int sum = num1 + num2` and `System.out.println("Sum of the numbers: " + sum)` lines to re-execute them.
+7.  You should now see the output: `Sum of the numbers: 14`
+
+
+
+
+### Step 23: Introducing Conditionals - the if
+
+
+
+#### Exercise 1: Check if a Number is Even
+
+**Problem**: Write a Java program using JShell that checks if a given number is even or odd. If the number is even, print "The number is even", otherwise print "The number is odd".
+
+**Solution**:
+
+```
+int number = 10;
+
+if (number % 2 == 0) {
+    System.out.println("The number is even");
+} else {
+    System.out.println("The number is odd");
+}
+``` 
+
+#### Exercise 2: Compare Two Numbers
+
+**Problem**: Write a Java program using JShell that takes two integer values as input and compares them. If the first number is greater than the second number, print "The first number is greater than the second number". 
+
+**Solution**:
+
+```
+int num1 = 15;
+int num2 = 7;
+
+if (num1 > num2) {
+    System.out.println("The first number is greater than the second number");
+```
+
+
+
+
+### Step 24: Programming Exercise PE-04
+
+#### Exercise 1: JShell Arithmetic Comparison
+
+In this exercise, you will use JShell to create four integer variables a, b, c, and d, and compare the sums of a + b and c + d.
+
+#### Problem
+
+1.  Start a JShell session.
+2.  Declare four integer variables a, b, c, and d, and initialize them with any integer values.
+3.  Write an if statement to print if the sum of a and b is greater than the sum of c and d.
+
+##### Solution
+
+```
+`// Start JShell
+$ jshell
+
+// Declare and initialize four integer variables
+jshell> int a = 10;
+a ==> 10
+
+jshell> int b = 20;
+b ==> 20
+
+jshell> int c = 5;
+c ==> 5
+
+jshell> int d = 15;
+d ==> 15
+
+// Write an if statement to compare the sums and print the result
+jshell> if (a + b > c + d) {
+   ...>     System.out.println("The sum of a and b is greater than the sum of c and d.");
+   ...> }
+The sum of a and b is greater than the sum of c and d.
+```
+
+#### Exercise 2: JShell Triangle Angle Check
+
+In this exercise, you will use JShell to check if three given angles can form a triangle.
+
+#### Problem
+
+1.  Start a JShell session if you haven't already.
+2.  Declare three integer variables angle1, angle2, and angle3, and initialize them with any integer values.
+3.  Write an if statement to check if the sum of angle1, angle2, and angle3 equals 180 degrees. If so, print that the angles can form a triangle; otherwise, print that the angles cannot form a triangle.
+
+##### Solution
+
+```
+// Start JShell if not already open
+$ jshell
+
+// Declare and initialize three integer variables for the angles
+jshell> int angle1 = 60;
+angle1 ==> 60
+
+jshell> int angle2 = 60;
+angle2 ==> 60
+
+jshell> int angle3 = 60;
+angle3 ==> 60
+
+// Write an if statement to check if the angles can form a triangle
+jshell> if (angle1 + angle2 + angle3 == 180) {
+   ...>     System.out.println("The angles can form a triangle.");
+   ...> } else {
+   ...>     System.out.println("The angles cannot form a triangle.");
+   ...> }
+The angles can form a triangle.
+```
