@@ -407,41 +407,24 @@ jshell> /exit
 
 
 
+
 #### Exercise 1: Simple Arithmetic with Printing using JShell 1
 
 1.  Launch JShell
-2.  Write an expression to calculate the result of `7 * 5`
-3.  Print the expression and result in the format `7 * 5 = 35`
-4.  Write an expression to calculate the result of `12 - 3 / 2 + 4 * 8`
-5.  Print the expression and result in the format `12 - 3 / 2 + 4 * 8 = 41`
-6.  Exit JShell using `/exit` command
+2.  Write an expression to print "Welcome to Java 9!" using `System.out.println()`
+3.  Exit JShell using `/exit` command
 
 ##### Solution 1
 
 1.  Launch JShell
-2.  Write an expression to calculate the result of `7 * 5`: `7 * 5`
-3.  Print the expression and result in the format `7 * 5 = 35` using `System.out.println()`
+2.  Write an expression to print "Welcome to Java 9!" using `System.out.println()`
 
 ```
-jshell> int result = 7 * 5;
-result ==> 35
-
-jshell> System.out.println("7 * 5 = " + result);
-7 * 5 = 35
+jshell> System.out.println("Welcome to Java 9!");
+Welcome to Java 9!
 ```
 
-4.  Write an expression to calculate the result of `12 - 3 / 2 + 4 * 8`: `12 - 3 / 2 + 4 * 8`
-5.  Print the expression and result in the format `12 - 3 / 2 + 4 * 8 = 41` using `System.out.println()`
-
-```
-jshell> result = 12 - 3 / 2 + 4 * 8;
-result ==> 41
-
-jshell> System.out.println("12 - 3 / 2 + 4 * 8 = " + result);
-12 - 3 / 2 + 4 * 8 = 41
-```
-
-6.  Exit JShell using `/exit` command
+3.  Exit JShell using `/exit` command
 
 ```
 jshell> /exit
@@ -451,38 +434,22 @@ jshell> /exit
 #### Exercise 2: Simple Arithmetic with Printing using JShell 2
 
 1.  Launch JShell
-2.  Write an expression to calculate the result of `25 % 7`
-3.  Print the expression and result in the format `25 % 7 = 4`
-4.  Write an expression to calculate the result of `(6 + 8) / 2 * 3`
-5.  Print the expression and result in the format `(6 + 8) / 2 * 3 = 18`
-6.  Exit JShell using `/exit` command
+2.  Write an expression to calculate the result of `20 % 3 + 5 - 2 * 4`
+3.  Print the result using `System.out.println()`
+4.  Exit JShell using `/exit` command
 
 ##### Solution 2
 
 1.  Launch JShell
-2.  Write an expression to calculate the result of `25 % 7`: `25 % 7`
-3.  Print the expression and result in the format `25 % 7 = 4` using `System.out.println()`
+2.  Write an expression to calculate the result of `20 % 3 + 5 - 2 * 4`: `20 % 3 + 5 - 2 * 4`
+3.  Print the result using `System.out.println()`
 
 ```
-jshell> int result = 25 % 7;
-result ==> 4
-
-jshell> System.out.println("25 % 7 = " + result);
-25 % 7 = 4
+jshell> System.out.println(20 % 3 + 5 - 2 * 4);
+1
 ```
 
-4.  Write an expression to calculate the result of `(6 + 8) / 2 * 3`: `(6 + 8) / 2 * 3`
-5.  Print the expression and result in the format `(6 + 8) / 2 * 3 = 18` using `System.out.println()`
-
-```
-jshell> result = (6 + 8) / 2 * 3;
-result ==> 18
-
-jshell> System.out.println("(6 + 8) / 2 * 3 = " + result);
-(6 + 8) / 2 * 3 = 18
-```
-
-6.  Exit JShell using `/exit` command
+4.  Exit JShell using `/exit` command
 
 ```
 jshell> /exit
