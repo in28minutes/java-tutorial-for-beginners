@@ -1365,4 +1365,55 @@ jshell> if (y > 15) {
    ...> } else {
    ...> System.out.println("y is not greater than 15");
    ...> }
-   ```
+```
+
+
+### Step 27: Introducing Loops: The  `for`  Statement
+
+#### Exercise 1: Printing Even Numbers
+
+**Problem:** Write a Java code snippet in JShell that uses a `for` loop to print the even numbers from 2 to 20.
+
+**Solution:**
+
+```
+jshell> for (int i = 2; i <= 20; i += 2) {
+...>     System.out.println(i);
+...> }
+```
+
+**Output:**
+
+```
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+```
+
+#### Exercise 2: Sum of Natural Numbers
+
+**Problem:** Write a Java code snippet in JShell that uses a `for` loop to find the sum of the first 15 natural numbers.
+
+**Solution:**
+
+```
+jshell> int sum = 0;
+sum ==> 0
+jshell> for (int i = 1; i <= 15; i++) {
+...>     sum += i;
+...> }
+jshell> System.out.println("Sum of first 15 natural numbers: " + sum);
+```
+
+**Output:**
+
+```
+Sum of first 15 natural numbers: 120
+```
