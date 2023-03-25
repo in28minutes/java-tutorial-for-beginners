@@ -190,7 +190,6 @@ $1 ==> 4
 jshell> /exit
 |  Goodbye
 ```
-```
 
 ### Step 05: Programming Exercise PE-1 (With Solutions)
 
