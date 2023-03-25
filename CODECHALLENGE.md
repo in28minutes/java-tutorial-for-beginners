@@ -459,58 +459,69 @@ jshell> /exit
 
 ### Step 10: Whitespace, Case sensitiveness and Escape Characters
 
-#### Exercise 1: Whitespace Counter
 
-Write a program that takes a string input and counts the number of whitespace characters in it. Use JShell to test your program with the following inputs:
+#### Exercise 1: Simple Arithmetic with Printing using JShell 1
 
-Input 1:
+1.  Launch JShell
+2.  Write an expression to print the string "hello, world!" in all lowercase using `System.out.println()`
+3.  Exit JShell using `/exit` command
 
+##### Solution 1
 
-`"The quick brown fox jumps over the lazy dog."` 
-
-Expected Output 1:
-
-`8` 
-
-Input 2:
-
-`"Java  Programming  is  Fun!"` 
-
-Expected Output 2:
-
-`6` 
-
-##### Solution:
-
-
+1.  Launch JShell
+2.  Write an expression to print the string "hello, world!" in all lowercase using `System.out.println()`
 
 ```
-int whitespaceCount = 0;
-String input = "The quick brown fox jumps over the lazy dog.";
-for (int i = 0; i < input.length(); i++) {
-    if (Character.isWhitespace(input.charAt(i))) {
-        whitespaceCount++;
-    }
-}
-System.out.println(whitespaceCount);
+jshell> System.out.println("hello, world!");
+hello, world!
 ```
 
-#### Exercise 2: Escape Sequence Example
-
-Write a program that uses escape sequences to print the following message exactly as shown below:
-
-
-`Java is a "programming" language.` 
-
-Use JShell to test your program.
-
-##### Solution:
-
+3.  Exit JShell using `/exit` command
 
 ```
-System.out.println("Java is a \"programming\" language.");
+jshell> /exit
+|  Goodbye
 ```
 
+#### Exercise 2: Simple Arithmetic with Printing using JShell 2
+
+1.  Launch JShell
+2.  Write an expression to print the string "Hi there!" using `System.out.println()`
+3.  Write an expression to print the string "Good\tmorning" using `System.out.println()`
+4.  Write an expression to print the string "See you\ntomorrow!" using `System.out.println()`
+5.  Exit JShell using `/exit` command
+
+### Solution 2
+
+1.  Launch JShell
+2.  Write an expression to print the string "Hi there!" using `System.out.println()`
+
+```
+jshell> System.out.println("Hi there!");
+Hi there!
+```
+
+3.  Write an expression to print the string "Good\tmorning" using `System.out.println()`
+
+```
+jshell> System.out.println("Good\tmorning");
+Good     morning
+```
+
+4.  Write an expression to print the string "See you\ntomorrow!" using `System.out.println()`
+
+```
+jshell> System.out.println("See you\ntomorrow!");
+See you
+tomorrow!
+```
+
+5.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
 
 ### Step 11: More On Method Calls
 
