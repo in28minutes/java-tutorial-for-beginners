@@ -1417,3 +1417,58 @@ jshell> System.out.println("Sum of first 15 natural numbers: " + sum);
 ```
 Sum of first 15 natural numbers: 120
 ```
+
+
+
+### Step 28: Programming Exercise PE-05
+
+
+#### Exercise 1: Calculate the sum of the first 10 even numbers using JShell
+
+**Problem:**
+
+Using JShell, write a program to calculate the sum of the first 10 even numbers.
+
+**Solution:**
+
+Open JShell and follow the instructions below.
+
+```
+// Declare a variable to store the sum
+int sum = 0;
+
+// Iterate through the first 10 even numbers
+for (int i = 2; i <= 20; i += 2) {
+    // Add the current even number to the sum
+    sum += i;
+}
+
+// Print the sum
+System.out.println("The sum of the first 10 even numbers is: " + sum);
+```
+
+#### Exercise 2: Calculate the factorial of a number using JShell
+
+**Problem:**
+
+Using JShell, write a program to calculate the factorial of a number (n). For this exercise, let n = 5.
+
+**Solution:**
+
+Open JShell and follow the instructions below.
+
+```
+// Declare a variable to store the factorial
+int factorial = 1;
+
+// Declare the number n
+int n = 5;
+
+// Calculate the factorial of n
+for (int i = 1; i <= n; i++) {
+    factorial *= i;
+}
+
+// Print the factorial
+System.out.println("The factorial of " + n + " is: " + factorial);
+```
