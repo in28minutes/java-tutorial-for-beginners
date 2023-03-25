@@ -793,3 +793,51 @@ age ==> 30
 jshell> System.out.println("My name is " + name + " and I am " + age + " years old.");
 My name is John Doe and I am 30 years old.
 ```
+
+
+
+### Step 16: Variables: Behind-The-Scenes
+
+
+
+#### Exercise 1
+
+Create a JShell program that declares three variables of type `int`, initializes the first two variables with integer values, and assigns the sum of the first two variables to the third variable.
+
+##### Solution
+
+```
+`// Declare three variables and assign values to the first two variables
+jshell> int num1 = 10;
+num1 ==> 10
+jshell> int num2 = 20;
+num2 ==> 20
+
+// Assign the sum of the first two variables to the third variable
+jshell> int sum = num1 + num2;
+sum ==> 30
+
+// Verify that the third variable has the correct value
+jshell> sum
+sum ==> 30
+```
+
+#### Exercise 2
+
+Create a JShell program that declares two variables of type `double`, initializes the first variable with a double value, and assigns the sum of the first variable and a second double value to the second variable.
+
+##### Solution
+
+```
+// Declare two variables of type double and initialize the first variable with a double value
+jshell> double num1 = 3.14;
+num1 ==> 3.14
+
+// Assign the sum of the first variable and a second double value to the second variable
+jshell> double num2 = num1 + 2.0;
+num2 ==> 5.14
+
+// Verify that the second variable has the correct value
+jshell> num2
+num2 ==> 5.14
+```
