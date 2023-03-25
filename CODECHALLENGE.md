@@ -841,3 +841,118 @@ num2 ==> 5.14
 jshell> num2
 num2 ==> 5.14
 ```
+
+
+
+### Step 17: Naming Variables
+
+
+#### Exercise 1
+
+Create a variable of type `int` in JShell with the following requirements:
+
+1.  The variable name should start with a letter.
+2.  The variable name should be in CamelCase.
+3.  The variable name should be descriptive.
+
+**Solution:**
+
+```
+jshell> int numberOfStudents
+numberOfStudents ==> 0
+```
+
+#### Exercise 2
+
+Create a variable of type `String` in JShell with the following requirements:
+
+1.  The variable name should contain an underscore.
+2.  The variable name should be descriptive.
+
+**Solution:**
+
+```
+jshell> String student_name
+student_name ==> null
+```
+
+
+
+### Step 18: Introducing Primitive Types
+
+#### Exercise 1: Using JShell to Perform Arithmetic Operations on Primitive Types
+
+**Problem:**
+
+In this exercise, you will use JShell to perform arithmetic operations on various primitive types in Java. Perform the following operations and observe the results:
+
+1.  Add two `int` values.
+2.  Multiply two `float` values.
+3.  Divide a `double` value by an `int` value.
+4.  Find the remainder when a `long` value is divided by an `int` value.
+
+**Solution:**
+
+Open JShell and execute the following commands:
+
+```
+int a = 15;
+int b = 25;
+int sum = a + b;
+System.out.println("The sum of a and b is: " + sum);
+
+float c = 3.5f;
+float d = 2.0f;
+float product = c * d;
+System.out.println("The product of c and d is: " + product);
+
+double e = 30.0;
+int f = 4;
+double division = e / f;
+System.out.println("The result of dividing e by f is: " + division);
+
+long g = 10000000000L;
+int h = 7;
+long remainder = g % h;
+System.out.println("The remainder when g is divided by h is: " + remainder);
+```
+
+#### Exercise 2: Comparing Primitive Types in JShell
+
+**Problem:**
+
+In this exercise, you will use JShell to compare various primitive types in Java. Compare the following pairs of values and determine if they are equal:
+
+1.  Two `int` values.
+2.  Two `float` values.
+3.  Two `double` values.
+4.  Two `char` values.
+
+**Solution:**
+
+Open JShell and execute the following commands:
+
+```
+int i1 = 42;
+int i2 = 42;
+boolean intsEqual = (i1 == i2);
+System.out.println("Are i1 and i2 equal? " + intsEqual);
+
+float f1 = 3.14f;
+float f2 = 3.14f;
+boolean floatsEqual = (f1 == f2);
+System.out.println("Are f1 and f2 equal? " + floatsEqual);
+
+double d1 = 25.678;
+double d2 = 25.678;
+boolean doublesEqual = (d1 == d2);
+System.out.println("Are d1 and d2 equal? " + doublesEqual);
+
+char c1 = 'A';
+char c2 = 'A';
+boolean charsEqual = (c1 == c2);
+System.out.println("Are c1 and c2 equal? " + charsEqual);
+```
+
+These exercises will help you gain hands-on experience with primitive types and their operations in Java using JShell.
+
