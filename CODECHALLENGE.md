@@ -1007,3 +1007,62 @@ if (isLeapYear) {
     System.out.println(year + " is not a leap year.");
 }
 ```
+
+
+
+
+### Step 20: The Assignment Operator =
+
+
+
+
+#### Exercise 1: Increment and Decrement Counter
+
+**Problem**
+
+Write a Java program using JShell to demonstrate the use of increment and decrement operations on a counter variable `counter`. Follow these steps:
+
+1.  Initialize `counter` with 0.
+2.  Increment `counter` by 5.
+3.  Decrement `counter` by 2.
+
+**Solution**
+
+```
+jshell> int counter = 0;
+counter ==> 0
+
+jshell> counter = counter + 5;
+counter ==> 5
+
+jshell> counter = counter - 2;
+counter ==> 3
+
+jshell> counter;
+counter ==> 3
+```
+
+#### Exercise 2: Calculate the power of a number using increments
+
+**Problem**
+
+Write a Java program using JShell to calculate the power of a number `base` raised to an exponent `exponent`. Do this using increments and a loop.
+
+**Solution**
+
+```
+jshell> int base = 2;
+base ==> 2
+
+jshell> int exponent = 3;
+exponent ==> 3
+
+jshell> int result = 1;
+result ==> 1
+
+jshell> for (int i = 0; i < exponent; i++) {
+   ...>   result = result * base;
+   ...> }
+jshell> result;
+result ==> 8
+```
