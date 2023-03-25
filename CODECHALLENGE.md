@@ -956,3 +956,54 @@ System.out.println("Are c1 and c2 equal? " + charsEqual);
 
 These exercises will help you gain hands-on experience with primitive types and their operations in Java using JShell.
 
+
+### Step 19: Choosing A Data Type
+
+
+#### Exercise 1: Calculating average temperature
+
+**Problem:**
+
+Write a program in JShell to calculate the average temperature of a week. Store the daily temperatures in an array, and then calculate and display the average temperature.
+
+**Solution:**
+
+```
+// Initialize the array with daily temperatures (in Celsius)
+double[] dailyTemperatures = {20.5, 22.3, 18.9, 19.6, 21.4, 23.7, 20.1};
+
+// Calculate the sum of temperatures
+double sumTemperatures = 0;
+for (int i = 0; i < dailyTemperatures.length; i++) {
+    sumTemperatures += dailyTemperatures[i];
+}
+
+// Calculate the average temperature
+double averageTemperature = sumTemperatures / dailyTemperatures.length;
+
+// Display the average temperature
+System.out.println("The average temperature for the week is: " + averageTemperature);
+```
+
+#### Exercise 2: Determining leap years
+
+**Problem:**
+
+Write a program in JShell to determine if a given year is a leap year or not. A leap year is a year that is exactly divisible by 4, except for years that are exactly divisible by 100. However, years that are exactly divisible by 400 are also considered leap years.
+
+**Solution:**
+
+```
+// Define a year to check if it's a leap year
+int year = 2024;
+
+// Determine if the year is a leap year
+boolean isLeapYear = (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
+
+// Display the result
+if (isLeapYear) {
+    System.out.println(year + " is a leap year.");
+} else {
+    System.out.println(year + " is not a leap year.");
+}
+```
