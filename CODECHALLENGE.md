@@ -707,7 +707,7 @@ In this exercise, you will use JShell to create a multiplication table using var
 2.  Define an integer variable named "i" and assign it a value of 1.
 3.  Print out the multiplication table for the number 5 using the "i" variable.
 4.  Change the value of the "i" variable to 2 and print out the corresponding multiplication table.
-5.  Repeat step 4 for the values of "i" from 3 to 10.
+5.  Repeat step 4 for the values of "i" from 3 to 5.
 
 ##### Solution:
 
@@ -737,7 +737,7 @@ jshell> System.out.printf("%d * %d = %d\n", 5, i, 5*i)
 5 * 2 = 10
 ```
 
-5.  Repeat step 4 for the values of "i" from 3 to 10.
+5.  Repeat step 4 for the values of "i" from 3 to 5.
 
 ```
 jshell> i = 3
@@ -754,10 +754,6 @@ jshell> i = 5
 i ==> 5
 jshell> System.out.printf("%d * %d = %d\n", 5, i, 5*i)
 5 * 5 = 25
-
-jshell> i = 6
-i ==> 6
-jshell> System.out.printf("%d * %d = %d
 ```
 
 
