@@ -256,51 +256,74 @@ jshell> /exit
 
 ###  Step 06: Operators
 
-#### Exercise 1: Operator Practice
 
-Write a Java program using JShell that takes two integers as input and prints their sum, difference, product, and quotient. Use appropriate operators to perform these operations.
+#### Exercise 11: Simple Expression using JShell
 
-#####  Solution
+In this exercise, you will use JShell to calculate some expressions.
 
-```
-// Use JShell to declare variables and perform arithmetic operations
-int num1 = 10;
-int num2 = 5;
+#### Problem
 
-// Calculate and print sum, difference, product, and quotient
-System.out.println("Sum: " + (num1 + num2));
-System.out.println("Difference: " + (num1 - num2));
-System.out.println("Product: " + (num1 * num2));
-System.out.println("Quotient: " + (num1 / num2));
-```
-
-#### Exercise 2: Operator Precedence
-
-Write a Java program using JShell that takes three integers as input and calculates the value of the following expression:
-
-`(num1 + num2) * num3 / 2`
+1.  Launch JShell
+2.  Write an expression to calculate the result of `11.0 / 2.0`
+3.  Verify that the result is displayed as `5.5`
+4.  Write an expression to calculate the result of `6 + 6 * 10`
+5.  Verify that the result is displayed as `66`
+6.  Exit JShell using `/exit` command
 
 ##### Solution
 
-```
-// Use JShell to declare variables and perform arithmetic operations
-int num1 = 5;
-int num2 = 10;
-int num3 = 2;
-
-// Calculate the value of the expression
-int result = (num1 + num2) * num3 / 2;
-
-// Print the result
-System.out.println("Result: " + result);
+1.  Launch JShell
+2.  Write an expression to calculate the result of `11.0 / 2.0`: `11.0 / 2.0`
 
 ```
+jshell> 11.0 / 2.0
+$1 ==> 5.5
+```
 
-Explanation:
+3.  Verify that the result is displayed as `5.5`
+4.  Write an expression to calculate the result of `6 + 6 * 10`: `6 + 6 * 10`
 
--   First, the expressions inside the parentheses `(num1 + num2)` are evaluated, resulting in the sum of `num1` and `num2`.
--   Next, the result of the previous step is multiplied by `num3`, giving `(num1 + num2) * num3`.
--   Finally, the result of the previous step is divided by `2`, resulting in the final value of the expression.
+```
+jshell> 6 + 6 * 10
+$2 ==> 66
+```
+
+5.  Verify that the result is displayed as `66`
+6.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+#### Exercise 12: Simple Expression using JShell
+
+In this exercise, you will use JShell to calculate an expression.
+
+#### Problem
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `(10 - 3) * 4`
+3.  Verify that the result is displayed as `28`
+4.  Exit JShell using `/exit` command
+
+##### Solution
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `(10 - 3) * 4`: `(10 - 3) * 4`
+
+```
+jshell> (10 - 3) * 4
+$1 ==> 28
+```
+
+3.  Verify that the result is displayed as `28`
+4.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
 
 
 ### Step 07: Introducing Console Output
