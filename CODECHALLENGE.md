@@ -329,140 +329,164 @@ jshell> /exit
 ### Step 07: Introducing Console Output
 
 
-#### Exercise 1:
 
-Challenge: Write a Java program that takes a user's name as input and greets the user by printing "Hello, [name]!" to the console using JShell.
+#### Exercise 1: Simple Arithmetic with Printing using JShell 1
 
-##### Solution:
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 * 2`
+3.  Print the result using `System.out.println()`
+4.  Write an expression to calculate the result of `7 / 2`
+5.  Print the result using `System.out.println()`
+6.  Exit JShell using `/exit` command
 
-```
-jshell> String name = "Alice";
-name ==> "Alice"
+##### Solution 1
 
-jshell> System.out.println("Hello, " + name + "!");
-Hello, Alice!
-``` 
-
-#### Exercise 2:
-
-Challenge: Write a Java program that takes two numbers as input and prints their product in the format "[num1] * [num2] = [product]" to the console using JShell.
-
-##### Solution:
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 * 2`: `7 * 2`
+3.  Print the result using `System.out.println()`
 
 ```
-jshell> int num1 = 5;
-num1 ==> 5
-
-jshell> int num2 = 3;
-num2 ==> 3
-
-jshell> int product = num1 * num2;
-product ==> 15
-
-jshell> System.out.println(num1 + " * " + num2 + " = " + product);
-5 * 3 = 15
+jshell> System.out.println(7 * 2);
+14
 ```
 
+4.  Write an expression to calculate the result of `7 / 2`: `7 / 2`
+5.  Print the result using `System.out.println()`
+
+```
+jshell> System.out.println(7 / 2);
+3
+```
+
+6.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+#### Exercise 2: Simple Arithmetic with Printing using JShell 2
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 + 4`
+3.  Print the result using `System.out.println()`
+4.  Write an expression to calculate the result of `7 - 2`
+5.  Print the result using `System.out.println()`
+6.  Exit JShell using `/exit` command
+
+##### Solution 2
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 + 4`: `7 + 4`
+3.  Print the result using `System.out.println()`
+
+```
+jshell> System.out.println(7 + 4);
+11
+```
+
+4.  Write an expression to calculate the result of `7 - 2`: `7 - 2`
+5.  Print the result using `System.out.println()`
+
+```
+`jshell> System.out.println(7 - 2);
+5
+```
+
+6.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
 
 
 
 ### Step 08: Programming Exercise PE-02
-
-
-
-#### Exercise 1
-
-Using JShell, write a program that prints out the message "Hello World" onto the console.
-
-##### Solution
-
-```
-System.out.println("Hello World");
-```
-
-#### Syntax Revision
-
-```
-//Numeric and string literals
-System.out.println("Hello World");
-
-//Expressions
-//There are no expressions in this code.
-
-//Operators
-//There are no operators in this code.
-
-//Operands
-//There are no operands in this code.
-
-//Method calls
-System.out.println();
-```
-
-#### Exercise 2
-
-Using JShell, write a program that prints out the result of the expression 5 * 3, both as an expression and as the calculated value.
-
-##### Solution
-
-```
-//Print the expression
-System.out.println("5 * 3");
-
-//Print the calculated value
-System.out.println(5 * 3);
-```
-
-#### Syntax Revision
-
-```
-//Numeric and string literals
-System.out.println("5 * 3");
-
-//Expressions
-System.out.println(5 * 3);
-
-//Operators
-//The * operator is used to multiply 5 and 3.
-
-//Operands
-//The operands in this code are 5 and 3.
-
-//Method calls
-System.out.println();
-```
-
-
-
 ### Step 09: Solutions to PE-02
 
-#### Exercise 1
-
-Create a program in JShell that displays the sum of 2 and 3.
-
-**Solution:**
 
 
-```
-jshell> int sum = 2 + 3;
-sum ==> 5
-jshell> System.out.println("The sum of 2 and 3 is: " + sum);
-The sum of 2 and 3 is: 5
-``` 
+#### Exercise 1: Simple Arithmetic with Printing using JShell 1
 
-#### Exercise 2
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 * 5`
+3.  Print the expression and result in the format `7 * 5 = 35`
+4.  Write an expression to calculate the result of `12 - 3 / 2 + 4 * 8`
+5.  Print the expression and result in the format `12 - 3 / 2 + 4 * 8 = 41`
+6.  Exit JShell using `/exit` command
 
-Create a program in JShell that converts a temperature from Celsius to Fahrenheit. The formula for converting Celsius to Fahrenheit is F = (C * 1.8) + 32.
+##### Solution 1
 
-**Solution:**
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 * 5`: `7 * 5`
+3.  Print the expression and result in the format `7 * 5 = 35` using `System.out.println()`
 
 ```
-jshell> double celsius = 20.0;
-celsius ==> 20.0
-jshell> double fahrenheit = (celsius * 1.8) + 32;
-fahrenheit ==> 68.0
-jshell> System.out.println(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.");
-20.0 degrees Celsius is equal to 68.0 degrees Fahrenheit.
+jshell> int result = 7 * 5;
+result ==> 35
+
+jshell> System.out.println("7 * 5 = " + result);
+7 * 5 = 35
+```
+
+4.  Write an expression to calculate the result of `12 - 3 / 2 + 4 * 8`: `12 - 3 / 2 + 4 * 8`
+5.  Print the expression and result in the format `12 - 3 / 2 + 4 * 8 = 41` using `System.out.println()`
+
+```
+jshell> result = 12 - 3 / 2 + 4 * 8;
+result ==> 41
+
+jshell> System.out.println("12 - 3 / 2 + 4 * 8 = " + result);
+12 - 3 / 2 + 4 * 8 = 41
+```
+
+6.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+#### Exercise 2: Simple Arithmetic with Printing using JShell 2
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `25 % 7`
+3.  Print the expression and result in the format `25 % 7 = 4`
+4.  Write an expression to calculate the result of `(6 + 8) / 2 * 3`
+5.  Print the expression and result in the format `(6 + 8) / 2 * 3 = 18`
+6.  Exit JShell using `/exit` command
+
+##### Solution 2
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `25 % 7`: `25 % 7`
+3.  Print the expression and result in the format `25 % 7 = 4` using `System.out.println()`
+
+```
+jshell> int result = 25 % 7;
+result ==> 4
+
+jshell> System.out.println("25 % 7 = " + result);
+25 % 7 = 4
+```
+
+4.  Write an expression to calculate the result of `(6 + 8) / 2 * 3`: `(6 + 8) / 2 * 3`
+5.  Print the expression and result in the format `(6 + 8) / 2 * 3 = 18` using `System.out.println()`
+
+```
+jshell> result = (6 + 8) / 2 * 3;
+result ==> 18
+
+jshell> System.out.println("(6 + 8) / 2 * 3 = " + result);
+(6 + 8) / 2 * 3 = 18
+```
+
+6.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
 ```
 
 
