@@ -1472,3 +1472,51 @@ for (int i = 1; i <= n; i++) {
 // Print the factorial
 System.out.println("The factorial of " + n + " is: " + factorial);
 ```
+
+
+### Step 30: Puzzling You With  `for`
+
+#### Exercise 1
+
+**Problem:** Write a Java code snippet in JShell to find the sum of all even numbers between 1 and 10 (inclusive).
+
+**Solution:**
+
+```
+jshell> int sum = 0;
+sum ==> 0
+
+jshell> for (int i = 2; i <= 10; i += 2) {
+   ...>     sum += i;
+   ...> }
+   
+jshell> sum
+sum ==> 30
+```
+
+### Exercise 2
+
+**Problem:** Write a Java code snippet in JShell to print the multiplication table of 5.
+
+**Solution:**
+
+```
+jshell> for (int i = 1; i <= 10; i++) {
+   ...>     System.out.println("5 * " + i + " = " + (5 * i));
+   ...> }
+   ```
+
+Output:
+
+```
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
+```
