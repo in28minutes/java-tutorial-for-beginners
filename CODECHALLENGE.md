@@ -782,39 +782,44 @@ myNum ==> 15
 15
 ```
 
-#### Exercise 2: Looping with JShell
 
-1.  Use a for loop to print the numbers from 1 to 10.
-2.  Create a new variable called `sum` and initialize it to 0.
-3.  Use a for loop to add the numbers from 1 to 10 to `sum`.
-4.  Print the value of `sum`.
+#### Exercise 2: Printing the Sum using Formatted Output in JShell
 
-##### Solution to Exercise 2:
+1.  Launch JShell
+2.  Define three integer variables `a`, `b`, and `c`, and assign them the values `3`, `6`, and `9`, respectively.
+3.  Print the sum of `a`, `b`, and `c` using `System.out.printf()`. The output should be in the format `a + b + c = sum`.
+4.  Exit JShell using the `/exit` command.
+
+##### Solution
+
+1.  Launch JShell
+2.  Define three integer variables `a`, `b`, and `c`, and assign them the values `3`, `6`, and `9`, respectively.
 
 ```
-jshell> for (int i = 1; i <= 10; i++) {
-   ...>     System.out.println(i);
-   ...> }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+jshell> int a = 3
+a ==> 3
 
-jshell> int sum = 0;
-sum ==> 0
+jshell> int b = 6
+b ==> 6
 
-jshell> for (int i = 1; i <= 10; i++) {
-   ...>     sum += i;
-   ...> }
+jshell> int c = 9
+c ==> 9
+```
 
-jshell> System.out.println(sum);
-55
+3.  Print the sum of `a`, `b`, and `c` using `System.out.printf()`. The output should be in the format `a + b + c = sum`.
+
+```
+jshell> System.out.printf("%d + %d + %d = %d%n", a, b, c, a + b + c);
+3 + 6 + 9 = 18
+```
+
+Note that the `%d` is a format specifier for integer values. The `%n` is a platform-independent newline character.
+
+4.  Exit JShell using the `/exit` command.
+
+```
+jshell> /exit
+|  Goodbye
 ```
 
 
