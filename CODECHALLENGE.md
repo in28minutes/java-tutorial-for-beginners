@@ -586,60 +586,72 @@ jshell> /exit
 ### Step 12: More Formatted Output
 
 
-####  Exercise 1: 
-Create a Java program using JShell to print the following multiplication table on the console:
 
-1 * 1 = 1 1 * 2 = 2 1 * 3 = 3 ... 1 * 10 = 10
+#### Exercise 1: Simple Arithmetic with Formatted Output using JShell
 
-##### Solution 1:
 
-```
-// Using JShell to print multiplication table for 1
-for (int i = 1; i <= 10; i++) {
-    System.out.printf("1 * %d = %d%n", i, 1 * i);
-}
-```
-Output:
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 * 5`
+3.  Print the expression and result in the format `7 * 5 = 35` using `System.out.printf()`
+4.  Write an expression to calculate the result of `12 - 3 / 2 + 4 * 8`
+5.  Print the expression and result in the format `12 - 3 / 2 + 4 * 8 = 41` using `System.out.printf()`
+6.  Exit JShell using `/exit` command
 
-```
-1 * 1 = 1
-1 * 2 = 2
-1 * 3 = 3
-1 * 4 = 4
-1 * 5 = 5
-1 * 6 = 6
-1 * 7 = 7
-1 * 8 = 8
-1 * 9 = 9
-1 * 10 = 10
-```
+##### Solution 1
 
-Explanation: The for loop iterates from 1 to 10, and for each iteration, it uses the printf method to print the multiplication table for 1. The `%d` format specifier is used to print the value of the loop variable `i`, and `%n` is used to print a newline character.
-
-#### Exercise 2: 
-Create a Java program using JShell to print the following output on the console:
-
-3.5 + 2.8 + 1.9 = 8.2
-
-##### Solution 2:
+1.  Launch JShell
+2.  Write an expression to calculate the result of `7 * 5`: `7 * 5`
+3.  Print the expression and result in the format `7 * 5 = 35` using `System.out.printf()`
 
 ```
-// Using JShell to print the sum of three decimal numbers
-double a = 3.5;
-double b = 2.8;
-double c = 1.9;
-double sum = a + b + c;
-System.out.printf("%.1f + %.1f + %.1f = %.1f%n", a, b, c, sum);
+jshell> System.out.printf("7 * 5 = %d%n", 7 * 5);
+7 * 5 = 35
 ```
 
-Output:
+4.  Write an expression to calculate the result of `12 - 3 / 2 + 4 * 8`: `12 - 3 / 2 + 4 * 8`
+5.  Print the expression and result in the format `12 - 3 / 2 + 4 * 8 = 41` using `System.out.printf()`
 
 ```
-3.5 + 2.8 + 1.9 = 8.2
+jshell> System.out.printf("12 - 3 / 2 + 4 * 8 = %d%n", 12 - 3 / 2 + 4 * 8);
+12 - 3 / 2 + 4 * 8 = 41
 ```
 
-Explanation: The program declares three double variables `a`, `b`, and `c`, and initializes them with the values 3.5, 2.8, and 1.9 respectively. It then calculates the sum of these variables and stores it in the `sum` variable. Finally, it uses the printf method to print the output with one decimal point using the `%f` format specifier and the `%.1f` modifier. `%n` is used to print a newline character.
+6.  Exit JShell using `/exit` command
 
+```
+jshell> /exit
+|  Goodbye
+```
+
+#### Exercise 2: Simple Arithmetic with Formatted Output using JShell
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `25 % 7`
+3.  Print the expression and result in the format `25 % 7 = 4` using `System.out.printf()`
+4.  Write an expression to calculate the result of `(6 + 8) / 2 * 3`
+5.  Print the expression and result in the format `(6 + 8) / 2 * 3 = 18` using `System.out.printf()`
+6.  Exit JShell using `/exit` command
+
+##### Solution 2
+
+1.  Launch JShell
+2.  Write an expression to calculate the result of `25 % 7`: `25 % 7`
+3.  Print the expression and result in the format `25 % 7 = 4` using `System.out.printf()`
+
+```
+jshell> System.out.printf("25 %% 7 = %d%n", 25 % 7);
+25 % 7 = 4
+```
+
+4.  Write an expression to calculate the result of `(6 + 8) / 2 * 3`: `(6 + 8) / 2 * 3`
+5.  Print the expression and result in the format `(6 + 8) / 2 * 3 = 18` using `System.out.printf()`
+
+```
+jshell> System.out.printf("(6 + 8) / 2 * 3 = %d%n", (6 + 8) / 2 * 3);
+(6 + 8) / 2 * 3 = 18
+```
+
+6.  Exit JShell using `/exit` command
 
 ### Step 13: Introducing Variables
 
