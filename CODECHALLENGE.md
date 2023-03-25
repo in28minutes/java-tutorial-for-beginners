@@ -1324,3 +1324,45 @@ jshell> if (angle1 + angle2 + angle3 == 180) {
    ...> }
 The angles can form a triangle.
 ```
+
+
+
+
+
+
+### Step 26: if Statement again
+#### Exercise 1
+
+**Problem Statement:**
+
+Create a JShell script that assigns a value to an integer `x` and checks if `x` is equal to 10. If `x` is equal to 10, print "x is equal to 10" and "x is even". If `x` is not equal to 10, print "x is not equal to 10".
+
+**Solution:**
+
+```
+jshell> int x = 10;
+jshell> if (x == 10) {
+   ...> System.out.println("x is equal to 10");
+   ...> System.out.println("x is even");
+   ...> } else {
+   ...> System.out.println("x is not equal to 10");
+   ...> }
+   ```
+
+#### Exercise 2
+
+**Problem Statement:**
+
+Create a JShell script that assigns a value to an integer `y` and checks if `y` is greater than 15. If `y` is greater than 15, print "y is greater than 15" and "y is a large number". If `y` is not greater than 15, print "y is not greater than 15".
+
+**Solution:**
+
+```
+jshell> int y = 20;
+jshell> if (y > 15) {
+   ...> System.out.println("y is greater than 15");
+   ...> System.out.println("y is a large number");
+   ...> } else {
+   ...> System.out.println("y is not greater than 15");
+   ...> }
+   ```
