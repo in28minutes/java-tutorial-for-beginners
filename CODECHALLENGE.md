@@ -526,56 +526,59 @@ jshell> /exit
 ### Step 11: More On Method Calls
 
 
-#### Exercise 1: JShell Math Practice
 
-Create a program using JShell that does the following:
+#### Problem 1
 
-1.  Generates a random integer between 1 and 10 inclusive using the Math.random() method.
-2.  Prints out the random integer.
-3.  Calculates the square root of the random integer using the Math.sqrt() method.
-4.  Prints out the square root.
+1.  Launch JShell
+2.  Write an expression to generate and print a random number between 1 and 100 using `Math.random()` and `System.out.println()`
+3.  Exit JShell using `/exit` command
 
-##### Solution:
+##### Solution 1
 
-```
-jshell> int randomNum = (int)(Math.random() * 10 + 1)
-randomNum ==> 6
-
-jshell> double sqrtNum = Math.sqrt(randomNum)
-sqrtNum ==> 2.449489742783178
-
-jshell> System.out.println("Random integer: " + randomNum);
-Random integer: 6
-
-jshell> System.out.println("Square root of random integer: " + sqrtNum);
-Square root of random integer: 2.449489742783178
-```
-
-#### Exercise 2: Max of Three Numbers
-
-Create a program using JShell that finds the maximum of three numbers using the Math.max() method.
-
-1.  Declare three integer variables and assign them values.
-2.  Call the Math.max() method with the three variables as parameters.
-3.  Print out the result.
-
-##### Solution:
+1.  Launch JShell
+2.  Write an expression to generate and print a random number between 1 and 100 using `Math.random()` and `System.out.println()`
 
 ```
-jshell> int num1 = 10;
-num1 ==> 10
+jshell> System.out.println((int)(Math.random() * 100) + 1);
+87
+```
 
-jshell> int num2 = 15;
-num2 ==> 15
+3.  Exit JShell using `/exit` command
 
-jshell> int num3 = 8;
-num3 ==> 8
+```
+jshell> /exit
+|  Goodbye
+```
 
-jshell> int maxNum = Math.max(Math.max(num1, num2), num3);
-maxNum ==> 15
+#### Problem 2
 
-jshell> System.out.println("Maximum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + maxNum);
-Maximum of 10, 15, and 8 is: 15
+1.  Launch JShell
+2.  Write an expression to print the minimum value between 100 and 199 using `Math.min()` and `System.out.println()`
+3.  Write an expression to print the maximum value between 299 and 555 using `Math.max()` and `System.out.println()`
+4.  Exit JShell using `/exit` command
+
+##### Solution 2
+
+1.  Launch JShell
+2.  Write an expression to print the minimum value between 100 and 199 using `Math.min()` and `System.out.println()`
+
+```
+jshell> System.out.println(Math.min(100, 199));
+100
+```
+
+3.  Write an expression to print the maximum value between 299 and 555 using `Math.max()` and `System.out.println()`
+
+```
+jshell> System.out.println(Math.max(299, 555));
+555
+```
+
+4.  Exit JShell using `/exit` command
+
+```
+jshell> /exit
+|  Goodbye
 ```
 
 
