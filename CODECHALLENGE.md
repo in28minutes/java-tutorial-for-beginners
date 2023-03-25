@@ -257,7 +257,7 @@ jshell> /exit
 ###  Step 06: Operators
 
 
-#### Exercise 11: Simple Expression using JShell
+#### Exercise 1: Simple Expression using JShell
 
 In this exercise, you will use JShell to calculate some expressions.
 
@@ -296,7 +296,7 @@ jshell> /exit
 |  Goodbye
 ```
 
-#### Exercise 12: Simple Expression using JShell
+#### Exercise 2: Simple Expression using JShell
 
 In this exercise, you will use JShell to calculate an expression.
 
