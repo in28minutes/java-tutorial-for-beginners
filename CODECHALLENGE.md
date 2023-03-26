@@ -1310,37 +1310,75 @@ int num2 = 9
 
 
 
-#### Exercise 1: Check if a Number is Even
+#### Exercise 1: Introducing Conditionals - the if
 
-**Problem**: Write a Java program using JShell that checks if a given number is even or odd. If the number is even, print "The number is even", otherwise print "The number is odd".
+1.  Launch JShell
+2.  Set the variable `age` to `20`: `int age = 20;`
+3.  Use an `if` statement to print out `"You are eligible to vote"` if `age` is greater than or equal to `18`
+4.  Use another `if` statement to print out `"You are not eligible to vote"` if `age` is less than `18`
+5.  Exit JShell using `/exit` command
 
-**Solution**:
+##### Solution 1
 
-```
-int number = 10;
-
-if (number % 2 == 0) {
-    System.out.println("The number is even");
-} else {
-    System.out.println("The number is odd");
-}
-``` 
-
-#### Exercise 2: Compare Two Numbers
-
-**Problem**: Write a Java program using JShell that takes two integer values as input and compares them. If the first number is greater than the second number, print "The first number is greater than the second number". 
-
-**Solution**:
+1.  Launch JShell
+2.  Set the variable `age` to `20`: `int age = 20;`
+3.  Use an `if` statement to print out `"You are eligible to vote"` if `age` is greater than or equal to `18`:
 
 ```
-int num1 = 15;
-int num2 = 7;
-
-if (num1 > num2) {
-    System.out.println("The first number is greater than the second number");
+jshell> if(age >= 18)
+          System.out.println("You are eligible to vote");
+You are eligible to vote
 ```
 
+4.  Use another `if` statement to print out `"You are not eligible to vote"` if `age` is less than `18`:
 
+```
+jshell> if(age < 18)
+          System.out.println("You are not eligible to vote");
+```
+
+5.  Exit JShell using `/exit` command:
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+#### Exercise 2: Introducing Conditionals - the if
+
+1.  Launch JShell
+2.  Set the variable `price1` to `10.50`: `double price1 = 10.50;`
+3.  Set the variable `price2` to `9.99`: `double price2 = 9.99;`
+4.  Use an `if` statement to print out `"Price 1 is greater than Price 2"` if `price1` is greater than `price2`
+5.  Use another `if` statement to print out `"Price 2 is greater than Price 1"` if `price2` is greater than `price1`
+6.  Exit JShell using `/exit` command
+
+##### Solution 2
+
+1.  Launch JShell
+2.  Set the variable `price1` to `10.50`: `double price1 = 10.50;`
+3.  Set the variable `price2` to `9.99`: `double price2 = 9.99;`
+4.  Use an `if` statement to print out `"Price 1 is greater than Price 2"` if `price1` is greater than `price2`:
+
+```
+jshell> if(price1 > price2)
+          System.out.println("Price 1 is greater than Price 2");
+Price 1 is greater than Price 2
+```
+
+5.  Use another `if` statement to print out `"Price 2 is greater than Price 1"` if `price2` is greater than `price1`:
+
+```
+jshell> if(price2 > price1)
+          System.out.println("Price 2 is greater than Price 1");
+```
+
+6.  Exit JShell using `/exit` command:
+
+```
+jshell> /exit
+|  Goodbye
+```
 
 
 ### Step 24: Programming Exercise PE-04
