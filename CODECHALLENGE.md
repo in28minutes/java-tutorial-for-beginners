@@ -984,7 +984,7 @@ jshell> /exit
 ### Step 19: Choosing A Data Type
 
 
-#### Exercise: Choosing A Data Type using JShell
+#### Exercise 1: Choosing A Data Type using JShell
 
 1.  Launch JShell.
 2.  Write a statement to store the number of seconds in a day.
@@ -1033,7 +1033,7 @@ jshell> /exit
 |  Goodbye
 ```
 
-##### Problem 2
+#### Exercise 2: Choosing A Data Type using JShell
 
 1.  Launch JShell.
 2.  Write a statement to store the current year.
