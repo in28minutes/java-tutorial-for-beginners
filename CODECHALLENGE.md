@@ -1614,23 +1614,39 @@ System.out.println("The factorial of " + n + " is: " + factorial);
 
 ### Step 30: Puzzling You With  `for`
 
+
 #### Exercise 1
 
-**Problem:** Write a Java code snippet in JShell to find the sum of all even numbers between 1 and 10 (inclusive).
+1.  Launch JShell
+2.  Write a for loop that counts from 1 to 5 using two variables `i` and `j`, with `i` starting at 1 and incrementing by 1, and `j` starting at 5 and decrementing by 1.
+3.  Within the for loop, print the values of `i` and `j` on each iteration using `System.out.printf()` with the format string "i = %d, j = %d\n".
+4.  Exit JShell using the `/exit` command.
 
-**Solution:**
+##### Solution 1
+
+1.  Launch JShell
+2.  Write a for loop that counts from 1 to 5 using two variables `i` and `j`, with `i` starting at 1 and incrementing by 1, and `j` starting at 5 and decrementing by 1.
 
 ```
-jshell> int sum = 0;
-sum ==> 0
-
-jshell> for (int i = 2; i <= 10; i += 2) {
-   ...>     sum += i;
+jshell> for (int i = 1, j = 5; i <= 5; i++, j--) {
+   ...> System.out.printf("i = %d, j = %d\n", i, j);
    ...> }
-   
-jshell> sum
-sum ==> 30
 ```
+
+3.  Within the for loop, print the values of `i` and `j` on each iteration using `System.out.printf()` with the format string "i = %d, j = %d\n".
+4.  Exit JShell using the `/exit` command.
+
+```
+i = 1, j = 5
+i = 2, j = 4
+i = 3, j = 3
+i = 4, j = 2
+i = 5, j = 1
+|  Expression value is: void
+|    assigned to temporary variable $1 of type void
+```
+
+
 
 ### Exercise 2
 
