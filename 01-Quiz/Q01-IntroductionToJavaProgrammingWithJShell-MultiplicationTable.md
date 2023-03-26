@@ -1,4 +1,4 @@
-## Java Multiple Choice Quiz 
+## Introduction to Programming with Print-Multiplication-Table - MCQ
 
 ## Step 02: Introducing JShell
 

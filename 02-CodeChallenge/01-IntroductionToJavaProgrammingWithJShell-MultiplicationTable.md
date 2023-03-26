@@ -1,4 +1,4 @@
-## Java Code Challenge
+## Introduction to Programming with Print-Multiplication-Table
 
 
 ### Step 02: Introducing JShell
