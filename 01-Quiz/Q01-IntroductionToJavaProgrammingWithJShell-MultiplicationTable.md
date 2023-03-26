@@ -1,6 +1,6 @@
 ## Java Multiple Choice Quiz 
 
-### Step 02: Introducing JShell
+## Step 02: Introducing JShell
 
 ----------
 
