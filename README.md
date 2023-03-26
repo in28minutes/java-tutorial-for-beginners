@@ -123,46 +123,6 @@ In this step, we:
 * Stated our first programming challenge, *PMT-Challenge*
 * Identified basic Java concepts to learn, to solve this challenge
 
-#### Quiz:
-
-Question 1: What is the aim of the PMT-Challenge?
-a) To solve a mathematical equation
-b) To read out a multiplication table
-c) To learn basic Java concepts
-
-Answer: b) To read out a multiplication table
-
-Question 2: What are some basic Java concepts that will be introduced in the PMT-Challenge?
-a) Numbers and alphabets
-b) Loops and conditionals
-c) Colors and shapes
-
-Answer: b) Loops and conditionals
-
-Question 3: Which of the following is NOT a basic Java concept introduced in the PMT-Challenge?
-a) Variables
-b) Methods
-c) Booleans
-Answer: c) Booleans
-
-#### Hands-on Exercise:
-
-Write a Java program to compute the multiplication table for 7, with entries from 1 to 12. Display this table in the following format:
-```
-7 * 1 = 7
-7 * 2 = 14
-7 * 3 = 21
-7 * 4 = 28
-7 * 5 = 35
-7 * 6 = 42
-7 * 7 = 49
-7 * 8 = 56
-7 * 9 = 63
-7 * 10 = 70
-7 * 11 = 77
-7 * 12 = 84
-```
-
 ### Step 02: Introducing ```JShell```
 - - - 
 
@@ -291,36 +251,6 @@ In this step, we learned:
 * How to launch ```JShell``` from our terminal, and run a few commands on it
 * How to run Java code on the ```JShell``` prompt
 
-#### Quiz:
-
-What is JShell?
-A. A programming tool
-B. A game
-C. A text editor
-Answer: A
-
-What does REPL stand for?
-A. Read, Evaluate, Print, Loop
-B. Run, Edit, Print, Launch
-C. Record, Edit, Play, Loop
-Answer: A
-
-How do you exit JShell?
-A. /terminate
-B. /exit
-C. /quit
-Answer: B
-
-#### Hands-on exercise:
-
-Exercise: Launch JShell and Evaluate an Expression
-
-Launch JShell on your terminal.
-Type 2+3 at the JShell prompt and press enter.
-Observe the output.
-Type /exit to exit JShell.
-
-
 ### Step 03: Welcome to Problem Solving
 
 Lets try to break down the *PMT-Challenge* problem to be able to solve it.
@@ -349,50 +279,6 @@ Here is how our draft steps look like
 In this step, we:
 
 * Broke down the *PMT-Challenge* problem into sub-problems
-
-#### Quiz:
-
-Question 1: What is the aim of breaking down a problem into sub-problems?
-a) To make the problem more complicated
-b) To make the problem easier to solve
-c) To avoid solving the problem altogether
-
-Answer: b) To make the problem easier to solve
-
-Question 2: How many times do we need to perform the calculation in the PMT-Challenge?
-a) Five times
-b) Ten times
-c) Fifteen times
-
-Answer: b) Ten times
-
-Question 3: What is the first step to solve the PMT-Challenge according to the draft steps?
-a) Print 5 * 3 = 15
-b) Calculate 5 * 3 and print result as 15
-c) Do this ten times
-
-Answer: b) Calculate 5 * 3 and print result as 15
-
-#### Hands-on Exercise:
-
-Write a Java program to compute the multiplication table for 9, with entries from 1 to 15. Use the draft steps mentioned above to solve the problem. Display this table in the following format:
-```
-9 * 1 = 9
-9 * 2 = 18
-9 * 3 = 27
-9 * 4 = 36
-9 * 5 = 45
-9 * 6 = 54
-9 * 7 = 63
-9 * 8 = 72
-9 * 9 = 81
-9 * 10 = 90
-9 * 11 = 99
-9 * 12 = 108
-9 * 13 = 117
-9 * 14 = 126
-9 * 15 = 135
-```
 
 ### Step 04: Introducing Expressions 
 
@@ -510,31 +396,6 @@ In this step, we:
 * Learned how to construct numeric expressions
 * Discovered that operators are predefined symbols
 * Combined several operators to form larger expressions
-
-
-#### Quiz:
-
-What is an expression in Java programming?
-a) A set of instructions to be executed
-b) A combination of operands and operators that results in a value
-c) A way to define a variable
-Answer: b
-
-Which symbol is used for multiplication in Java programming?
-a) X
-b) *
-c) /
-Answer: b
-
-What does the modulo operator do in Java programming?
-a) Adds two numbers
-b) Subtracts two numbers
-c) Gives the remainder when integer division is performed
-Answer: c
-
-#### Hands-on exercise:
-
-Create a Java program that calculates the product of two numbers and displays the result. Use the multiplication operator (*) to perform the calculation.
  
 ### Step 05: Programming Exercise PE-1 (With Solutions)
 
@@ -563,42 +424,6 @@ Okay, here comes a couple of programming exercises.
 $jshell>60 * 60 * 24
 
 $1 ==> 86400
-```
-
-#### Quiz:
-
-Question 1: What is the purpose of Step 05 in this book?
-a) To learn basic math concepts
-b) To practice evaluating Java expressions
-c) To explore advanced Java programming concepts
-
-Answer: b) To practice evaluating Java expressions
-
-Question 2: What is the expression to calculate the number of minutes in a day?
-a) 60 * 24
-b) 60 + 24
-c) 24 * 60 * 60
-
-Answer: a) 60 * 24
-
-Question 3: What is the expression to calculate the number of seconds in a day?
-a) 60 * 60
-b) 60 * 60 * 24
-c) 24 / 60 / 60
-
-Answer: b) 60 * 60 * 24
-
-#### Hands-on Exercise:
-
-Write a Java expression to calculate the number of milliseconds in a day.
-Display the result using System.out.println() method.
-
-Solution:
-1000 (milliseconds in a second) multiplied by 60 (seconds in a minute) multiplied by 60 (minutes in an hour) multiplied by 24 (hours in a day)
-
-```
-long millisecondsInADay = 1000L * 60 * 60 * 24;
-System.out.println("Number of milliseconds in a day: " + millisecondsInADay);
 ```
 
 ### Step 06: Operators
@@ -748,38 +573,6 @@ In this step, we:
 * Learned that result of operation depends on operand types
 * Understood what operator precedence means
 * Used parentheses to group parts of an expression
-
-
-
-#### Quiz
-
-What is the result of the expression 5 / 2?
-a) 2
-b) 2.5
-c) Error
-Correct answer: a) 2
-
-Which of the following operators has the highest precedence?
-a) +
-b) *
-c) %
-Correct answer: b) *
-
-Which of the following is the correct way to group the sub-expressions in the expression 5 + 5 * 6?
-a) 5 + (5 * 6)
-b) (5 + 5) * 6
-c) 5 + 5 * 6
-Correct answer: a) 5 + (5 * 6)
-
-#### Hands-on Exercise:
-Write a Java program that takes two integers as input from the user and performs the following operations on them:
-
-* Addition
-* Subtraction
-* Multiplication
-* Division
-<br/>
-Make sure to display the results of each operation to the user. Use parentheses to group the sub-expressions in each operation for better readability.
  
 ### Step 07: Introducing Console Output 
 
@@ -877,34 +670,6 @@ In this step, we:
 * Were introduced to the ```System.out.println()``` method for console output
 * Used this utility to print a single *PMT-Challenge* table entry
 
-#### Quiz
-
-Question 1: What is the syntax for calling the System.out.println() method in Java?
-a) System.out.println
-b) println.System.out
-c) System.out.print
-
-Correct answer: a) System.out.println
-
-Question 2: What is a String literal in Java?
-a) A sequence of characters enclosed within double quotes
-b) A method call used to display text on the console
-c) A variable used to store numeric values
-
-Correct answer: a) A sequence of characters enclosed within double quotes
-
-Question 3: How do you display the text "5 * 2 = 10" on the console in Java?
-a) System.out.println(5 * 2 = 10)
-b) System.out.println("5 * 2 = 10")
-c) System.out.print("5 * 2 = 10")
-
-Correct answer: b) System.out.println("5 * 2 = 10")
-
-#### Hands-on exercise:
-
-Write a Java program that computes the product of two integers, and displays the result in the format "a * b = c", where a and b are the input integers, and c is their product. Use the System.out.println() method to display the result on the console.
-
-
 ### Step 08: Programming Exercise PE-02
 
 Try and solve the following exercises:
@@ -923,46 +688,6 @@ Try and solve the following exercises:
 	* Operators
 	* Operands
 	* Method calls
-
-
-#### Quiz:
-
-Question 1: What is the first exercise in Programming Exercise PE-02?
-a) Print the calculated value of 5 * 3
-b) Print the number of seconds in a day
-c) Print Hello World onto the console
-
-Answer: c) Print Hello World onto the console
-
-Question 2: What do you need to identify in your code when doing a syntax revision for the exercises in Programming Exercise PE-02?
-a) Loops and conditionals
-b) Numeric and string literals, expressions, operators, operands, and method calls
-c) Classes and objects
-
-Answer: b) Numeric and string literals, expressions, operators, operands, and method calls
-
-Question 3: What should be printed when you execute the code for the second exercise in Programming Exercise PE-02?
-a) "5 * 3"
-b) "15"
-c) 5 * 3
-
-Answer: a) "5 * 3"
-
-#### Hands-on Exercise:
-
-Write a Java program to print the following:
-
-- Your name
-- The year you were born
-- The year you will turn 30
-
-Do a syntax revision for your code, and identify the following elements:
-
-- Numeric and string literals
-- Expressions
-- Operators
-- Operands
-- Method calls
 
 ### Step 09: Solutions to PE-02
 
@@ -1001,34 +726,6 @@ Do a syntax revision for your code, and identify the following elements:
 	86400
 
 ```
-
-#### Quiz:
-
-Question 1: What is the output of Solution 1?
-a) "5 * 3"
-b) "Hello World"
-c) 15
-
-Answer: b) "Hello World"
-
-Question 2: What is the output of Solution 2?
-a) "15"
-b) "5 * 3"
-c) Syntax Error
-
-Answer: b) "5 * 3"
-
-Question 3: What is the output of Solution 4?
-a) 86400
-b) 5184000
-c) 3600
-
-Answer: a) 86400
-
-#### Hands-on Exercise:
-
-Write a Java program to print the following sentence using the System.out.println() statement:
-- "Java is a programming language."
 
 ### Step 10: Whitespace, Case sensitiveness and Escape Characters
 The term *whitespace* refers to any sequence of continuous space, tab or newline characters.
@@ -1177,32 +874,6 @@ In this step, we:
 * Were introduced to method call syntax, with ```System.out.println()```
 * Discovered the uses of whitespace characters
 * Learned about Java escape sequences 
-
-
-#### Quiz
-What happens when you use whitespace around string literals in Java?
-a) It is ignored by the compiler
-b) It produces a syntax error
-Correct answer: a) It is ignored by the compiler
-
-Is Java case sensitive?
-a) Yes
-b) No
-Correct answer: a) Yes
-
-What is the role of the backslash character in Java?
-a) It is a special symbol used for escape sequences
-b) It is used to indicate a syntax error
-Correct answer: a) It is a special symbol used for escape sequences
-
-#### Hands-on exercise:
-Write a Java program that prints the following output to the console:
-````
-Hello
-World
-````
-
-Hint: You can use the escape sequence "\n" to insert a newline and "\t" to insert a tab.
 
 ### Step 11: More On Method Calls
 
