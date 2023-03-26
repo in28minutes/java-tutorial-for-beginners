@@ -1321,7 +1321,10 @@ int num2 = 9
 ##### Solution 1
 
 1.  Launch JShell
-2.  Set the variable `age` to `20`: `int age = 20;`
+2.  Set the variable `age` to `20`: 
+```
+int age = 20;
+````
 3.  Use an `if` statement to print out `"You are eligible to vote"` if `age` is greater than or equal to `18`:
 
 ```
@@ -1356,8 +1359,14 @@ jshell> /exit
 ##### Solution 2
 
 1.  Launch JShell
-2.  Set the variable `price1` to `10.50`: `double price1 = 10.50;`
-3.  Set the variable `price2` to `9.99`: `double price2 = 9.99;`
+2.  Set the variable `price1` to `10.50`: 
+```
+double price1 = 10.50;
+```
+3.  Set the variable `price2` to `9.99`: 
+```
+double price2 = 9.99;
+```
 4.  Use an `if` statement to print out `"Price 1 is greater than Price 2"` if `price1` is greater than `price2`:
 
 ```
