@@ -984,55 +984,103 @@ jshell> /exit
 ### Step 19: Choosing A Data Type
 
 
-#### Exercise 1: Calculating average temperature
+#### Exercise: Choosing A Data Type using JShell
 
-**Problem:**
+1.  Launch JShell.
+2.  Write a statement to store the number of seconds in a day.
+3.  Declare and initialize a variable to store the value of pi, accurate to 3 decimal places.
+4.  Write a statement to store the temperature of the human body in degrees Celsius.
+5.  Declare and initialize a variable to store the average height of an adult male in meters.
+6.  Exit JShell using the `/exit` command.
 
-Write a program in JShell to calculate the average temperature of a week. Store the daily temperatures in an array, and then calculate and display the average temperature.
+##### Solution 1
 
-**Solution:**
-
-```
-// Initialize the array with daily temperatures (in Celsius)
-double[] dailyTemperatures = {20.5, 22.3, 18.9, 19.6, 21.4, 23.7, 20.1};
-
-// Calculate the sum of temperatures
-double sumTemperatures = 0;
-for (int i = 0; i < dailyTemperatures.length; i++) {
-    sumTemperatures += dailyTemperatures[i];
-}
-
-// Calculate the average temperature
-double averageTemperature = sumTemperatures / dailyTemperatures.length;
-
-// Display the average temperature
-System.out.println("The average temperature for the week is: " + averageTemperature);
-```
-
-#### Exercise 2: Determining leap years
-
-**Problem:**
-
-Write a program in JShell to determine if a given year is a leap year or not. A leap year is a year that is exactly divisible by 4, except for years that are exactly divisible by 100. However, years that are exactly divisible by 400 are also considered leap years.
-
-**Solution:**
+1.  Launch JShell.
+    
+2.  Write a statement to store the number of seconds in a day.
+    
 
 ```
-// Define a year to check if it's a leap year
-int year = 2024;
-
-// Determine if the year is a leap year
-boolean isLeapYear = (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
-
-// Display the result
-if (isLeapYear) {
-    System.out.println(year + " is a leap year.");
-} else {
-    System.out.println(year + " is not a leap year.");
-}
+jshell> int secondsInDay = 86400;
+secondsInDay ==> 86400
 ```
 
+3.  Declare and initialize a variable to store the value of pi, accurate to 3 decimal places.
 
+```
+jshell> double pi = 3.141;
+pi ==> 3.141
+```
+
+4.  Write a statement to store the temperature of the human body in degrees Celsius.
+
+```
+jshell> float bodyTemperature = 37.0f;
+bodyTemperature ==> 37.0
+```
+
+5.  Declare and initialize a variable to store the average height of an adult male in meters.
+
+```
+jshell> double avgMaleHeight = 1.75;
+avgMaleHeight ==> 1.75
+```
+
+6.  Exit JShell using the `/exit` command.
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+##### Problem 2
+
+1.  Launch JShell.
+2.  Write a statement to store the current year.
+3.  Declare and initialize a variable to store the mass of the earth in kilograms.
+4.  Write a statement to store the first letter of your first name.
+5.  Declare and initialize a variable to store whether a person is eligible to vote.
+6.  Exit JShell using the `/exit` command.
+
+##### Solution 2
+
+1.  Launch JShell.
+    
+2.  Write a statement to store the current year.
+    
+
+```
+jshell> short currentYear = 2023;
+currentYear ==> 2023
+```
+
+3.  Declare and initialize a variable to store the mass of the earth in kilograms.
+
+```
+jshell> long earthMass = 5972000000000000000000000L;
+earthMass ==> 5972000000000000000000000
+```
+
+4.  Write a statement to store the first letter of your first name.
+
+```
+jshell> char firstLetter = 'J';
+firstLetter ==> 'J'
+```
+
+5.  Declare and initialize a variable to store whether a person is eligible to vote.
+
+```
+jshell> boolean isEligibleToVote = true;
+isEligibleToVote ==> true
+```
+
+6.  Exit JShell using the `/exit` command.
+
+```
+jshell> /exit
+|  Goodbye
+```
 
 
 ### Step 20: The Assignment Operator =
