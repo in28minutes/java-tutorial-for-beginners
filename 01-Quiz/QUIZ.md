@@ -2,15 +2,6 @@
 
 ### Step 02: Introducing JShell
 
-JShell is a programming tool, introduced in Java SE 9. JShell is a REPL interface. The term REPL refers to this:
-
-'R' stands for Read; Read the input Java code  
-'E' means Eval; Evaluate the source code  
-'P' translates to Print; Print out the result  
-'L' indicates Loop; Loop around, and wait for the next input
-
-How about starting off exploring Java? Are you game?
-
 ----------
 
 1.  What does JShell stand for? a. JavaShell  
