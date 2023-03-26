@@ -1088,55 +1088,74 @@ jshell> /exit
 
 
 
+
 #### Exercise 1: Increment and Decrement Counter
 
-**Problem**
+Write a Java program using JShell to demonstrate the use of increment and decrement operations on a counter variable `count`. Follow these steps:
 
-Write a Java program using JShell to demonstrate the use of increment and decrement operations on a counter variable `counter`. Follow these steps:
+1.  Initialize `count` with 10.
+2.  Increment `count` by 2 using the `++` operator.
+3.  Decrement `count` by 3 using the `--` operator.
+4.  Add 5 to `count` using the `+=` operator.
+5.  Subtract 2 from `count` using the `-=` operator.
 
-1.  Initialize `counter` with 0.
-2.  Increment `counter` by 5.
-3.  Decrement `counter` by 2.
-
-**Solution**
-
-```
-jshell> int counter = 0;
-counter ==> 0
-
-jshell> counter = counter + 5;
-counter ==> 5
-
-jshell> counter = counter - 2;
-counter ==> 3
-
-jshell> counter;
-counter ==> 3
-```
-
-#### Exercise 2: Calculate the power of a number using increments
-
-**Problem**
-
-Write a Java program using JShell to calculate the power of a number `base` raised to an exponent `exponent`. Do this using increments and a loop.
-
-**Solution**
+Solution
 
 ```
-jshell> int base = 2;
-base ==> 2
+jshell> int count = 10;
+count ==> 10
 
-jshell> int exponent = 3;
-exponent ==> 3
+jshell> count++;
+count ==> 11
 
-jshell> int result = 1;
-result ==> 1
+jshell> count--;
+count ==> 10
 
-jshell> for (int i = 0; i < exponent; i++) {
-   ...>   result = result * base;
-   ...> }
-jshell> result;
-result ==> 8
+jshell> count += 5;
+count ==> 15
+
+jshell> count -= 2;
+count ==> 13
+
+jshell> count;
+count ==> 13
+```
+
+Explanation
+
+We first initialize `count` with the value 10. We then increment it by 2 using the `++` operator, which results in `count` being equal to 11. We then decrement it by 3 using the `--` operator, which results in `count` being equal to 10 again.
+
+Next, we add 5 to `count` using the `+=` operator, which results in `count` being equal to 15. Finally, we subtract 2 from `count` using the `-=` operator, which results in `count` being equal to 13.
+
+We print the value of `count` using the JShell prompt at the end, which confirms that the above operations were successful.
+
+
+#### Exercise 2: Arithmetic Operations on a Variable Problem
+
+Write a Java program using JShell to perform arithmetic operations on a variable num. Follow these steps:
+
+1. Initialize num with 5. 
+2. Multiply num by 3. 
+3. Divide num by 2. 
+4. Calculate the remainder of num when divided by 4. 
+
+##### Solution
+
+```
+jshell> int num = 5; 
+num ==> 5
+
+jshell> num *= 3; 
+num ==> 15
+
+jshell> num /= 2; 
+num ==> 7
+
+jshell> num %= 4; 
+num ==> 3
+
+jshell> num; 
+num ==> 3
 ```
 
 
