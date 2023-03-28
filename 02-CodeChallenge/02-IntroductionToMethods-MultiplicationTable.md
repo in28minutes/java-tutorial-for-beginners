@@ -132,23 +132,26 @@ jshell> /exit
 
 
 
-#### Exercise 2
 
-1.  Launch JShell
-2.  Define a method called `greet` that prints the message `"Welcome to JShell!"` to the console.
+#### Exercise: Editing A Method Definition in JShell
+
+1.  Launch JShell.
+2.  Define a method called `greet` that prints the message "Welcome to JShell!" to the console.
 3.  Call the `greet` method.
-4.  Define a method called `printName` that prints your name to the console.
-5.  Call the `printName` method.
+4.  Edit the `greet` method to print "Hello, JShell!" to the console instead.
+5.  Call the `greet` method again to verify that it has been updated.
 6.  Exit JShell using the `/exit` command.
 
 ##### Solution
 
 1.  Launch JShell.
-2.  Define a method called `greet` that prints the message `"Welcome to JShell!"` to the console.
+    
+2.  Define a method called `greet` that prints the message "Welcome to JShell!" to the console.
+    
 
 ```
 jshell> void greet() {
-   ...> System.out.println("Welcome to JShell!");
+   ...>     System.out.println("Welcome to JShell!");
    ...> }
    ```
 
@@ -159,19 +162,25 @@ jshell> greet();
 Welcome to JShell!
 ```
 
-4.  Define a method called `printName` that prints your name to the console.
+4.  Edit the `greet` method to print "Hello, JShell!" to the console instead.
 
 ```
-jshell> void printName() {
-   ...> System.out.println("My name is Deb.");
-   ...> }
-   ``` 
+jshell> /edit greet
+```
 
-5.  Call the `printName` method.
+This will open the method definition in an external editor. Replace the line that prints "Welcome to JShell!" with the following line:
 
 ```
-jshell> printName();
-My name is Deb.
+System.out.println("Hello, JShell!");
+```
+
+Save the changes and close the editor.
+
+5.  Call the `greet` method again to verify that it has been updated.
+
+```
+jshell> greet();
+Hello, JShell!
 ```
 
 6.  Exit JShell using the `/exit` command.
