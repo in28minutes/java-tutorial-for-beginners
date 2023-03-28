@@ -558,3 +558,85 @@ Hello, World!
 /exit
 | Goodbye
 ```
+
+
+
+### Step 09: Methods With Multiple Arguments
+
+#### Exercise 1: Methods with Multiple Arguments in JShell
+
+1.  Launch JShell.
+2.  Define a method called `calculateSum` that takes in two `int` arguments and calculates and prints their sum.
+3.  Define another method called `calculateAverage` that takes in three `double` arguments and calculates and prints their average.
+4.  Call the `calculateSum` method with two `int` arguments.
+5.  Call the `calculateAverage` method with three `double` arguments.
+6.  Exit JShell using the `/exit` command.
+
+##### Solution
+
+1.  Launch JShell.
+    
+2.  Define a method called `calculateSum` that takes in two `int` arguments and calculates and prints their sum.
+    
+
+```
+jshell> void calculateSum(int num1, int num2) {
+   ...>     int sum = num1 + num2;
+   ...>     System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+   ...> }
+   ```
+
+3.  Define another method called `calculateAverage` that takes in three `double` arguments and calculates and prints their average.
+
+```
+jshell> void calculateAverage(double num1, double num2, double num3) {
+   ...>     double avg = (num1 + num2 + num3) / 3.0;
+   ...>     System.out.println("The average of " + num1 + ", " + num2 + ", and " + num3 + " is " + avg);
+   ...> }
+   ```
+
+4.  Call the `calculateSum` method with two `int` arguments.
+
+```
+jshell> calculateSum(5, 7);
+The sum of 5 and 7 is 12
+```
+
+5.  Call the `calculateAverage` method with three `double` arguments.
+
+```
+jshell> calculateAverage(3.5, 6.8, 9.1);
+The average of 3.5, 6.8, and 9.1 is 6.466666666666666
+```
+
+6.  Exit JShell using the `/exit` command.
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+
+#### Exercise 2
+
+Problem: Write a method called `printMessage` that takes a string message and an integer count as parameters, and prints the message count times to the console. Then, call the `printMessage` method with a string message of your choice and an integer count of your choice.
+
+Solution:
+
+```
+1. Launch JShell
+2. Define a method called `printMessage` that takes a string message and an integer count as parameters, and prints the message count times to the console:
+   jshell> void printMessage(String message, int count) {
+              for (int i = 1; i <= count; i++) {
+                  System.out.println(message);
+              }
+          }
+3. Call the `printMessage` method with a string message of your choice and an integer count of your choice:
+   jshell> printMessage("Hello, world!", 3)
+   Hello, world!
+   Hello, world!
+   Hello, world!
+4. Exit JShell using the `/exit` command.
+```
+
+Note: In this example, the `printMessage` method takes two parameters - a string message and an integer count. Inside the method, we use a for loop to print the message count times to the console. Finally, we call the `printMessage` method with the string message "Hello, world!" and the integer count 3.
