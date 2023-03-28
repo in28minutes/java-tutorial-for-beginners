@@ -438,3 +438,123 @@ jshell> /exit
 ```
 
 
+### Step 08: Methods With Arguments, And Overloading
+
+#### Exercise 1: Method Overloading
+
+1.  Launch JShell
+2.  Create a Java method called `printNumber` that takes an integer argument and prints it to the console.
+3.  Overload the `printNumber` method with another method that takes a double argument and prints it to the console.
+4.  Overload the `printNumber` method with another method that takes a string argument and prints it to the console.
+5.  Call each of the `printNumber` methods with an appropriate argument.
+6.  Exit JShell using the `/exit` command.
+
+##### Solution
+
+1.  Launch JShell.
+2.  Create a Java method called `printNumber` that takes an integer argument and prints it to the console:
+
+```
+jshell> void printNumber(int num) {
+   ...> System.out.println("The number is: " + num);
+   ...> }
+   ```
+
+3.  Overload the `printNumber` method with another method that takes a double argument and prints it to the console:
+
+```
+jshell> void printNumber(double num) {
+   ...> System.out.println("The number is: " + num);
+   ...> }
+   ```
+
+4.  Overload the `printNumber` method with another method that takes a string argument and prints it to the console:
+
+```
+jshell> void printNumber(String str) {
+   ...> System.out.println("The string is: " + str);
+   ...> }
+   ```
+
+5.  Call each of the `printNumber` methods with an appropriate argument:
+
+```
+jshell> printNumber(10);
+The number is: 10
+
+jshell> printNumber(10.5);
+The number is: 10.5
+
+jshell> printNumber("Hello World");
+The string is: Hello World
+```
+
+6.  Exit JShell using the `/exit` command:
+
+```
+jshell> /exit
+|  Goodbye
+```
+
+#### Exercise: 2
+
+1.  Launch JShell
+2.  Define a method called `printHelloWorld()` that prints the message "Hello, World!" to the console.
+3.  Define an overloaded method called `printHelloWorld(int number)` that prints the message "Hello, World!" to the console `number` times.
+4.  Call the `printHelloWorld()` method.
+5.  Call the `printHelloWorld(int number)` method with `number` equal to 3.
+6.  Exit JShell using the `/exit` command.
+
+##### Solution:
+
+1.  Launch JShell
+2.  Define a method called `printHelloWorld()` that prints the message "Hello, World!" to the console.
+
+```
+void printHelloWorld() {
+    System.out.println("Hello, World!");
+}
+```
+
+3.  Define an overloaded method called `printHelloWorld(int number)` that prints the message "Hello, World!" to the console `number` times.
+
+```
+void printHelloWorld(int number) {
+    for (int i = 0; i < number; i++) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+4.  Call the `printHelloWorld()` method.
+
+```
+printHelloWorld();
+```
+
+Output:
+
+```
+Hello, World!
+```
+
+5.  Call the `printHelloWorld(int number)` method with `number` equal to 3.
+
+```
+printHelloWorld(3);
+```
+
+Output:
+
+```
+Hello, World!
+Hello, World!
+Hello, World!
+```
+
+6.  Exit JShell using the `/exit` command.
+
+```
+/exit
+| Goodbye
+```
