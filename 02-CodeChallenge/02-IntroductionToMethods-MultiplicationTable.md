@@ -640,3 +640,65 @@ Solution:
 ```
 
 Note: In this example, the `printMessage` method takes two parameters - a string message and an integer count. Inside the method, we use a for loop to print the message count times to the console. Finally, we call the `printMessage` method with the string message "Hello, world!" and the integer count 3.
+
+
+
+### Step 10: Returning From A Method
+
+#### Exercise 1
+
+Write a method called `calculateSum` that takes two integer parameters and returns their sum. Then, call the `calculateSum` method with two integer arguments of your choice and print the result to the console.
+
+Solution:
+
+1.  Launch JShell.
+2.  Define a method called `calculateSum` that takes two integer parameters and returns their sum:
+    
+```
+jshell> int calculateSum(int a, int b) {
+               return a + b;
+           }
+```
+    
+3.  Call the `calculateSum` method with two integer arguments of your choice and print the result to the console:
+    
+```
+jshell> int result = calculateSum(5, 7);
+           System.out.println(result); 
+```
+    Output: `12`
+4.  Exit JShell using the `/exit` command.
+
+Note: In this example, we define a method called `calculateSum` that takes two integer parameters `a` and `b`. Inside the method, we return the sum of `a` and `b`. Finally, we call the `calculateSum` method with two integer arguments `5` and `7` and store the result in a variable named `result`. Then we print the `result` variable to the console using the `System.out.println()` method.
+
+
+
+#### Exercise 2
+
+Write a method called `sumNumbers` that takes an integer `n` as a parameter and returns the sum of the first `n` natural numbers.
+
+Solution:
+
+1.  Launch JShell.
+2.  Define a method called `sumNumbers` that takes an integer `n` as a parameter and returns the sum of the first `n` natural numbers:
+    
+```
+jshell> int sumNumbers(int n) {
+               int sum = 0;
+               for (int i = 1; i <= n; i++) {
+                   sum += i;
+               }
+               return sum;
+           }
+```
+    
+3.  Call the `sumNumbers` method with an integer `n` of your choice:
+    
+```
+jshell> sumNumbers(10)
+    $1 ==> 55
+```
+    
+4.  Exit JShell using the `/exit` command.
+
+Note: In this example, the `sumNumbers` method takes an integer `n` as a parameter and returns the sum of the first `n` natural numbers using a for loop. We call the `sumNumbers` method with an integer `n` of 10 and it returns the sum of the first 10 natural numbers, which is 55.
