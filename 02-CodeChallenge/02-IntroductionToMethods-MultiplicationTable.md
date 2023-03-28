@@ -70,7 +70,7 @@ jshell> /exit
 
 
 
-
+### Step 03: Editing A Method Definition (Jshell Tips)
 
 
 
@@ -130,7 +130,6 @@ jshell> /exit
 |  Goodbye
 ```
 
-### Step 03: Editing A Method Definition (Jshell Tips)
 
 
 #### Exercise 2
