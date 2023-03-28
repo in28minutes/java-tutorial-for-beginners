@@ -133,7 +133,7 @@ jshell> /exit
 
 
 
-#### Exercise: Editing A Method Definition in JShell
+#### Exercise 2: Editing A Method Definition in JShell
 
 1.  Launch JShell.
 2.  Define a method called `greet` that prints the message "Welcome to JShell!" to the console.
