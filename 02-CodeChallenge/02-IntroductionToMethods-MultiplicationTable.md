@@ -223,65 +223,50 @@ jshell> /exit
 
 ### Step 07:  _PMT-Challenge_  Revisited (And Some Puzzles)
 
+
 #### Exercise 1: Printing a Multiplication Table with a Method in JShell
 
-1.  Launch JShell.
-2.  Define a method called `printMultiplicationTable` that takes an `int` parameter called `number`. The method should print the multiplication table of the given number up to 10. Each line of the table should be printed in the format `number * i = result`, where `i` is the number being multiplied by `number`, and `result` is the product of the multiplication.
-3.  Call the `printMultiplicationTable` method with the argument `5`.
-4.  Call the `printMultiplicationTable` method with the argument `9`.
-5.  Exit JShell using the `/exit` command.
+Write a void method called `printMultiplicationTable` that takes an integer `number` as a parameter and prints the multiplication table of that number up to 15. Call the `printMultiplicationTable` method with a number of your choice.
 
-##### Solution
+##### Solution:
 
 1.  Launch JShell.
-2.  Define a method called `printMultiplicationTable` that takes an `int` parameter called `number`. The method should print the multiplication table of the given number up to 10. Each line of the table should be printed in the format `number * i = result`, where `i` is the number being multiplied by `number`, and `result` is the product of the multiplication.
-
+    
+2.  Define a void method called `printMultiplicationTable` that takes an integer `number` as a parameter and prints the multiplication table of that number up to 15:
+    
 ```
-jshell> void printMultiplicationTable(int number) {
-   ...>     for (int i = 1; i <= 10; i++) {
-   ...>         System.out.printf("%d * %d = %d\n", number, i, number * i);
-   ...>     }
-   ...> }
-   ```
-
-3.  Call the `printMultiplicationTable` method with the argument `5`.
-
+void printMultiplicationTable(int number) {
+        for (int i = 1; i <= 15; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
+    }
+```
+    
+3.  Call the `printMultiplicationTable` method with a number of your choice:
+    
 ```
 jshell> printMultiplicationTable(5);
-5 * 1 = 5
-5 * 2 = 10
-5 * 3 = 15
-5 * 4 = 20
-5 * 5 = 25
-5 * 6 = 30
-5 * 7 = 35
-5 * 8 = 40
-5 * 9 = 45
-5 * 10 = 50
-```
+    5 x 1 = 5
+    5 x 2 = 10
+    5 x 3 = 15
+    5 x 4 = 20
+    5 x 5 = 25
+    5 x 6 = 30
+    5 x 7 = 35
+    5 x 8 = 40
+    5 x 9 = 45
+    5 x 10 = 50
+    5 x 11 = 55
+    5 x 12 = 60
+    5 x 13 = 65
+    5 x 14 = 70
+    5 x 15 = 75
+ ```
+    
+4.  Exit JShell using the `/exit` command.
+    
 
-4.  Call the `printMultiplicationTable` method with the argument `9`.
-
-```
-jshell> printMultiplicationTable(9);
-9 * 1 = 9
-9 * 2 = 18
-9 * 3 = 27
-9 * 4 = 36
-9 * 5 = 45
-9 * 6 = 54
-9 * 7 = 63
-9 * 8 = 72
-9 * 9 = 81
-9 * 10 = 90
-```
-
-5.  Exit JShell using the `/exit` command.
-
-```
-jshell> /exit
-|  Goodbye
-```
+Note: In this example, the `printMultiplicationTable` method takes an integer `number` as a parameter and prints the multiplication table of that number up to 15 using a for loop. We call the `printMultiplicationTable` method with the integer value of 5.
 
 
 #### Exercise 2: Printing Even Numbers using a Method with a Parameter
