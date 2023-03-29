@@ -74,66 +74,7 @@ jshell> /exit
 
 
 
-
-
-#### Exercise 1: Editing a Method Definition in JShell
-
-1.  Launch JShell.
-2.  Define a method called `printMessage` that prints the message "Hello, World!" to the console.
-3.  Call the `printMessage` method to verify that it works.
-4.  Modify the `printMessage` method so that it prints a different message.
-5.  Call the `printMessage` method again to verify that it now prints the new message.
-6.  Exit JShell using the `/exit` command.
-
-##### Solution
-
-1.  Launch JShell.
-
-```
-jshell>
-```
-
-2.  Define a method called `printMessage` that prints the message "Hello, World!" to the console.
-
-```
-jshell> void printMessage() {
-   ...>   System.out.println("Hello, World!");
-   ...> }
-   ```
-
-3.  Call the `printMessage` method to verify that it works.
-
-```
-jshell> printMessage();
-Hello, World!
-```
-
-4.  Modify the `printMessage` method so that it prints a different message.
-
-```
-jshell> void printMessage() {
-   ...>   System.out.println("Goodbye, World!");
-   ...> }
-   ```
-
-5.  Call the `printMessage` method again to verify that it now prints the new message.
-
-```
-jshell> printMessage();
-Goodbye, World!
-```
-
-6.  Exit JShell using the `/exit` command.
-
-```
-jshell> /exit
-|  Goodbye
-```
-
-
-
-
-#### Exercise 2: Editing A Method Definition in JShell
+#### Exercise 1: Editing A Method Definition in JShell
 
 1.  Launch JShell.
 2.  Define a method called `greet` that prints the message "Welcome to JShell!" to the console.
