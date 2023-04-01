@@ -179,3 +179,212 @@ public class Evaluate {
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Exercise 2:  Even Number Printer  Calculator
+
+#### Instructions
+
+
+**Task:**
+
+Complete the missing parts of the `EvenNumberPrinter` class to implement the following methods:
+
+1.  `printEvenNumbers()`: Prints all even numbers from 1 to 10.
+2.  `printEvenNumbers(int number)`: Prints all even numbers from 1 to `number`.
+3.  `printEvenNumbers(int from, int to)`: Prints all even numbers in the range `from` to `to` (inclusive).
+
+**Steps:**
+
+1.  Implement the `printEvenNumbers()` method:
+    -   Call the `printEvenNumbers(int from, int to)` method with `from` as 1 and `to` as 10.
+2.  Implement the `printEvenNumbers(int number)` method:
+    -   Call the `printEvenNumbers(int from, int to)` method with `from` as 1 and `to` as `number`.
+3.  Implement the `printEvenNumbers(int from, int to)` method:
+    -   Use a for loop to iterate through the range of numbers from `from` to `to` (inclusive).
+    -   Check if the current number is even using the modulo operator (`i % 2 == 0`).
+    -   If the current number is even, print it using `System.out.println(i)`.
+
+#### Hints
+
+
+1.  Use a `for` loop to iterate through the given range of numbers.
+2.  Use the modulo operator (`%`) to check if a number is even (i.e., if `number % 2 == 0`).
+3.  Use `System.out.println()` to print the even numbers in each method.
+
+#### Solution Explanation
+
+The solution implements the `EvenNumberPrinter` class with three methods for printing even numbers.
+
+1.  `printEvenNumbers()`: This method prints even numbers from 1 to 10 by calling the `printEvenNumbers(int from, int to)` method with arguments 1 and 10.
+
+```
+public static void printEvenNumbers() {
+    printEvenNumbers(1, 10);
+}
+```
+
+2.  `printEvenNumbers(int number)`: This method prints even numbers from 1 to the given number by calling the `printEvenNumbers(int from, int to)` method with arguments 1 and `number`.
+
+```
+public static void printEvenNumbers(int number) {
+    printEvenNumbers(1, number);
+}
+```
+
+3.  `printEvenNumbers(int from, int to)`: This method iterates through the range `from` to `to` using a `for` loop and prints the even numbers using the `System.out.println()` method.
+
+```
+public static void printEvenNumbers(int from, int to) {
+    for (int i = from; i <= to; i++) {
+        if (i % 2 == 0) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+The main method calls these three methods to demonstrate their functionality:
+
+```
+public static void main(String[] args) {
+    EvenNumberPrinter evenNumberPrinter = new EvenNumberPrinter();
+    evenNumberPrinter.printEvenNumbers();
+    evenNumberPrinter.printEvenNumbers(8);
+    evenNumberPrinter.printEvenNumbers(3, 12);
+}
+```
+
+
+#### Student File
+**EvenNumberPrinterRunner.java**
+```
+public class EvenNumberPrinterRunner {
+
+    public static class EvenNumberPrinter {
+        public static void printEvenNumbers() {
+            // Complete the code
+        }
+
+        public static void printEvenNumbers(int number) {
+            // Complete the code
+        }
+
+        public static void printEvenNumbers(int from, int to) {
+            // Complete the code
+        }
+    }
+
+    public static void main(String[] args) {
+        EvenNumberPrinter evenNumberPrinter = new EvenNumberPrinter();
+        evenNumberPrinter.printEvenNumbers();
+        evenNumberPrinter.printEvenNumbers(8);
+        evenNumberPrinter.printEvenNumbers(3, 12);
+    }
+}
+
+
+
+```
+
+
+#### Solution File
+**EvenNumberPrinterRunner.java**
+```
+public class EvenNumberPrinterRunner {
+
+    public static class EvenNumberPrinter {
+        public static void printEvenNumbers() {
+            printEvenNumbers(1, 10);
+        }
+
+        public static void printEvenNumbers(int number) {
+            printEvenNumbers(1, number);
+        }
+
+        public static void printEvenNumbers(int from, int to) {
+            for (int i = from; i <= to; i++) {
+                if (i % 2 == 0) {
+                    System.out.println(i);
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        EvenNumberPrinter evenNumberPrinter = new EvenNumberPrinter();
+        evenNumberPrinter.printEvenNumbers();
+        evenNumberPrinter.printEvenNumbers(8);
+        evenNumberPrinter.printEvenNumbers(3, 12);
+    }
+}
+
+```
+
+
+
+#### Evaluation File
+**Evaluate.java**
+```
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+public class Evaluate {
+
+    @Test
+    public void testEvenNumbersMethods() {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(baos));
+
+        EvenNumberPrinterRunner.EvenNumberPrinter.printEvenNumbers();
+        EvenNumberPrinterRunner.EvenNumberPrinter.printEvenNumbers(8);
+        EvenNumberPrinterRunner.EvenNumberPrinter.printEvenNumbers(3, 12);
+
+        System.setOut(originalOut);
+        String capturedOutput = baos.toString();
+
+        String lineSeparator = System.lineSeparator();
+        String expectedOutput = "2" + lineSeparator +
+                                 "4" + lineSeparator +
+                                 "6" + lineSeparator +
+                                 "8" + lineSeparator +
+                                 "10" + lineSeparator +
+                                 "2" + lineSeparator +
+                                 "4" + lineSeparator +
+                                 "6" + lineSeparator +
+                                 "8" + lineSeparator +
+                                 "4" + lineSeparator +
+                                 "6" + lineSeparator +
+                                 "8" + lineSeparator +
+                                 "10" + lineSeparator +
+                                 "12" + lineSeparator;
+
+        assertEquals(expectedOutput, capturedOutput);
+    }
+}
+
+
+```
