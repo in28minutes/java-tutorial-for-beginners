@@ -1,4 +1,4 @@
-### Exercise 2:  Factorial Calculator : Implement a Factorial Calculator in Java
+### Exercise 1:  Factorial Calculator : Implement a Factorial Calculator in Java
 
 #### Instructions
 
