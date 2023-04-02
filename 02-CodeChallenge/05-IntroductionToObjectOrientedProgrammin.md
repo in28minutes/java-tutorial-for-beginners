@@ -270,39 +270,61 @@ public class Evaluate {
 
     @BeforeEach
     public void setUp() {
+        LOGGER.info("Setting up a new VideoGame instance for the tests...");
         videoGame = new VideoGameRunner.VideoGame();
     }
 
     @Test
     public void testSetTitleAndGetTitle() {
         LOGGER.info("Running testSetTitleAndGetTitle...");
-        videoGame.setTitle("Test Game");
-        assertEquals("Test Game", videoGame.getTitle());
+        String testTitle = "Test Game";
+        LOGGER.info("Setting title to: " + testTitle);
+        videoGame.setTitle(testTitle);
+        LOGGER.info("Getting the title and checking if it matches the expected value...");
+        assertEquals(testTitle, videoGame.getTitle());
+        LOGGER.info("testSetTitleAndGetTitle passed.");
     }
 
     @Test
     public void testSetNumberOfCopiesAndGetNumberOfCopies() {
         LOGGER.info("Running testSetNumberOfCopiesAndGetNumberOfCopies...");
-        videoGame.setNumberOfCopies(10);
-        assertEquals(10, videoGame.getNumberOfCopies());
+        int testCopies = 10;
+        LOGGER.info("Setting number of copies to: " + testCopies);
+        videoGame.setNumberOfCopies(testCopies);
+        LOGGER.info("Getting the number of copies and checking if it matches the expected value...");
+        assertEquals(testCopies, videoGame.getNumberOfCopies());
+        LOGGER.info("testSetNumberOfCopiesAndGetNumberOfCopies passed.");
     }
 
     @Test
     public void testIncreaseCopies() {
         LOGGER.info("Running testIncreaseCopies...");
-        videoGame.setNumberOfCopies(5);
-        videoGame.increaseCopies(5);
-        assertEquals(10, videoGame.getNumberOfCopies());
+        int initialCopies = 5;
+        int increaseCopiesBy = 5;
+        LOGGER.info("Setting initial number of copies to: " + initialCopies);
+        videoGame.setNumberOfCopies(initialCopies);
+        LOGGER.info("Increasing number of copies by: " + increaseCopiesBy);
+        videoGame.increaseCopies(increaseCopiesBy);
+        LOGGER.info("Getting the number of copies and checking if it matches the expected value...");
+        assertEquals(initialCopies + increaseCopiesBy, videoGame.getNumberOfCopies());
+        LOGGER.info("testIncreaseCopies passed.");
     }
 
     @Test
     public void testDecreaseCopies() {
         LOGGER.info("Running testDecreaseCopies...");
-        videoGame.setNumberOfCopies(10);
-        videoGame.decreaseCopies(5);
-        assertEquals(5, videoGame.getNumberOfCopies());
+        int initialCopies = 10;
+        int decreaseCopiesBy = 5;
+        LOGGER.info("Setting initial number of copies to: " + initialCopies);
+        videoGame.setNumberOfCopies(initialCopies);
+        LOGGER.info("Decreasing number of copies by: " + decreaseCopiesBy);
+        videoGame.decreaseCopies(decreaseCopiesBy);
+        LOGGER.info("Getting the number of copies and checking if it matches the expected value...");
+        assertEquals(initialCopies - decreaseCopiesBy, videoGame.getNumberOfCopies());
+        LOGGER.info("testDecreaseCopies passed.");
     }
 }
+
 ```
 
 
