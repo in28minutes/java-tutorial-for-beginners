@@ -169,12 +169,13 @@ This solution code demonstrates the proper implementation of encapsulation techn
 public class VideoGameRunner {
 
     static class VideoGame {
-
+     // Complete the code
     }
 
     public static void main(String[] args) {
         // VideoGame rdr2 = new VideoGame();
         //  rdr2.setTitle("Red Dead Redemption 2");
+         // Complete the code
     }
 }
 
