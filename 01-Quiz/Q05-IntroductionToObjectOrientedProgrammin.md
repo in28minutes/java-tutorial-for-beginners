@@ -215,7 +215,7 @@ In the given example, which method is used to start the MotorBike?
 
 ## Step 13
 
-**Question 21: What is the purpose of a constructor in a Java class?**
+**Question 22: What is the purpose of a constructor in a Java class?**
 
 - a) To create an instance of the class with the specified initial state 
 - b) To perform calculations on the class variables 
