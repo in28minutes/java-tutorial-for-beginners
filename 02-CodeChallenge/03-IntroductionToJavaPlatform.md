@@ -51,26 +51,20 @@ public class Exercise {
 ```
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import com.udemy.ucp.IOHelper;
 
 public class Evaluate {
+    Exercise ex = new Exercise();
+    IOHelper helper = new IOHelper();
     
     @Test
-    public void testExerciseOutput() {
-        // Redirect output to a ByteArrayOutputStream
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        PrintStream printStream = new PrintStream(outputStream);
-        System.setOut(printStream);
-        
-        // Call the main method of the Exercise class
+    public void testHelloWorld() {
+        helper.resetStdOut(); // clean stdout
         Exercise.main(null);
-        
-        // Verify that the output contains the message "Hello World"
-        String output = outputStream.toString();
-        assertEquals("Hello World\n", output);
+        assertEquals("Hello World\n", helper.getOutput(), "The output should be 'Hello World'");
     }
 }
+
 ```
 
 
