@@ -67,7 +67,7 @@ public class Evaluate {
 
 ```
 
-
+<!---
 
 ### Exercise 2:  Printing a Message with the Exercise Class
 
@@ -175,3 +175,5 @@ public class Evaluate {
     }
 }
 ```
+
+--->
