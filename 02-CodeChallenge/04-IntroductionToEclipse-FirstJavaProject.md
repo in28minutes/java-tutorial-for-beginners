@@ -1,3 +1,4 @@
+<!---
 ### Exercise 1:  Factorial Calculator : Implement a Factorial Calculator in Java
 
 #### Instructions
@@ -181,22 +182,8 @@ public class Evaluate {
 ```
 
 
+--->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!---
 
 
 
@@ -390,4 +377,3 @@ public class Evaluate {
 ```
 
 
---->
