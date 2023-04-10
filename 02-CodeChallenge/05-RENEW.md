@@ -335,7 +335,7 @@ public class Evaluate {
 
 
 
-# ## Exercise 2: Implementing Encapsulation Techniques in the VideoGame Class Part 2
+## Exercise 2: Implementing Encapsulation Techniques in the VideoGame Class Part 2
 
   
 
