@@ -5,10 +5,7 @@
 
 ## Instructions
 
-
-**Instructions**
-
-**Task 1: Implement VideoGame class attributes**
+### Task 1: Implement VideoGame class attributes**
 
 In the given `VideoGameRunner` class, add the following attributes to the `VideoGame` class:
 
@@ -17,7 +14,7 @@ In the given `VideoGameRunner` class, add the following attributes to the `Video
 -   `numberOfCopies` of type `int`
     
 
-**Task 2: Implement methods for VideoGame class**
+### Task 2: Implement methods for VideoGame class**
 
 Implement the following methods for the `VideoGame` class:
 
@@ -30,7 +27,7 @@ Implement the following methods for the `VideoGame` class:
 -   `getNumberOfCopies()`: Returns the number of copies.
     
 
-**Task 3: Test the VideoGame class in the main method**
+### Task 3: Test the VideoGame class in the main method**
 
 In the `main` method of the `VideoGameRunner` class, do the following:
 
@@ -57,7 +54,7 @@ In the `main` method of the `VideoGameRunner` class, do the following:
 ```
         
 
-**The output should look like:**
+### The output should look like:
 
   
 ```
@@ -84,7 +81,7 @@ I hope these hints help you complete the exercise!
 
 In this problem, we need to implement a VideoGame class and test it in the main method of the VideoGameRunner class.
 
-**Task 1: Implement VideoGame class attributes**
+### Task 1: Implement VideoGame class attributes**
 
 In the VideoGame class, we need to add two attributes: `title` of type `String` and `numberOfCopies` of type `int`.
 
@@ -95,7 +92,7 @@ public class VideoGame {
 }
 ```
 
-**Task 2: Implement methods for VideoGame class**
+### Task 2: Implement methods for VideoGame class**
 
 In the VideoGame class, we need to implement four methods: `setTitle`, `getTitle`, `setNumberOfCopies`, and `getNumberOfCopies`.
 
@@ -133,7 +130,7 @@ public int getNumberOfCopies() {
 }
 ```
 
-**Task 3: Test the VideoGame class in the main method**
+### Task 3: Test the VideoGame class in the main method**
 
 In the main method of the VideoGameRunner class, we need to create three instances of the VideoGame class and set their titles. Then, we need to set the number of copies for each video game instance and print the title and number of copies for each video game instance.
 
