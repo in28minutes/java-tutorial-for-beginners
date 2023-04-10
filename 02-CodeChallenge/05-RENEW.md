@@ -1,5 +1,5 @@
 
-# ## Exercise 1: Implementing Encapsulation Techniques in the VideoGame Class
+## Exercise 1: Implementing Encapsulation Techniques in the VideoGame Class
 
   
 
