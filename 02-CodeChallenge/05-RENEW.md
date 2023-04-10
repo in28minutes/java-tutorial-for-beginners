@@ -178,24 +178,35 @@ This output matches the expected output mentioned in the problem statement.
 public class VideoGameRunner {
 
     static class VideoGame {
-        // Complete the code
+        // Add two private attributes: title (type: String) and numberOfCopies (type: int)
+
+        // Implement setTitle method: public void setTitle(String gameTitle)
+
+        // Implement getTitle method: public String getTitle()
+
+        // Implement setNumberOfCopies method: public void setNumberOfCopies(int numberOfCopies) with a condition to check if numberOfCopies is greater than or equal to 0
+
+        // Implement getNumberOfCopies method: public int getNumberOfCopies()
     }
 
     public static void main(String[] args) {
-       
-       // VideoGame rdr2 = new VideoGame();
-       // rdr2.setTitle("Red Dead Redemption 2");
-       // rdr2.setNumberOfCopies(5);
-       // Complete the code 
+        // Create a VideoGame instance called rdr2 and set its title to "Red Dead Redemption 2"
+        // Set the number of copies for rdr2 to 5
+        // VideoGame rdr2 = new VideoGame();
+        // rdr2.setTitle("Red Dead Redemption 2");
+        // rdr2.setNumberOfCopies(5);
 
-        
+        // Create a VideoGame instance called tw3 and set its title to "The Witcher 3"
+        // Set the number of copies for tw3 to 8
 
-       // System.out.println(rdr2.getTitle() + " - Number of copies: " + rdr2.getNumberOfCopies());
-       // Complete the code
-  
-  
+        // Create a VideoGame instance called botw and set its title to "Breath of the Wild"
+        // Set the number of copies for botw to 10
+
+        // Print the title and number of copies for each instance in the format: "Title - Number of copies: X"
+        // System.out.println(rdr2.getTitle() + " - Number of copies: " + rdr2.getNumberOfCopies());
     }
 }
+
 ```
 
   
