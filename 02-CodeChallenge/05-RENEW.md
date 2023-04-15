@@ -789,11 +789,44 @@ import org.junit.jupiter.api.Test;
 import java.util.logging.Logger;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Assertions;
+import com.udemy.ucp.EvaluationHelper;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class Evaluate {
 
     IOHelper helper = new IOHelper();
     private static final Logger LOGGER = Logger.getLogger(Evaluate.class.getName());
+    EvaluationHelper evaluationHelper = new EvaluationHelper();
+    VideoGameRunner.VideoGame videoGame = new VideoGameRunner.VideoGame();
+    
+    
+    @Test
+    public void testFieldsAndMethods() {
+        if (!evaluationHelper.isFieldDeclared(videoGame, "title", String.class)) {
+            fail("'title' field is not declared.");
+        }
+
+        if (!evaluationHelper.isFieldDeclared(videoGame, "numberOfCopies", int.class)) {
+            fail("'numberOfCopies' field is not declared.");
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "setTitle", String.class)) {
+            fail("'setTitle' method is not declared.");
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "getTitle")) {
+            fail("'getTitle' method is not declared.");
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "setNumberOfCopies", int.class)) {
+            fail("'setNumberOfCopies' method is not declared.");
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "getNumberOfCopies")) {
+            fail("'getNumberOfCopies' method is not declared.");
+        }
+    }
 
     @Test
     public void testSetAndGetMethods() {
