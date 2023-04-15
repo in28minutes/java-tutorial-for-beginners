@@ -271,71 +271,157 @@ public class VideoGameRunner {
 
 ```
 import com.udemy.ucp.IOHelper;
+
+import com.udemy.ucp.EvaluationHelper;
+
 import org.junit.jupiter.api.Test;
+
 import java.util.logging.Logger;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+
 
 public class Evaluate {
 
+
+
     IOHelper helper = new IOHelper();
+
+    EvaluationHelper evaluationHelper = new EvaluationHelper();
+
+    VideoGameRunner.VideoGame videoGame = new VideoGameRunner.VideoGame();
+
+
+
     private static final Logger LOGGER = Logger.getLogger(Evaluate.class.getName());
 
-    @Test
-    public void testSetAndGetMethods() {
-        try {
-            assertTrue(VideoGameRunner.VideoGame.class.getDeclaredMethod("setTitle", String.class) != null, "Method setTitle is not declared in VideoGame class.");
-            assertTrue(VideoGameRunner.VideoGame.class.getDeclaredMethod("getTitle") != null, "Method getTitle is not declared in VideoGame class.");
-            assertTrue(VideoGameRunner.VideoGame.class.getDeclaredMethod("setNumberOfCopies", int.class) != null, "Method setNumberOfCopies is not declared in VideoGame class.");
-            assertTrue(VideoGameRunner.VideoGame.class.getDeclaredMethod("getNumberOfCopies") != null, "Method getNumberOfCopies is not declared in VideoGame class.");
 
-            assertTrue(VideoGameRunner.VideoGame.class.getDeclaredField("title") != null, "Field title is not declared in VideoGame class.");
-            assertTrue(VideoGameRunner.VideoGame.class.getDeclaredField("numberOfCopies") != null, "Field numberOfCopies is not declared in VideoGame class.");
-        } catch (NoSuchMethodException | NoSuchFieldException e) {
-            LOGGER.severe("Error: " + e.getMessage());
-        }
-    }
 
     @Test
+
     public void testMainMethod() {
+
         helper.resetStdOut(); // clean stdout
-        VideoGameRunner.main(new String[]{});
+
+        VideoGameRunner.main(new String[] {});
+
         String actualOutput = helper.getOutput();
+
         String refinedActualOutput = helper.getOutput().replace("\n", " ");
 
+
+
         String expectedOutput = "Red Dead Redemption 2 - Number of copies: 5\n" +
-                                "The Witcher 3 - Number of copies: 8\n" +
-                                "Breath of the Wild - Number of copies: 10\n";
+
+            "The Witcher 3 - Number of copies: 8\n" +
+
+            "Breath of the Wild - Number of copies: 10\n";
+
         LOGGER.info("Expected Output: " + expectedOutput);
+
         LOGGER.info("Actual Output: " + actualOutput);
+
         assertEquals(expectedOutput, actualOutput, "Output does not match the expected value. Please check user logs for more detailed view. Expected: Red Dead Redemption 2 - Number of copies: 5 " +
-                                "The Witcher 3 - Number of copies: 8 " +
-                                "Breath of the Wild - Number of copies: 10 " + ", actual: " + refinedActualOutput);
+
+            "The Witcher 3 - Number of copies: 8 " +
+
+            "Breath of the Wild - Number of copies: 10 " + ", actual: " + refinedActualOutput);
+
     }
-    
+
     @Test
+
     public void testRdr2Output() {
-    helper.resetStdOut(); // clean stdout
-    VideoGameRunner.main(new String[]{});
-    String actualOutput = helper.getOutput();
-    assertTrue(actualOutput.contains("Red Dead Redemption 2 - Number of copies: 5"), "Output does not contain expected string: Red Dead Redemption 2 - Number of copies: 5");
+
+        helper.resetStdOut(); // clean stdout
+
+        VideoGameRunner.main(new String[] {});
+
+        String actualOutput = helper.getOutput();
+
+        assertTrue(actualOutput.contains("Red Dead Redemption 2 - Number of copies: 5"), "Output does not contain expected string: Red Dead Redemption 2 - Number of copies: 5");
+
     }
 
-   @Test
-   public void testTw3Output() {
-   helper.resetStdOut(); // clean stdout
-   VideoGameRunner.main(new String[]{});
-   String actualOutput = helper.getOutput();
-   assertTrue(actualOutput.contains("The Witcher 3 - Number of copies: 8"), "Output does not contain expected string: The Witcher 3 - Number of copies: 8");
-   }
 
-   @Test
-   public void testBotwOutput() {
-   helper.resetStdOut(); // clean stdout
-   VideoGameRunner.main(new String[]{});
-   String actualOutput = helper.getOutput();
-   assertTrue(actualOutput.contains("Breath of the Wild - Number of copies: 10"), "Output does not contain expected string: Breath of the Wild - Number of copies: 10");
-   }
+
+    @Test
+
+    public void testTw3Output() {
+
+        helper.resetStdOut(); // clean stdout
+
+        VideoGameRunner.main(new String[] {});
+
+        String actualOutput = helper.getOutput();
+
+        assertTrue(actualOutput.contains("The Witcher 3 - Number of copies: 8"), "Output does not contain expected string: The Witcher 3 - Number of copies: 8");
+
+    }
+
+
+
+    @Test
+
+    public void testBotwOutput() {
+
+        helper.resetStdOut(); // clean stdout
+
+        VideoGameRunner.main(new String[] {});
+
+        String actualOutput = helper.getOutput();
+
+        assertTrue(actualOutput.contains("Breath of the Wild - Number of copies: 10"), "Output does not contain expected string: Breath of the Wild - Number of copies: 10");
+
+    }
+
+    @Test
+
+    public void testFieldsAndMethods() {
+
+        if (!evaluationHelper.isFieldDeclared(videoGame, "title", String.class)) {
+
+            fail("'title' field is not declared.");
+
+        }
+
+        if (!evaluationHelper.isFieldDeclared(videoGame, "numberOfCopies", int.class)) {
+
+            fail("'numberOfCopies' field is not declared.");
+
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "setTitle", String.class)) {
+
+            fail("'setTitle' method is not declared.");
+
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "getTitle")) {
+
+            fail("'getTitle' method is not declared.");
+
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "setNumberOfCopies", int.class)) {
+
+            fail("'setNumberOfCopies' method is not declared.");
+
+        }
+
+        if (!evaluationHelper.isMethodDeclared(videoGame, "getNumberOfCopies")) {
+
+            fail("'getNumberOfCopies' method is not declared.");
+
+        }
+
+    }
+
 }
 
 ```
