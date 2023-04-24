@@ -260,7 +260,7 @@ You are given an incomplete Java program called `MyIntRunner` that has a nested 
 
 ### Detailed Instructions
 
-1.  Declare an instance variable `value` of type `int` in the `MyInt` class to store the value of the `MyInt` object.
+1.  Declare an public instance variable `value` of type `int` in the `MyInt` class to store the value of the `MyInt` object.
     
 2.  Create a constructor for the `MyInt` class that takes an `int` parameter, `value`. The constructor should initialize the `value` field of the `MyInt` object with the provided `value`.
     
@@ -371,7 +371,7 @@ public class MyIntRunner {
     }
 
     static class MyInt {
-        // Declare an instance variable to store the value
+        // Declare an public instance variable to store the value
         public int value;
 
         // Constructor to initialize the value of the MyInt object
