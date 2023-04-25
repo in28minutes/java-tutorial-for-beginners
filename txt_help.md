@@ -1,30 +1,62 @@
 
 
-Solution
+# Month Name Printer
+
+## Problem Statement
+
+You are tasked with implementing a Java program that takes an integer input representing the month number (1-12) and prints the corresponding month name.
+
+### Instructions
+
+1.  **TODO:** Implement the `getMonthName()` method which takes an integer `monthNumber` as a parameter and returns the corresponding month name as a string. If the given `monthNumber` is invalid (not in the range of 1-12), the method should return `null`.
+    
+2.  **TODO:** In the `main()` method, prompt the user to enter the month number (1-12). Call the `getMonthName()` method with the entered month number as an argument and store the result in a variable named `monthName`.
+    
+3.  **TODO:** Use an `if-else` statement to check if the `monthName` is `null`. If it is, print "Invalid month number entered." If it's not `null`, print "The name of month number [monthNumber] is [monthName]."
+    
+
+### Input Format
+
+The input is a single integer `monthNumber` (1 ≤ monthNumber ≤ 12).
 
 ```
-import java.math.BigDecimal;
-
-public class Formula1RaceRunner {
-
-    static BigDecimal calculateAverageSpeed(int numberOfCars, BigDecimal totalDistance, BigDecimal totalTime) {
-        BigDecimal averageDistance = totalDistance.divide(new BigDecimal(numberOfCars), 2, BigDecimal.ROUND_HALF_UP);
-        BigDecimal averageTime = totalTime.divide(new BigDecimal(numberOfCars), 2, BigDecimal.ROUND_HALF_UP);
-
-        return averageDistance.divide(averageTime, 2, BigDecimal.ROUND_HALF_UP);
-    }
-
-    public static void main(String[] args) {
-        int numberOfCars = 5;
-        BigDecimal totalDistance = new BigDecimal("12000"); // in meters
-        BigDecimal totalTime = new BigDecimal("720.5"); // in seconds
-
-        BigDecimal averageSpeed = calculateAverageSpeed(numberOfCars, totalDistance, totalTime);
-
-        System.out.println("Average speed for the Formula 1 cars: " + averageSpeed.setScale(1, BigDecimal.ROUND_HALF_UP) + " m/s");
-    }
-}
+4
 ```
 
-Test
+## Output Format
+
+The output is a single line with the month name corresponding to the given `monthNumber`. If the `monthNumber` is invalid, the output is "Invalid month number entered."
+
+```
+The name of month number 4 is April.
+```
+
+### Example
+
+**Input:**
+
+```
+Enter the month number (1-12):
+4
+```
+
+**Output:**
+
+```
+The name of month number 4 is April.
+```
+
+**Input:**
+
+```
+Enter the month number (1-12):
+0
+```
+
+**Output:**
+
+```
+Invalid month number entered.
+```
+
 
