@@ -32,7 +32,7 @@ The name of month number 4 is April.
 
 ### Example
 
-**Input:**
+**Input 1:**
 
 ```
 Enter the month number (1-12):
@@ -45,7 +45,7 @@ Enter the month number (1-12):
 The name of month number 4 is April.
 ```
 
-**Input:**
+**Input 2:**
 
 ```
 Enter the month number (1-12):
