@@ -303,3 +303,319 @@ public class Evaluate {
 
 
 ```
+
+
+
+
+
+
+# Exercise 2 : Age Calculator using Java's LocalDate and Period classes
+
+## Problem Statement
+
+In this exercise, you are required to implement an `AgeCalculator` class that calculates a person's age based on their date of birth and the current date. The date of birth should be entered by the user in the format `YYYY-MM-DD`. You need to complete the `calculateAge` method.
+
+### Instructions
+
+1.  Import the `LocalDate` and `Period` classes from the `java.time` package.
+2.  Complete the `calculateAge` method by implementing the logic to calculate a person's age based on their date of birth and the current date.
+    -   Use the `LocalDate.parse()` method to convert the birthDate string into a LocalDate object.
+    -   Check if the currentDate is before the date of birth using the `isBefore()` method. If it is, return -1 to indicate an error.
+    -   Check if the date of birth is before a specific date (e.g., `1900-01-01`). If it is, return -1 to indicate an error.
+    -   Use the `Period.between()` method to calculate the difference between the date of birth and the current date in years.
+    -   Return the calculated age.
+
+### Input Format
+
+-   A string representing the user's date of birth in the format `YYYY-MM-DD`.
+
+### Output Format
+
+-   If the input is invalid, print an error message: "Invalid input. Please enter a valid date in the format YYYY-MM-DD."
+-   If the input is valid, print the person's age: "Your age is: X", where X is the calculated age.
+
+**Note**: Make sure to mention the `Period.between()`, `isBefore()`, and `LocalDate.parse()` methods in the instructions, as the student is not familiar with these methods.
+
+### Example
+
+**Input:**
+
+```
+Please enter your date of birth in YYYY-MM-DD format: 2000-05-01
+```
+
+**Output:**
+
+```
+Your age is: 23
+```
+
+**Explanation:** In this example, the user has entered their date of birth as `2000-05-01`. The current date is assumed to be `2023-05-03`. The difference between these two dates in years is 23 years. Hence, the output is "Your age is: 23".
+
+
+## Hints
+
+1.  Use `LocalDate.parse()` method to convert the birthDate string into a LocalDate object.
+2.  Use `isBefore()` method to check if one date is before another date.
+3.  Use `Period.between()` method to calculate the difference between two dates in years.
+4.  Make sure to return -1 in case of invalid input (e.g., when the date of birth is in the future or before a specific date such as `1900-01-01`).
+5.  In the `main` method, the code to read input, calculate the current date, and call the `calculateAge` method is already provided.
+
+## Solution Explanation
+
+Here is the step-by-step explanation of the solution:
+
+1.  In the `calculateAge` method, first, we check if the `birthDate` string is null or empty. If it is, we return -1 to indicate an error.
+    
+    ```
+    if (birthDate == null || birthDate.isEmpty()) {
+        return -1;
+    }
+    ```
+    
+2.  Convert the `birthDate` string into a `LocalDate` object using the `LocalDate.parse()` method.
+    
+   ```
+   LocalDate dob = LocalDate.parse(birthDate);
+   ```
+    
+3.  Check if the `currentDate` is before the date of birth using the `isBefore()` method. If it is, return -1 to indicate an error.
+    
+   ```
+   if (currentDate.isBefore(dob)) {
+        return -1;
+    }
+```
+    
+4.  Check if the date of birth is before a specific date (e.g., `1900-01-01`). If it is, return -1 to indicate an error.
+    
+    ```
+    if (dob.isBefore(LocalDate.of(1900, 1, 1))) {
+        return -1;
+    }
+    ```
+    
+5.  Use the `Period.between()` method to calculate the difference between the date of birth and the current date in years.
+    
+   ```
+   return Period.between(dob, currentDate).getYears();
+   ```
+    
+
+The `main` method is already provided in the student code. It takes care of reading the input, calculating the current date, calling the `calculateAge` method, and printing the age or an error message based on the calculated age.
+
+#### Here's the Full Solution Code:
+
+```
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
+
+public class AgeCalculator {
+
+    public static int calculateAge(String birthDate, LocalDate currentDate) {
+        // Check if birthDate is null or empty
+        if (birthDate == null || birthDate.isEmpty()) {
+            return -1;
+        }
+        
+        // Convert birthDate string to LocalDate object
+        LocalDate dob = LocalDate.parse(birthDate);
+        
+        // Check if currentDate is before the date of birth
+        if (currentDate.isBefore(dob)) {
+            return -1;
+        }
+        
+        // Check if the date of birth is before a specific date (e.g., 1900-01-01)
+        if (dob.isBefore(LocalDate.of(1900, 1, 1))) {
+            return -1;
+        }
+
+        // Calculate the difference between dob and currentDate in years using Period.between() method
+        return Period.between(dob, currentDate).getYears();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter your date of birth in YYYY-MM-DD format: ");
+        String birthDate = scanner.nextLine();
+        scanner.close();
+
+        // Get the current date
+        LocalDate currentDate = LocalDate.now();
+        
+        // Calculate the age using the calculateAge method
+        int age = calculateAge(birthDate, currentDate);
+        
+        // Print the age or an error message if age is negative
+        if (age < 0) {
+            System.out.println("Invalid input. Please enter a valid date in the format YYYY-MM-DD.");
+        } else {
+            System.out.println("Your age is: " + age);
+        }
+    }
+}
+```
+
+I hope this helps! Let me know if you have any questions.
+
+
+## Student File
+
+```
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
+
+public class AgeCalculator {
+
+    public static int calculateAge(String birthDate, LocalDate currentDate) {
+        // Write your code to calculate the age based on the birthDate and currentDate
+        // You can use the Period.between() method to calculate the difference between two dates in years
+        // Return -1 if the input is invalid
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter your date of birth in YYYY-MM-DD format: ");
+        String birthDate = scanner.nextLine();
+        scanner.close();
+
+        // Get the current date
+        LocalDate currentDate = LocalDate.now();
+        
+        // Call the calculateAge method to calculate the age
+        int age = calculateAge(birthDate, currentDate);
+        
+        // Print the age or an error message if age is negative
+        if (age < 0) {
+            System.out.println("Invalid input. Please enter a valid date in the format YYYY-MM-DD.");
+        } else {
+            System.out.println("Your age is: " + age);
+        }
+    }
+}
+
+```
+
+## Solution code
+
+```
+
+   
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
+
+public class AgeCalculator {
+
+    public static int calculateAge(String birthDate, LocalDate currentDate) {
+        if (birthDate == null || birthDate.isEmpty()) {
+            return -1;
+        }
+        
+        LocalDate dob = LocalDate.parse(birthDate);
+        
+        
+        if (currentDate.isBefore(dob)) {
+            return -1;
+        }
+        
+        if (dob.isBefore(LocalDate.of(1900, 1, 1))) {
+            return -1;
+        }
+
+        
+        return Period.between(dob, currentDate).getYears();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter your date of birth in YYYY-MM-DD format: ");
+        String birthDate = scanner.nextLine();
+        scanner.close();
+
+        LocalDate currentDate = LocalDate.now();
+        
+        int age = calculateAge(birthDate, currentDate);
+        
+        if (age < 0) {
+            System.out.println("Invalid input. Please enter a valid date in the format YYYY-MM-DD.");
+        } else {
+            System.out.println("Your age is: " + age);
+        }
+    }
+}
+
+
+
+```
+
+## Evaluation File
+
+```
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import java.time.LocalDate;
+import java.util.logging.Logger;
+
+public class Evaluate {
+private final Logger logger = Logger.getLogger(Evaluate.class.getName());
+
+@Test
+public void test_valid_input(){
+    LocalDate currentDate = LocalDate.of(2022, 10, 1);
+    int age = AgeCalculator.calculateAge("2000-01-01", currentDate);
+    assertEquals(22, age, "Should return correct age for valid input");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: " + 22);
+}
+
+@Test
+public void test_invalid_input(){
+    LocalDate currentDate = LocalDate.of(2022, 10, 1);
+    int age = AgeCalculator.calculateAge("", currentDate);
+    assertEquals(-1, age, "Should return -1 for empty input");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: " + -1);
+
+    age = AgeCalculator.calculateAge(null, currentDate);
+    assertEquals(-1, age, "Should return -1 for null input");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: " + -1);
+
+    LocalDate futureDate = LocalDate.of(1999, 2, 1);
+    age = AgeCalculator.calculateAge("2000-01-01", futureDate);
+    assertEquals(-1, age, "Should return -1 for future date input");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: " + -1);
+}
+
+@Test
+public void test_edge_cases(){
+    LocalDate currentDate = LocalDate.of(2022, 10, 1);
+    int age = AgeCalculator.calculateAge("2000-10-01", currentDate);
+    assertEquals(22, age, "Should return correct age for edge case input (same birth date and current date)");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: " + 22);
+    
+    age = AgeCalculator.calculateAge("1900-01-01", currentDate);
+    assertEquals(122, age, "Should return correct age for edge case input (very old birth date)");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: 122");
+
+    age = AgeCalculator.calculateAge("1901-01-01", currentDate);
+    assertEquals(121, age, "Should return correct age for edge case input (after 1900-01-01)");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: 121");
+
+    age = AgeCalculator.calculateAge("1899-12-31", currentDate);
+    assertEquals(-1, age, "Should not return correct age for edge case input (very old birth date)");
+    logger.info("Actual Output: " + age);
+    logger.info("Expected Output: -1");
+    }
+}
+
+```
