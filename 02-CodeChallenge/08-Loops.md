@@ -245,7 +245,7 @@ In this exercise, you will complete a Java program that acts as a simple calcula
 5.  The loop should continue executing until the user selects option `3` (Exit). After the loop, close the `Scanner` object using `scanner.close()`.
     
 
-### Example Output
+#### Example Output
 
 A sample interaction with the calculator should look like this:
 
@@ -302,7 +302,7 @@ Complete the `main` method in the provided student code, following the solution 
 Use the provided student code as a starting point, and complete the `main` method to implement the calculator's functionality.
 
 
-### Solution Explanation
+## Solution Explanation
 
 To complete the `main` method inside the `SimpleCalculator` class, follow these steps:
 
