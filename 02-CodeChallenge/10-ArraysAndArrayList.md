@@ -347,3 +347,250 @@ public class Evaluate {
 
 
 ```
+
+
+
+
+
+
+# Exercise 2: Correct and Calculate Average of Marks
+
+## Problem Statement
+
+You have been given an incomplete Java program called `CorrectAndAverageMarks`. The goal of this program is to correct an array of student marks by removing negative values and then calculating the average of the corrected marks.
+
+**Instructions**
+
+1.  Complete the `correctAndAverageMarks` method that takes an integer array `marks` as input. This method should correct the marks by removing any negative values and then calculate the average of the corrected marks.
+2.  To remove negative values, use an `ArrayList<Integer>` to store the corrected marks. Loop through the `marks` array and add only non-negative values to the `correctedMarks` list.
+3.  Calculate the sum of the corrected marks and then find the average by dividing the sum by the size of the `correctedMarks` list.
+4.  If all values in the `marks` array are negative, return 0 as the average.
+5.  Test your implementation with the given input array in the `main` method.
+6. 
+**Input Format:**
+
+-   An integer array `marks` of length n (1 ≤ n ≤ 10^5), where each element mark (mark: -10^5 ≤ mark ≤ 10^5) represents a student's mark.
+
+**Output Format:**
+
+-   An integer value representing the average of the corrected marks.
+
+**Example:**
+
+Suppose the given input array is:
+
+```
+int[] input = {95, 80, -5, 70, 88, -15, 65};
+```
+
+The `CorrectAndAverageMarks` program should output:
+
+```
+Average of corrected marks: 79
+```
+
+**Explanation:**
+
+1.  Remove negative values: {95, 80, 70, 88, 65}
+2.  Calculate the sum of the corrected marks: 95 + 80 + 70 + 88 + 65 = 398
+3.  Calculate the average: 398 / 5 = 79
+4.  The output is 79
+
+
+## Hints 
+
+**Hint 1:** Create an `ArrayList<Integer>` to store the corrected marks (non-negative values).
+
+**Hint 2:** Iterate through the input array and add non-negative values to the `correctedMarks` ArrayList, and keep track of the sum of the non-negative values.
+
+**Hint 3:** Check if the `correctedMarks` ArrayList is empty. If it is, return 0 as the average.
+
+**Hint 4:** Calculate the average by dividing the sum of the non-negative values by the size of the `correctedMarks` ArrayList. Return the calculated average.
+
+## Solution Explanation
+
+In the given solution, we aim to calculate the average of the corrected marks by removing any negative values from the input array. Here's a step-by-step explanation with the code:
+
+1.  Create a method called `correctAndAverageMarks` that takes an integer array `marks` as input.
+
+```
+public static int correctAndAverageMarks(int[] marks) {
+    // ...
+}
+```
+2.  Inside the method, create an `ArrayList<Integer>` called `correctedMarks` to store the non-negative values and initialize a variable `sum` to store the sum of the non-negative values.
+
+```
+ArrayList<Integer> correctedMarks = new ArrayList<>();
+int sum = 0;
+```
+
+3.  Iterate through the input array using a for-each loop. If the value is non-negative (greater than or equal to 0), add it to the `correctedMarks` ArrayList and update the `sum`.
+
+```
+for (int mark : marks) {
+    if (mark >= 0) {
+        correctedMarks.add(mark);
+        sum += mark;
+    }
+}
+```
+
+4.  After iterating through the input array, check if the `correctedMarks` ArrayList is empty. If it is, return 0 as the average. Otherwise, calculate the average by dividing the `sum` by the size of the `correctedMarks` ArrayList and return the result.
+
+```
+if (correctedMarks.isEmpty()) {
+    return 0;
+} else {
+    return sum / correctedMarks.size();
+}
+```
+
+5.  In the `main` method, call the `correctAndAverageMarks` method with the input array and print the returned average.
+
+```
+int average = correctAndAverageMarks(input);
+System.out.println("Average of corrected marks: " + average);
+```
+
+The complete solution code calculates the average of the corrected marks by removing negative values from the input array as described above.
+
+**Full Solution Code:**
+
+```
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class CorrectAndAverageMarks {
+    public static void main(String[] args) {
+        int[] input = {95, 80, -5, 70, 88, -15, 65};
+
+        // Call the correctAndAverageMarks method with the input array and print the returned average
+        int average = correctAndAverageMarks(input);
+        System.out.println("Average of corrected marks: " + average);
+    }
+
+    public static int correctAndAverageMarks(int[] marks) {
+        // Create an ArrayList to store the non-negative values
+        ArrayList<Integer> correctedMarks = new ArrayList<>();
+        
+        // Initialize a variable to store the sum of the non-negative values
+        int sum = 0;
+        
+        // Iterate through the input array
+        for (int mark : marks) {
+            // If the value is non-negative, add it to the correctedMarks ArrayList and update the sum
+            if (mark >= 0) {
+                correctedMarks.add(mark);
+                sum += mark;
+            }
+        }
+        
+        // If the correctedMarks ArrayList is empty, return 0 as the average
+        // Otherwise, calculate the average by dividing the sum by the size of the correctedMarks ArrayList and return the result
+        if (correctedMarks.isEmpty()) {
+            return 0;
+        } else {
+            return sum / correctedMarks.size();
+        }
+    }
+}
+
+```
+
+## Student File
+
+```
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class CorrectAndAverageMarks {
+    public static void main(String[] args) {
+        int[] input = {95, 80, -5, 70, 88, -15, 65};
+        
+        int average = correctAndAverageMarks(input);
+        System.out.println("Average of corrected marks: " + average);
+    }
+
+    // TODO: Implement the correctAndAverageMarks method that takes an integer array as input
+    // TODO: The method should correct the marks by removing any negative values and then calculate the average
+    // TODO: If all values are negative, return 0 as the average
+    public static int correctAndAverageMarks(int[] marks) {
+        
+    }
+}
+
+
+```
+
+
+## Solution File
+
+```
+
+    import java.util.ArrayList;
+    import java.util.Arrays;
+
+    public class CorrectAndAverageMarks {
+        public static void main(String[] args) {
+            int[] input = {95, 80, -5, 70, 88, -15, 65};
+            int average = correctAndAverageMarks(input);
+            System.out.println("Average of corrected marks: " + average);
+        }
+
+        public static int correctAndAverageMarks(int[] marks) {
+            ArrayList<Integer> correctedMarks = new ArrayList<>();
+            int sum = 0;
+            for (int mark : marks) {
+                if (mark >= 0) {
+                    correctedMarks.add(mark);
+                    sum += mark;
+                }
+            }
+            if (correctedMarks.isEmpty()) {
+                return 0;
+            } else {
+                return sum / correctedMarks.size();
+            }
+        }
+    }
+
+
+
+```
+
+## Evaluation File
+
+```
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.logging.Logger;
+
+public class Evaluate {
+
+    private final static Logger logger = Logger.getLogger(Evaluate.class.getName());
+
+    @Test
+    public void test_correct_and_average_marks() {
+        int[] input1 = {95, 80, -5, 70, 88, -15, 65};
+        int expected1 = 79;
+        int actual1 = CorrectAndAverageMarks.correctAndAverageMarks(input1);
+        logger.info("Input 1 Expected: " + expected1 + ", Actual: " + actual1);
+        assertEquals(expected1, actual1, "Should return the correct average of corrected marks");
+
+        int[] input2 = {-5, -10, -15};
+        int expected2 = 0;
+        int actual2 = CorrectAndAverageMarks.correctAndAverageMarks(input2);
+        logger.info("Input 2 Expected: " + expected2 + ", Actual: " + actual2);
+        assertEquals(expected2, actual2, "Should return 0 when all marks are negative");
+
+        int[] input3 = {};
+        int expected3 = 0;
+        int actual3 = CorrectAndAverageMarks.correctAndAverageMarks(input3);
+        logger.info("Input 3 Expected: " + expected3 + ", Actual: " + actual3);
+        assertEquals(expected3, actual3, "Should return 0 when input array is empty");
+    }
+}
+
+```
