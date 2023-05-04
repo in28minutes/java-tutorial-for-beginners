@@ -241,7 +241,7 @@ Difficulty Breathing
 ```
 
 
-### Hints
+## Hints
 
 1.  Use the `stream()` method on the `symptoms` list to create a stream of symptoms.
 2.  Apply the `filter()` function on the stream, and pass the `Symptom::isCovidSymptom` method reference as a predicate to filter COVID-19 symptoms.
