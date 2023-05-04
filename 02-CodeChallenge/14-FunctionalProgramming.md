@@ -192,3 +192,328 @@ public class Evaluate {
     }
 }
 ```
+
+
+
+
+
+
+# Exercise 2: COVID-19 Symptom Filter using Java Streams
+
+## Problem Statement
+
+You are tasked with creating a simple program to filter and display a list of COVID-19 symptoms. Given a list of symptoms with their names and a boolean flag indicating whether they are related to COVID-19, you must implement the following functionalities:
+
+1.  Filter the list of symptoms to only include those that are COVID-19 symptoms.
+2.  Print the COVID-19 symptoms.
+
+### Instructions and Steps
+
+1.  In the `main` method, use the `stream()` method and the `filter()` function to filter the list of symptoms to only include those that are COVID-19 symptoms. The `filter()` function should use the `isCovidSymptom()` method from the `Symptom` class to determine if a symptom is related to COVID-19.
+2.  After filtering the symptoms, use the `collect()` method to collect the filtered symptoms into a new `List<Symptom>` object named `covidSymptoms`.
+3.  To print the COVID-19 symptoms, use the `forEach()` method on the `covidSymptoms` list. Inside the `forEach()` method, use a lambda expression to print the name of each symptom using the `getName()` method from the `Symptom` class.
+
+### Example
+
+Input:
+
+```
+List<Symptom> symptoms = Arrays.asList(
+    new Symptom("Fever", true),
+    new Symptom("Dry Cough", true),
+    new Symptom("Tiredness", true),
+    new Symptom("Sore Throat", false),
+    new Symptom("Headache", false),
+    new Symptom("Loss of Taste or Smell", true),
+    new Symptom("Difficulty Breathing", true)
+);
+```
+
+Output:
+
+```
+COVID-19 Symptoms:
+Fever
+Dry Cough
+Tiredness
+Loss of Taste or Smell
+Difficulty Breathing
+```
+
+
+### Hints
+
+1.  Use the `stream()` method on the `symptoms` list to create a stream of symptoms.
+2.  Apply the `filter()` function on the stream, and pass the `Symptom::isCovidSymptom` method reference as a predicate to filter COVID-19 symptoms.
+3.  Collect the filtered symptoms into a new list using the `collect()` method and `Collectors.toList()` as an argument.
+4.  Iterate over the `covidSymptoms` list using the `forEach()` method.
+5.  Inside the `forEach()` method, use a lambda expression to print the name of each symptom using the `getName()` method from the `Symptom` class.
+
+
+## Solution Explanation
+
+In this solution, we'll use Java Streams to filter the list of symptoms and display only the COVID-19 related symptoms.
+
+1.  First, we create a stream of symptoms using the `stream()` method on the `symptoms` list.
+
+```
+symptoms.stream()
+```
+
+2.  Next, we apply the `filter()` function on the stream, and pass the `Symptom::isCovidSymptom` method reference as a predicate to filter COVID-19 symptoms.
+
+```
+symptoms.stream()
+    .filter(Symptom::isCovidSymptom)
+``` 
+
+3.  We then collect the filtered symptoms into a new list using the `collect()` method and `Collectors.toList()` as an argument.
+
+```
+List<Symptom> covidSymptoms = symptoms.stream()
+    .filter(Symptom::isCovidSymptom)
+    .collect(Collectors.toList());
+ ```
+
+4.  To print the COVID-19 symptoms, we iterate over the `covidSymptoms` list using the `forEach()` method.
+
+```
+covidSymptoms.forEach(symptom -> System.out.println(symptom.getName()));
+```
+
+5.  Inside the `forEach()` method, we use a lambda expression to print the name of each symptom using the `getName()` method from the `Symptom` class.
+
+
+**Complete Solution:**
+
+```
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class CovidSymptomChecker {
+    public static void main(String[] args) {
+        List<Symptom> symptoms = Arrays.asList(
+            new Symptom("Fever", true),
+            new Symptom("Dry Cough", true),
+            new Symptom("Tiredness", true),
+            new Symptom("Sore Throat", false),
+            new Symptom("Headache", false),
+            new Symptom("Loss of Taste or Smell", true),
+            new Symptom("Difficulty Breathing", true)
+        );
+
+        List<Symptom> covidSymptoms = symptoms.stream()
+            .filter(Symptom::isCovidSymptom)
+            .collect(Collectors.toList());
+
+        System.out.println("COVID-19 Symptoms:");
+        covidSymptoms.forEach(symptom -> System.out.println(symptom.getName()));
+    }
+
+    public static class Symptom {
+        private String name;
+        private boolean isCovidSymptom;
+
+        public Symptom(String name, boolean isCovidSymptom) {
+            this.name = name;
+            this.isCovidSymptom = isCovidSymptom;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public boolean isCovidSymptom() {
+            return isCovidSymptom;
+        }
+    }
+}
+```
+
+This code will output the following:
+
+```
+COVID-19 Symptoms:
+Fever
+Dry Cough
+Tiredness
+Loss of Taste or Smell
+Difficulty Breathing
+```
+
+
+## Student File
+
+```
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class CovidSymptomChecker {
+    public static void main(String[] args) {
+        List<Symptom> symptoms = Arrays.asList(
+            new Symptom("Fever", true),
+            new Symptom("Dry Cough", true),
+            new Symptom("Tiredness", true),
+            new Symptom("Sore Throat", false),
+            new Symptom("Headache", false),
+            new Symptom("Loss of Taste or Smell", true),
+            new Symptom("Difficulty Breathing", true)
+        );
+
+        // TODO: Filter the list of symptoms to only include those that are COVID-19 symptoms
+        List<Symptom> covidSymptoms = null;
+
+        System.out.println("COVID-19 Symptoms:");
+        // TODO: Print the COVID-19 symptoms
+    }
+
+    public static class Symptom {
+        private String name;
+        private boolean isCovidSymptom;
+
+        public Symptom(String name, boolean isCovidSymptom) {
+            this.name = name;
+            this.isCovidSymptom = isCovidSymptom;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public boolean isCovidSymptom() {
+            return isCovidSymptom;
+        }
+    }
+}
+
+```
+
+
+## Solution File
+
+```
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class CovidSymptomChecker {
+    public static void main(String[] args) {
+        List<Symptom> symptoms = Arrays.asList(
+            new Symptom("Fever", true),
+            new Symptom("Dry Cough", true),
+            new Symptom("Tiredness", true),
+            new Symptom("Sore Throat", false),
+            new Symptom("Headache", false),
+            new Symptom("Loss of Taste or Smell", true),
+            new Symptom("Difficulty Breathing", true)
+        );
+
+        List<Symptom> covidSymptoms = symptoms.stream()
+            .filter(Symptom::isCovidSymptom)
+            .collect(Collectors.toList());
+
+        System.out.println("COVID-19 Symptoms:");
+        covidSymptoms.forEach(symptom -> System.out.println(symptom.getName()));
+    }
+
+    public static class Symptom {
+        private String name;
+        private boolean isCovidSymptom;
+
+        public Symptom(String name, boolean isCovidSymptom) {
+            this.name = name;
+            this.isCovidSymptom = isCovidSymptom;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public boolean isCovidSymptom() {
+            return isCovidSymptom;
+        }
+    }
+}
+
+
+```
+
+## Evaluation File
+
+```
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.Arrays;
+import java.util.List;
+import java.util.logging.Logger;
+import java.util.stream.Collectors;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Evaluate {
+    private static final Logger logger = Logger.getLogger(Evaluate.class.getName());
+
+    @Test
+    public void test_covid_symptoms() {
+        List<CovidSymptomChecker.Symptom> symptoms = Arrays.asList(
+            new CovidSymptomChecker.Symptom("Fever", true),
+            new CovidSymptomChecker.Symptom("Dry Cough", true),
+            new CovidSymptomChecker.Symptom("Tiredness", true),
+            new CovidSymptomChecker.Symptom("Sore Throat", false),
+            new CovidSymptomChecker.Symptom("Headache", false),
+            new CovidSymptomChecker.Symptom("Loss of Taste or Smell", true),
+            new CovidSymptomChecker.Symptom("Difficulty Breathing", true)
+        );
+
+        List<CovidSymptomChecker.Symptom> covidSymptoms = symptoms.stream()
+            .filter(CovidSymptomChecker.Symptom::isCovidSymptom)
+            .collect(Collectors.toList());
+
+        List<String> expected = Arrays.asList("Fever", "Dry Cough", "Tiredness", "Loss of Taste or Smell", "Difficulty Breathing");
+        List<String> actual = covidSymptoms.stream().map(CovidSymptomChecker.Symptom::getName).collect(Collectors.toList());
+
+        logger.info("Expected output: " + expected);
+        logger.info("Actual output: " + actual);
+        
+        assertEquals(expected, actual, "Should return the correct list of COVID-19 symptoms");
+    }
+
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final PrintStream originalOut = System.out;
+
+    @BeforeEach
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outContent));
+    }
+
+    @AfterEach
+    public void restoreStreams() {
+        System.setOut(originalOut);
+    }
+
+    @Test
+    public void test_covid_symptoms_output() {
+        CovidSymptomChecker.main(new String[]{});
+
+        String expectedOutput = "COVID-19 Symptoms:" + System.lineSeparator()
+            + "Fever" + System.lineSeparator()
+            + "Dry Cough" + System.lineSeparator()
+            + "Tiredness" + System.lineSeparator()
+            + "Loss of Taste or Smell" + System.lineSeparator()
+            + "Difficulty Breathing" + System.lineSeparator();
+
+        logger.info("Expected printed output: " + expectedOutput.replace(System.lineSeparator(), "\\n"));
+        logger.info("Actual printed output: " + outContent.toString().replace(System.lineSeparator(), "\\n"));
+
+        assertEquals(expectedOutput, outContent.toString(), "Should print the correct list of COVID-19 symptoms");
+    }
+}
+
+```
