@@ -1,22 +1,22 @@
 ## Step 00: Collections Overview
 
-//Question 1
+Question 1
 //What are Collections in Java?
-a) Collections is a package in Java
-**b) Collections are in-built implementations available to support dynamic data structures in Java programs.**
-c) Collections are used to sort static data structures in Java programs.
+- a) Collections is a package in Java
+- **b) Collections are in-built implementations available to support dynamic data structures in Java programs.**
+- c) Collections are used to sort static data structures in Java programs.
 
-//Question 2
+Question 2
 //What are some common collections?
-**a) List, Set, Queue, Map**
-b) Stack, Heap, Tree
-c) Graph, Queue, Hash Table
+- **a) List, Set, Queue, Map**
+- b) Stack, Heap, Tree
+- c) Graph, Queue, Hash Table
 
-//Question 3
+Question 3
 //What is List Interface used for?
-**a) List Interface is used to implement an ordered collection in Java programs.**
-b) List Interface is used to implement an unordered collection in Java programs.
-c) List Interface is used to implement a stack data structure in Java programs.
+- **a) List Interface is used to implement an ordered collection in Java programs.**
+- b) List Interface is used to implement an unordered collection in Java programs.
+- c) List Interface is used to implement a stack data structure in Java programs.
 
 
 ## Step 00: Comparator for ArrayList.sort()
