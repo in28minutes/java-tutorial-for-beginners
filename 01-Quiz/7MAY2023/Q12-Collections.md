@@ -283,9 +283,9 @@ treeMap // {A=15, F=25, L=250, Z=5}
 
 Which of the following map implementations maintains natural sorted order of the keys?
 
-A. HashMap 
-B. LinkedHashMap 
-C. TreeMap
+- A. HashMap 
+- B. LinkedHashMap 
+- C. TreeMap
 
 Answer: C
 
@@ -293,9 +293,9 @@ Answer: C
 
 Which of the following map implementations does not guarantee the order of stored elements?
 
-A. HashMap 
-B. LinkedHashMap 
-C. TreeMap
+- A. HashMap 
+- B. LinkedHashMap 
+- C. TreeMap
 
 Answer: A
 
@@ -303,9 +303,9 @@ Answer: A
 
 Which of the following map implementations maintains insertion order of elements?
 
-A. HashMap 
-B. LinkedHashMap 
-C. TreeMap
+- A. HashMap 
+- B. LinkedHashMap 
+- C. TreeMap
 
 Answer: B
 
@@ -337,10 +337,10 @@ map.put("D", 4);
 System.out.println(map.size());
 ```
 
-A. 3 
-B. 4 
-C. 5 
-D. Compilation error
+- A. 3 
+- B. 4 
+- C. 5 
+- D. Compilation error
 
 Answer: D (Map.of() method creates an immutable map, hence put() operation cannot be performed)
 
@@ -353,9 +353,9 @@ Map<String, Integer> map = Map.of("A", 1, "B", 2, "C", 3);
 System.out.println(map.containsValue(2));
 ```
 
-A. true 
-B. false 
-C. Compilation error
+- A. true 
+- B. false 
+- C. Compilation error
 
 Answer: A
 
@@ -368,35 +368,35 @@ Map<String, Integer> map = Map.of("A", 1, "B", 2, "C", 3);
 System.out.println(map.keySet());
 ```
 
-A. ["A", "B", "C"] 
-B. [1, 2, 3] 
-C. ["A"], ["B"], ["C"] 
-D. Compilation error
+- A. ["A", "B", "C"] 
+- B. [1, 2, 3] 
+- C. ["A"], ["B"], ["C"] 
+- D. Compilation error
 
 Answer: A
 
 ## Step 23: Sorting Collections
 
 Question 1: Which data structure always maintains the natural sorted order of its elements? 
-a) HashSet 
-b) LinkedHashMap 
-c) TreeMap 
-d) PriorityQueue
+- a) HashSet 
+- b) LinkedHashMap 
+- c) TreeMap 
+- d) PriorityQueue
 
 Answer: c) TreeMap
 
 Question 2: Which interface provides a contract to implement collections of elements in the form of (key, value) pairs? 
-a) List 
-b) Set 
-c) Queue 
-d) Map
+- a) List 
+- b) Set 
+- c) Queue 
+- d) Map
 
 Answer: d) Map
 
 Question 3: What is the main difference between a HashMap and a TreeMap? 
-a) HashMap stores elements in natural sorted order while TreeMap is unordered. 
-b) HashMap maintains insertion order while TreeMap is unsorted. 
-c) HashMap and TreeMap are both unordered and unsorted. 
-d) HashMap is based on a hash table while TreeMap is stored in a tree data structure and maintains natural sorted order.
+- a) HashMap stores elements in natural sorted order while TreeMap is unordered. 
+- b) HashMap maintains insertion order while TreeMap is unsorted. 
+- c) HashMap and TreeMap are both unordered and unsorted. 
+- d) HashMap is based on a hash table while TreeMap is stored in a tree data structure and maintains natural sorted order.
 
 Answer: d) HashMap is based on a hash table while TreeMap is stored in a tree data structure and maintains natural sorted order.
