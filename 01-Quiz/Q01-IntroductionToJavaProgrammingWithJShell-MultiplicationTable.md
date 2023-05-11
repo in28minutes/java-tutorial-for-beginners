@@ -11,6 +11,16 @@
 
 **Answer: a. JavaShell**
 
+JShell stands for Java Shell.
+
+Introduced in Java 9, JShell is a Read-Eval-Print Loop (REPL) tool that allows developers to run Java statements and expressions interactively in the console without having to wrap them in classes or methods. This is particularly useful for testing small bits of code, learning new features, or prototyping.
+
+To explain why the other options are incorrect:
+
+b. JavaScriptShell - This is not accurate because JShell is a feature of Java, not JavaScript. These are two different programming languages with distinct features and use cases.
+
+c. JupyterShell - This option is not correct either. Jupyter is a separate open-source project that provides a web-based interactive computing environment for multiple programming languages, including Python, Julia, and R. It has no direct connection with Java or JShell.
+
 ----------
 
 2.  What is the purpose of JShell? 
@@ -19,7 +29,15 @@
     c. To debug Java code
 
 **Answer: b. To evaluate and execute Java code and provide immediate results**
+JShell is designed to evaluate and execute Java code and provide immediate results. This is a feature known as a Read-Eval-Print Loop (REPL), which is common in scripting languages but was introduced in Java with the release of Java 9.
 
+To further explain:
+
+a. To create graphical user interfaces - While Java is indeed used to create graphical user interfaces (GUIs), this is not the primary purpose of JShell. GUI creation in Java typically involves using libraries such as Swing or JavaFX, not JShell.
+
+b. To evaluate and execute Java code and provide immediate results - This is the correct answer. JShell allows developers to input Java code directly and see results immediately, without needing to compile or run a full program. This makes JShell a useful tool for testing snippets of code, learning new features of the language, or prototyping.
+
+c. To debug Java code - While you could potentially use JShell to test and debug small snippets of code, this is not its primary function. Traditional debugging usually involves tools that can step through code, inspect variable values, set breakpoints, and so on. JShell is more of an interactive console for running code and seeing immediate results.
 ----------
 
 3.  What command can be used to exit JShell? 
@@ -28,7 +46,17 @@
     c. /quit
 
 **Answer: b. /exit**
+The command to exit JShell is indeed /exit.
 
+Here's a breakdown of each option:
+
+a. /end - This is not a valid command in JShell. JShell doesn't recognize this command and will give you an error if you try to use it.
+
+b. /exit - This is the correct answer. Using the /exit command in JShell will terminate the session and return you to your system's command line.
+
+c. /quit - This is not a valid command in JShell. Similar to /end, JShell doesn't recognize this command and will give you an error if you try to use it.
+
+It's worth noting that JShell also supports a variety of other slash commands (/) for various functions. For instance, /help will provide a list of all available commands and /list will show you all the code you've entered during your current JShell session.
 
 ## Step 03: Welcome to Problem Solving
 
@@ -39,12 +67,36 @@
     -   b) Subdivision
     -   c) Deductive Reasoning
     -   Answer: b) Subdivision
+
+The correct answer is indeed b) Subdivision.
+
+Here's the explanation for each option:
+
+a) Reverse Engineering - This is a process where you start with a finished product and then work backward to understand how it was made. This method is often used in software engineering to understand the source code of a program when the source code is not available. In the context of the question, reverse engineering does not apply.
+
+b) Subdivision - This is the correct answer. In problem-solving, subdivision is a technique where a complex problem is broken down into smaller, more manageable parts. This is a common technique in programming and is often used to simplify the process of writing code. In the context of the multiplication table program, subdivision is used to break down the complex problem of generating a multiplication table into simpler tasks like iterating over numbers and printing individual rows of the table.
+
+c) Deductive Reasoning - This is a process of reasoning from one or more general statements to reach a logically certain conclusion. While this is a valuable problem-solving skill, it's not the primary technique being employed in this situation. The task of creating a multiplication table is more about systematically applying a set of rules (i.e., the multiplication operation) to a range of inputs, rather than drawing conclusions from general principles.
+
+
+
 2.  What is the result of 5 * 3?
     
     -   a) 8
     -   b) 10
     -   c) 15
     -   Answer: c) 15
+
+The correct answer is indeed c) 15.
+
+Here's the explanation:
+
+Multiplication is one of the basic operations in arithmetic. When you multiply 5 by 3, you are essentially adding 5 three times.
+
+So, 5 * 3 = 5 + 5 + 5 = 15
+
+Therefore, the result of 5 times 3 is 15, making option c) the correct answer.
+
 3.  How many times do we repeat the calculation in this step?
     
     -   a) 5 times
@@ -68,6 +120,13 @@
     -   b) 5
     -   c) 3
     -   Answer: a) 5, 3
+
+The correct answer is a) 5, 3.
+
+In the expression 5 * 3, 5 and 3 are the operands. In general, an operand in programming and mathematics is a term of a mathematical operation that takes part in the operation.
+
+In this case, the operation is multiplication (*), and the two numbers (5 and 3) that are being multiplied are the operands. So, the numbers 5 and 3 are the values on which the multiplication operation is performed. Hence, the answer is a) 5, 3.
+
 3.  What is the modulo operator in Java?
     
     -   a) *
@@ -75,6 +134,13 @@
     -   c) +
     -   Answer: b) %
 
+The correct answer is b) %.
+
+In Java, the modulo operator is represented by the percentage symbol (%). This operator returns the remainder of a division operation. For example, if you divide 10 by 3, the remainder is 1. So, in Java, the expression 10 % 3 would yield the result 1.
+
+This operator is useful for many programming tasks such as determining if a number is even or odd (a number is even if it's divisible by 2 with no remainder, so num % 2 would be 0), or wrapping values within a certain range (like getting the remainder of a division by the size of an array to always get a valid index).
+
+Therefore, the modulo operator in Java is % (option b).
 
 ## Step 05: Programming Exercise PE-1 (With Solutions)
 
