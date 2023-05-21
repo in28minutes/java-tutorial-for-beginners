@@ -1,108 +1,59 @@
-Step 01: The Integer Types
+**Step 1: The Integer Types**
 
-Question 1: Which of the following wrapper classes corresponds to the int primitive type in Java?
+**Question 1: Which of the following wrapper classes corresponds to the int primitive type in Java?**
 
--   A) Byte (Incorrect: The `Byte` class corresponds to the byte primitive type, not int.)
--   B) Integer (Correct: The `Integer` class is the wrapper class for the `int` primitive type. It provides methods to work with int values.)
--   C) Short (Incorrect: The `Short` class corresponds to the short primitive type, not int.)
+- A) Byte `Incorrect: Byte corresponds to the byte primitive type, not int.`
+- B) Integer `Correct: Integer is the wrapper class for the int primitive type in Java.`
+- C) Short `Incorrect: Short corresponds to the short primitive type, not int.`
 
-Explanation:
+**Question 2: What is the maximum value of a short data type in Java?**
 
--   Option A is incorrect because the `Byte` class corresponds to the byte primitive type, not int.
--   Option B is correct because the `Integer` class is the wrapper class specifically designed to work with int values.
--   Option C is incorrect because the `Short` class corresponds to the short primitive type, not int.
+- A) 127 `Incorrect: 127 is the maximum value for a byte, not short.`
+- B) 32767 `Correct: 32767 is indeed the maximum value a short can take in Java.`
+- C) 2147483647 `Incorrect: This is the maximum value for int, not short.`
 
-Question 2: What is the maximum value of a short data type in Java?
+**Question 3: What type of cast is used to store a smaller data value in a larger data type variable?**
 
--   A) 127
--   B) 32767 (Correct: The maximum value of a `short` is 32767)
--   C) 2147483647 (Incorrect: The value 2147483647 is the maximum value for the `int` data type, not short.)
+- A) Implicit cast `Correct: Java will automatically perform an implicit cast when storing a smaller data type in a larger one.`
+- B) Explicit cast `Incorrect: Explicit casting is used when we want to convert a larger type to a smaller one, potentially losing information.`
 
-Explanation:
+**Step 2: Integer Representations, And Other Puzzles**
 
--   Option A is incorrect because 127 is the maximum value for the `byte` data type, not short.
--   Option B is correct because 32767 is the maximum value for the `short` data type in Java.
--   Option C is incorrect because 2147483647 is the maximum value for the `int` data type, not short.
+**Question 1: What are the three number systems supported by Java for integers?**
 
-Question 3: What type of cast is used to store a smaller data value in a larger data type variable?
+- A) Decimal, Octal, and Binary `Incorrect: Java supports Decimal, Octal, Binary and also Hexadecimal.`
+- B) Decimal, Octal, and Hexadecimal `Correct: Java supports these three number systems as well as binary.`
+- C) Decimal, Binary, and Hexadecimal `Correct: Java indeed supports these three number systems.`
 
--   A) Implicit cast (Correct: Implicit casting is used to automatically convert a smaller data type to a larger data type)
--   B) Explicit cast
+**Question 2: Which of the following is the correct representation for the value 16 in a hexadecimal system?**
 
-Explanation:
+- A) 0x10 `Correct: 0x prefix denotes hexadecimal in Java, and 10 is 16 in hexadecimal.`
+- B) 010 `Incorrect: The 0 prefix is for octal numbers in Java, not hexadecimal.`
+- C) 0x16 `Incorrect: 0x16 represents 22 in decimal, not 16.`
 
--   Option A is correct because implicit casting is used to automatically convert a smaller data type to a larger data type without any loss of data.
--   Option B is incorrect because explicit casting is used when converting a larger data type to a smaller data type and requires explicit specification.
+**Question 3: What is the difference between prefix and post-fix increment operators in Java?**
 
+- A) Prefix increment takes place before the assignment, and post-fix increment takes place after the assignment. `Correct: In prefix, the value is incremented first then used whereas in postfix the value is used then incremented.`
+- B) Prefix increment takes place after the assignment, and post-fix increment takes place before the assignment. `Incorrect: It's the other way around. Prefix increment occurs before assignment and post-fix increment after assignment.`
+- C) There is no difference between prefix and post-fix increment operators in Java. `Incorrect: The order of operations differs between the two.`
 
+**Step 3: Classroom Exercise CE-01 (With Solutions)**
 
-Step 02: Integer Representations, And Other Puzzles
+**Question 1: What is the purpose of the BiNumber class?**
 
-Question 1: What are the three number systems supported by Java for integers?
+- A) To store a single integer and perform basic arithmetic operations `Incorrect: BiNumber is designed to store and operate on a pair of numbers, not a single integer.`
+- B) To store a pair of integers and perform basic arithmetic operations `Correct: The BiNumber class is designed to store two numbers and perform operations on them.`
+- C) To store a list of integers and perform basic arithmetic operations `Incorrect: BiNumber class is not intended for storing a list of integers.`
 
--   A) Decimal, Octal, and Binary
--   B) Decimal, Octal, and Hexadecimal (Correct: The three number systems supported by Java for integers are decimal, octal, and hexadecimal)
--   C) Decimal, Binary, and Hexadecimal (Incorrect: Binary is also a number system supported by Java for integers)
+**Question 2: Which method is used to double the values of both numbers in a BiNumber object?**
 
-Explanation:
+- A)
 
--   Option A is incorrect because it doesn't include hexadecimal, which is one of the number systems supported by Java for integers.
--   Option B is correct because decimal, octal, and hexadecimal are the three number systems supported by Java for integers.
--   Option C is incorrect because it includes binary, but it doesn't include octal.
+ double() `Incorrect: There's no double() method in the BiNumber class.`
+- B) doubleNumbers() `Correct: The doubleNumbers() method doubles the values of both numbers in the BiNumber object.`
+- C) doubleValue() `Incorrect: The doubleValue() method is not used to double the numbers in the BiNumber class.`
 
-Question 2: Which of the following is the correct representation for the value 16 in a hexadecimal system?
-
--   A) 0x10 (Correct: In a hexadecimal system, 16 is represented as 0x10)
--   B) 010 (Incorrect: This represents the value 10 in an octal system)
--   C) 0x16 (Incorrect: This represents the value 22 in a hexadecimal system)
-
-Explanation:
-
--   Option A is correct because in a hexadecimal system, the prefix "0x" is used, followed by the digits representing the value. Therefore, 16 is represented as 0x10.
--   Option B is incorrect because "010" represents the value 10 in an octal system, not hexadecimal.
--   Option C is incorrect because "0x16" represents the value 22 in a hexadecimal system, not 16.
-
-Question 3: What is the difference between prefix and post-fix increment operators in Java?
-
--   A) Prefix increment takes place before the assignment, and post-fix increment takes place after the assignment. (Correct: Prefix increment happens before the assignment, while postfix increment happens after the assignment.)
--   B) Prefix increment takes place after the assignment, and post-fix increment takes place before the assignment. (Incorrect: The order of increment is reversed in the explanation)
--   C) There is no difference between prefix and post-fix increment operators in Java. (Incorrect: There is a difference in the order of increment)
-
-Explanation:
-
--   Option A is correct because prefix increment (++variable) happens before the assignment, meaning the variable is incremented and then used in the expression.
--   Option B is incorrect because the explanation states that postfix increment happens before the assignment, which is incorrect.
--   Option C is incorrect because there is indeed a difference between prefix and postfix increment operators in Java.
-
-
-
-Step 03: Classroom Exercise CE-01 (With Solutions)
-
-Question 1: What is the purpose of the BiNumber class?
-
--   A) To store a single integer and perform basic arithmetic operations
--   B) To store a pair of integers and perform basic arithmetic operations (Correct: The purpose of the BiNumber class is to store a pair of integers and perform basic arithmetic operations)
--   C) To store a list of integers and perform basic arithmetic operations
-
-Explanation:
-
--   Option A is incorrect because it mentions storing a single integer, while the BiNumber class is specifically designed to store a pair of integers.
--   Option B is correct because the BiNumber class is used to store a pair of integers and provides methods to perform basic arithmetic operations on those numbers.
--   Option C is incorrect because it mentions storing a list of integers, which is not the purpose of the BiNumber class.
-
-Question 2: Which method is used to double the values of both numbers in a BiNumber object?
-
--   A) double()
--   B) doubleNumbers() (Correct: The `doubleNumbers()` method is used to double the values of both numbers in a BiNumber object)
--   C) doubleValue()
-
-Explanation:
-
--   Option A is incorrect because `double()` is not a valid method for doubling the values of both numbers in a BiNumber object.
--   Option B is correct because the `doubleNumbers()` method specifically performs the operation of doubling the values of both numbers in a BiNumber object.
--   Option C is incorrect because `doubleValue()` is not the method responsible for doubling both numbers in a BiNumber object.
-
-Question 3: What will be the output of the following code snippet?
+**Question 3: What will be the output of the following code snippet?**
 
 ```java
 BiNumber numbers = new BiNumber(4, 5);
@@ -112,168 +63,89 @@ System.out.println(numbers.getNumber1());
 System.out.println(numbers.getNumber2());
 ```
 
--   A) 9, 8, 10
--   B) 9, 8, 5
--   C) 9, 4, 5 (Correct: The output will be 9, 4, 5 after adding the numbers and doubling the value of the BiNumber object)
+- A) 9, 8, 10 `Correct: The add() method returns the sum of the numbers (4+5=9). The doubleValue() method doubles the values (4*2=8 and 5*2=10).`
+- B) 9, 8, 5 `Incorrect: The second number is also doubled by the doubleValue() method, it should be 10 not 5.`
+- C) 9, 4, 5 `Incorrect: The doubleValue() method doubles the values of both numbers.`
 
-Explanation:
+**Step 5: Floating-Point Types**
 
--   The first line creates a BiNumber object with values 4 and 5.
--   The second line prints the result of adding the two numbers, which is 9.
--   The third line calls the `doubleValue()` method on the BiNumber object, doubling both numbers internally.
--   The fourth line prints the first number of the BiNumber object, which is now 4.
--   The fifth line prints the second number of the BiNumber object, which remains 5.
--   Therefore, the output will be 9, 4, 5.
+**Question 1: What is the default type for floating-point literals in Java?**
 
+- A) float `Incorrect: In Java, floating-point literals are by default considered double.`
+- B) double `Correct: Double is indeed the default data type for floating-point literals in Java.`
 
+**Question 2: How can you create a float literal?**
 
-Step 05: Floating-Point Types
+- A) float f = 34.5 `Incorrect: This will lead to a compilation error as 34.5 is a double literal by default. A suffix of 'f' or 'F' is needed to make it a float literal.`
+- B) float f = 34.5f; `Correct: This is the correct way to create a float literal in Java. The 'f' suffix indicates a float literal.`
+- C) float f = (float)34.5 `Correct: Explicitly casting a double literal to a float will also work, but the 'f' suffix is generally preferred.`
 
-Question 1: What is the default type for floating-point literals in Java?
+**Question 3: Which type of casting is needed to convert a double value to a float value?**
 
--   A) float
--   B) double (Correct: The default type for floating-point literals in Java is `double`)
+- A) Implicit casting `Incorrect: Implicit casting is used when we convert a smaller type to a larger one.`
+- B) Explicit casting `Correct: When converting a larger type to a smaller one, such as double to float, explicit casting is needed.`
 
-Explanation:
+**Step 6: Introducing BigDecimal**
 
--   Option A is incorrect because the default type for floating-point literals in Java is `double`.
--   Option B is correct because `double` is the default type for floating-point literals in Java.
+**Question 1: What is the main reason for using the BigDecimal data type in Java?**
 
-Question 2: How can you create a float literal?
+- A) To represent floating-point numbers with higher precision `Correct: BigDecimal allows us to represent floating-point numbers with almost arbitrary precision, making it a good choice for financial and monetary calculations.`
+- B) To perform faster calculations `Incorrect: BigDecimal computations are generally slower than primitive types due to the higher precision and object overhead.`
+- C) To store large integer values `Incorrect: Although BigDecimal can indeed store large numbers, its primary purpose is to offer precise floating-point computations.`
 
--   A) float f = 34.5
--   B) float f = 34.5f; (Correct: To create a float literal, you need to append the suffix `f` to the value)
--   C) float f = (float)34.5
+**Question 2: What is the best way to construct a BigDecimal object to achieve high precision?**
 
-Explanation:
+- A) Using integer literals `Incorrect: Although you can construct a BigDecimal with an integer literal, for high precision you should prefer string literals.`
+- B) Using double literals `Incorrect: This can introduce rounding errors because of the binary representation of double literals. It's not the preferred way for high precision.`
+- C) Using string literals `Correct: Constructing BigDecimal objects using string literals is the preferred way when high precision is required.`
 
--   Option A is incorrect because 34.5 without the `f` suffix is considered a `double` literal, not a `float` literal.
--   Option B is correct because adding the `f` suffix to the value makes it a `float` literal.
--   Option C is incorrect because explicitly casting the value to a `float` is another way to create a `float` literal, but it is not necessary when assigning a literal value directly.
+**Question 3: What is the main characteristic of BigDecimal objects?**
 
-Question 3: Which type of casting is needed to convert a double value to a float value?
+- A) Mutable `Incorrect: BigDecimal objects are immutable, which means their value
 
--   A) Implicit casting
--   B) Explicit casting (Correct: Explicit casting is required to convert a `double` value to a `float` value)
+ cannot be changed once created.`
+- B) Immutable `Correct: Indeed, BigDecimal objects are immutable.`
+- C) Synchronized `Incorrect: Synchronization isn't a characteristic of BigDecimal. It's a concept related to multi-threading.`
 
-Explanation:
+**Step 6: BigDecimal Operations**
 
--   Option A is incorrect because implicit casting is not sufficient to convert a `double` value to a `float` value. It could result in a loss of precision.
--   Option B is correct because explicit casting, specifically `(float)`, is needed to convert a `double` value to a `float` value. It explicitly tells the compiler to perform the conversion, even though there may be potential loss of precision.
+**Question 1: Which of the following methods can be used for arithmetic operations on BigDecimal objects?**
 
+- A) add() `This method is used for addition operations on BigDecimal objects.`
+- B) multiply() `This method is used for multiplication operations on BigDecimal objects.`
+- C) subtract() `This method is used for subtraction operations on BigDecimal objects.`
+- D) All of the above `Correct: All these methods can be used for arithmetic operations on BigDecimal objects.`
 
+**Question 2: Can you perform arithmetic operations directly between a BigDecimal object and a primitive data type, like an int or a double?**
 
-Step 06: Introducing BigDecimal
+- A) Yes `Incorrect: You cannot directly perform arithmetic operations between a BigDecimal object and a primitive data type.`
+- B) No `Correct: You need to convert the primitive to a BigDecimal first.`
 
-Question 1: What is the main reason for using the BigDecimal data type in Java?
+**Question 3: How can you perform an arithmetic operation between a BigDecimal object and a primitive int value?**
 
--   To represent floating-point numbers with higher precision (Correct: The main reason for using the BigDecimal data type is to represent floating-point numbers with higher precision)
--   To perform faster calculations
--   To store large integer values
+- A) Convert the int to a BigDecimal using BigDecimal.valueOf() `Correct: This is the best way to convert a primitive int to a BigDecimal for arithmetic operations.`
+- B) Use a type cast to convert the int to a BigDecimal `Incorrect: You can't use casting to convert a primitive to a BigDecimal.`
+- C) Perform the operation directly as the BigDecimal class automatically handles primitive types `Incorrect: The BigDecimal class doesn't automatically handle arithmetic with primitives.`
 
-Explanation:
+**Step 8: boolean, Relational and Logical Operators**
 
--   Option A is correct because the BigDecimal data type is used to represent floating-point numbers with higher precision, avoiding issues with rounding errors that can occur with other floating-point types.
--   Option B is incorrect because the primary purpose of BigDecimal is precision, not performance.
--   Option C is incorrect because BigDecimal is not specifically designed for storing large integer values; it is more focused on decimal numbers with high precision.
+**Question 1: Which of the following operators is a logical operator in Java?**
 
-Question 2: What is the best way to construct a BigDecimal object to achieve high precision?
+- A) > `Incorrect: '>' is a relational operator, not a logical operator.`
+- B) && `Correct: '&&' is a logical AND operator. It returns true if both operands are true.`
+- C) <= `Incorrect: '<=' is a relational operator, not a logical operator.`
 
--   Using integer literals
--   Using double literals
--   Using string literals (Correct: The best way to construct a BigDecimal object to achieve high precision is by using string literals)
-
-Explanation:
-
--   Option A is incorrect because using integer literals might result in the loss of precision when constructing a BigDecimal object.
--   Option B is incorrect because using double literals may introduce rounding errors when constructing a BigDecimal object.
--   Option C is correct because using string literals, such as "0.12345678901234567890", allows you to specify the exact precision and avoid any potential rounding errors.
-
-Question 3: What is the main characteristic of BigDecimal objects?
-
--   Mutable
--   Immutable (Correct: BigDecimal objects are immutable, meaning their values cannot be changed once created)
--   Synchronized
-
-Explanation:
-
--   Option A is incorrect because BigDecimal objects are immutable, meaning their values cannot be changed once created.
--   Option B is correct because BigDecimal objects have the characteristic of immutability, ensuring that their values remain unchanged.
--   Option C is incorrect because synchronization is not a characteristic specific to BigDecimal objects. It is related to thread safety.
-
-
-
-Step 06: BigDecimal Operations
-
-Question: Which of the following methods can be used for arithmetic operations on BigDecimal objects?
-
--   a. add()
--   b. multiply()
--   c. subtract()
--   d. All of the above (Correct: All of the mentioned methods can be used for arithmetic operations on BigDecimal objects)
-
-Explanation:
-
--   Option a is correct because the `add()` method is used for addition of BigDecimal objects.
--   Option b is correct because the `multiply()` method is used for multiplication of BigDecimal objects.
--   Option c is correct because the `subtract()` method is used for subtraction of BigDecimal objects.
--   Option d is correct because all of the mentioned methods (add(), multiply(), and subtract()) can be used for arithmetic operations on BigDecimal objects.
-
-Question: Can you perform arithmetic operations directly between a BigDecimal object and a primitive data type, like an int or a double?
-
--   a. Yes
--   b. No (Correct: No, arithmetic operations between BigDecimal objects and primitive data types require explicit conversion)
-
-Explanation:
-
--   Option a is incorrect because arithmetic operations between BigDecimal objects and primitive data types cannot be performed directly without explicit conversion.
--   Option b is correct because explicit conversion, using methods like `BigDecimal.valueOf()`, is required to perform arithmetic operations between BigDecimal objects and primitive data types.
-
-Question: How can you perform an arithmetic operation between a BigDecimal object and a primitive int value?
-
--   a. Convert the int to a BigDecimal using BigDecimal.valueOf() (Correct: To perform an arithmetic operation between a BigDecimal object and a primitive int value, you need to convert the int to a BigDecimal using BigDecimal.valueOf())
-
-Explanation:
-
--   Option a is correct because to perform an arithmetic operation between a BigDecimal object and a primitive int value, you need to convert the int to a BigDecimal using the `BigDecimal.valueOf()` method.
--   Using this method, you can create a BigDecimal object representing the int value and then perform arithmetic operations with other BigDecimal objects.
-
-
-
-Step 08: boolean, Relational and Logical Operators
-
-Question: Which of the following operators is a logical operator in Java?
-
--   a) >
--   b) &&
--   c) <= (Correct: The logical operator in Java is represented by the symbol &&)
-
-Explanation:
-
--   Option a is incorrect because the ">" operator is a relational operator used for comparison.
--   Option b is correct because the "&&" operator is the logical AND operator in Java, which combines two boolean expressions.
--   Option c is incorrect because the "<=" operator is a relational operator used for comparison, not a logical operator.
-
-Question: Given the following code snippet, what will be the value of result?
-
+**Question 2: Given the following code snippet, what will be the value of result?**
 ```java
-int a = 10;
-int b = 5;
-boolean result = (a > b) && (a < 2 * b);
+  int a = 10;
+    int b = 5;
+    boolean result = (a > b) && (a < 2 * b);
 ```
 
--   a) true (Correct: The value of result will be true)
--   b) false
+- A) true `Correct: Since both conditions (a > b and a < 2 * b) are true, the result will be true.`
+- B) false `Incorrect: Given the values of a and b, the result of the boolean expression is true.`
 
-Explanation:
-
--   In the given code snippet, the expression `(a > b) && (a < 2 * b)` is evaluated.
--   `(a > b)` evaluates to true because 10 is greater than 5.
--   `(a < 2 * b)` also evaluates to true because 10 is less than 2 times 5, which is 10.
--   The logical AND operator `&&` combines these two boolean expressions and returns true only if both expressions are true.
--   Since both expressions are true, the value of `result` will be true.
-
-Question: What will the following expression evaluate to?
+**Question 3: What will the following expression evaluate to?**
 
 ```java
 boolean x = true;
@@ -281,51 +153,27 @@ boolean y = false;
 boolean z = !(x || y);
 ```
 
--   a) true
--   b) false (Correct: The expression will evaluate to false)
+- A) true `Incorrect: Since 'x' is true, 'x || y' is also true. The negation of true is false.`
+- B) false `Correct: The expression '(x || y)' is true, so the negation of this expression is false.`
 
-Explanation:
+**Step 10: Character Types**
 
--   The expression `(x || y)` evaluates to true because at least one of the operands (x or y) is true.
--   The `!` operator negates the result, so `!(x || y)` evaluates to false.
--   Therefore, the value of `z` will be false.
+**Question 1: What is the Unicode representation of the double quotation mark?**
 
+- A) \u0021 `Incorrect: \u0021 is the Unicode representation for the exclamation mark (!).`
+- B) \u0022 `Correct: \u0022 is the Unicode representation for the double quotation mark (").`
+- C) \u0023 `Incorrect: \u0023 is the Unicode representation for the number sign (#).`
 
+**Question 2: What data type in Java is used to store Unicode characters?**
 
-Step 10: Character Types
+- A) String `Incorrect: Although a String can contain Unicode characters, the data type specifically designed to store a single Unicode character is char.`
+- B) char `Correct: The char data type in Java is used to store a single Unicode character.`
+-
 
-Question 1: What is the Unicode representation of the double quotation mark?
+ C) byte `Incorrect: Although a byte can represent a character in some encodings, the char data type is specifically designed for this purpose in Java.`
 
--   \u0021
--   \u0022 (Correct: The Unicode representation of the double quotation mark is \u0022)
--   \u0023
+**Question 3: What will the following code print out?**
 
-Explanation:
-
--   Option \u0021 represents the Unicode character for exclamation mark (!), not the double quotation mark.
--   Option \u0022 is correct because it represents the Unicode character for double quotation mark (").
--   Option \u0023 represents the Unicode character for hash or number sign (#), not the double quotation mark.
-
-Question 2: What data type in Java is used to store Unicode characters?
-
--   String
--   char (Correct: The `char` data type in Java is used to store Unicode characters)
--   int
-
-Explanation:
-
--   Option String is incorrect because `String` is a data type used to store sequences of characters, not a single Unicode character.
--   Option char is correct because the `char` data type is specifically designed to store a single Unicode character.
--   Option int is incorrect because `int` is used to store integer values, not Unicode characters.
-
-Question 3: What happens when you perform the following operation in Java: `char cn = 65;`?
-
--   A character with a Unicode value of 65 is stored in the variable cn. (Correct: The character with Unicode value 65, which is 'A', is stored in the variable cn)
--   An integer value of 65 is stored in the variable cn.
--   A compilation error occurs.
-
-Explanation:
-
--   Option A is correct because assigning the value 65 to a char variable `cn` will store the character 'A' in `cn`. In Java, characters are internally represented using Unicode values.
--   Option B is incorrect because 65 is the Unicode value of 'A', not an integer value.
--   Option C is incorrect because there is no compilation error in assigning a Unicode value to a char variable.
+- A) The character 'a' `Incorrect: The code will print the character corresponding to the Unicode value 0x0041, which is 'A'.`
+- B) The character 'A' `Correct: The Unicode value 0x0041 corresponds to the character 'A'.`
+- C) The number 65 `Incorrect: The code will print the character corresponding to the Unicode value 0x0041, not the value itself.`
