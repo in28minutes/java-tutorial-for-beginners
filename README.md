@@ -3799,7 +3799,7 @@ The code may have compiled without any errors, but what's the use if we cannot r
 
 **_The ```main()``` method is essential to run code defined within any ```class```._**
 
-The definition of ```main()``` needs to have this exact synatx:
+The definition of ```main()``` needs to have this exact syntax:
 
 `public static void main(String[] args) {  /* <Some Code Goes In Here> */ }`
 
