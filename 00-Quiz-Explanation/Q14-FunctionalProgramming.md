@@ -433,7 +433,7 @@ Without seeing the given code, I can't answer this question definitively. Howeve
 
 **Step 14: Functional Interfaces: Consumer**
 
-**Question 1: What is the purpose of the Consumer<S> interface in stream operations?**
+**Question 1: What is the purpose of the `Consumer<S>` interface in stream operations?**
 
 - A) It is used to filter elements based on a logical condition.
   - `Incorrect: The Consumer<S> interface is not used for filtering elements, it is used for performing an action on each element of a stream.`
@@ -488,7 +488,7 @@ Without seeing the given code, I can't answer this question definitively. Howeve
 - B) <T> Stream<T> map(Predicate<T> predicate)
   - `Incorrect: The map() method doesn't take a Predicate as a parameter. It takes a Function.`
 
-- C) <S> Stream<S> map(Consumer<? super S> action)
+- C) `<S> Stream<S> map(Consumer<? super S> action)`
   - `Incorrect: The map() method doesn't take a Consumer as a parameter. It takes a Function.`
 
 **Question 3: What is the purpose of the apply() method in the Function interface?**
