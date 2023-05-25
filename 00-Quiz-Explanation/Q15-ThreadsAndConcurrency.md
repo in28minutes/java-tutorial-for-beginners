@@ -388,3 +388,107 @@ class Task2 implements Runnable {
   - `Incorrect: The newScheduledThreadPool() method creates a thread pool that can schedule commands to run after a given delay, or to execute periodically.`
 
 
+**Step 10: Executor - Customizing Number Of Threads**
+
+**Question 1: Which method is used to create a fixed-size thread pool with a specified number of threads?**
+
+- A) newSingleThreadExecutor()
+  - `Incorrect: The newSingleThreadExecutor() method creates an ExecutorService that uses a single worker thread. It does not allow specifying the number of threads.`
+
+- B) newFixedThreadPool()
+  - `Correct: The newFixedThreadPool() method creates a thread pool that reuses a fixed number of threads. You can specify the number of threads when calling this method.`
+
+- C) newCachedThreadPool()
+  - `Incorrect: The newCachedThreadPool() method creates a thread pool that creates new threads as needed but will reuse previously constructed threads when they are available. It does not allow specifying the number of threads.`
+
+- D) newScheduledThreadPool()
+  - `Incorrect: The newScheduledThreadPool() method creates a thread pool that can schedule commands to run after a given delay or to execute periodically. It does allow specifying the number of threads, but it is used for different purposes than a fixed thread pool.`
+
+**Question 2: What happens if more tasks are submitted to an ExecutorService than the number of threads in the thread pool?**
+
+- A) The additional tasks are queued and executed when a thread becomes available.
+  - `Correct: If more tasks are submitted than the number of threads in the thread pool, the additional tasks are added to a task queue. When a thread in the pool finishes a task, it takes another from the queue.`
+
+- B) The additional tasks are discarded and not executed.
+  - `Incorrect: The ExecutorService does not discard tasks. If more tasks are submitted than there are threads available, the additional tasks are queued for execution when a thread becomes available.`
+
+- C) The ExecutorService automatically adds more threads to the thread pool to accommodate the tasks.
+  - `Incorrect: For a fixed thread pool, the ExecutorService does not add more threads than the fixed number specified. Any additional tasks are queued.`
+
+- D) The additional tasks cause an exception to be thrown.
+  - `Incorrect: Additional tasks do not cause an exception. They are queued for execution when a thread becomes available.`
+
+**Question 3: Which of the following statements is true about the ExecutorService?**
+
+- A) It allows for fine-grained control over the execution of threads.
+  - `Correct: ExecutorService provides methods for managing thread execution, shutting down threads, producing future results, and so on, allowing for fine-grained control over the execution of threads.`
+
+- B) It is used to pause the execution of a thread temporarily.
+  - `Incorrect: ExecutorService does not provide methods to pause a thread.`
+
+- C) It is used to manage and control the execution of threads.
+  - `Correct: The primary purpose of the ExecutorService is to manage and control the execution of threads.`
+
+- D) It is used to terminate a thread and free up system resources.
+  - `Partially Correct: ExecutorService provides methods to shut down the executor and thus terminate threads. However, its main purpose is to control and manage thread execution, not only to terminate threads.`
+
+
+**Step 11: ExecutorService: Returning Values From Tasks**
+
+**Question 1: Which interface is used to create sub-tasks that return a result?**
+
+- A) Thread
+  - `Incorrect: Thread does not return a result. It simply executes the logic defined in the run() method.`
+
+- B) Runnable
+  - `Incorrect: Runnable does not return a result. Its run() method does not have a return value.`
+
+- C) Callable<T>
+  - `Correct: Callable<T> is used to create tasks that return a result. The call() method of Callable<T> returns a value.`
+
+- D) ExecutorService
+  - `Incorrect: ExecutorService is a higher-level replacement for working with threads directly. It manages and controls task execution but isn't used to directly create tasks.`
+
+**Question 2: What method is used to submit a Callable task to an ExecutorService and obtain a Future object representing the task's result?**
+
+- A) execute()
+  - `Incorrect: The execute() method is used for tasks of type Runnable, and it doesn't return a result.`
+
+- B) submit()
+  - `Correct: The submit() method is used to submit tasks of type Callable<T>. It returns a Future<T> object, which can be used to retrieve the result once the task is completed.`
+
+- C) invokeAll()
+  - `Incorrect: The invokeAll() method is used to execute a collection of tasks and returns a list of Future objects, but it isn't used to submit a single Callable task.`
+
+- D) invokeAny()
+  - `Incorrect: The invokeAny() method is used to execute a collection of tasks and returns the result of one of the successfully completed tasks (if any), but it isn't used to submit a single Callable task.`
+
+**Question 3: How can you retrieve the result of a Callable task from a Future object?**
+
+- A) Using the get() method of the Future object
+  - `Correct: The get() method is used to retrieve the result from a Future object. This method blocks until the computation is complete.`
+
+- B) Using the run() method of the Callable task
+  - `Incorrect: Callable does not have a run() method. Instead, it has a call() method. Moreover, calling this method directly doesn't involve a Future object.`
+
+- C) Using the call() method of the Callable task
+  - `Incorrect: While it's true that the call() method of the Callable task computes the result, it's not used to retrieve the result from a Future object.`
+
+- D) Using the result() method of the Future object
+  - `Incorrect: There's no result() method in the Future interface.`
+
+**Step 12: Executor - Wait Only For The Fastest Task**
+
+**Question 1: What method of ExecutorService can be used to wait for the result of the fastest completed task from a collection of Callable tasks?**
+
+- A) execute()
+  - `Incorrect: The execute() method is used for executing Runnable tasks and does not return a result.`
+
+- B) submit()
+  - `Incorrect: The submit() method is used to submit individual Callable or Runnable tasks and isn't used for executing a collection of tasks and waiting for the fastest one.`
+
+- C) invokeAll()
+  - `Incorrect: The invokeAll() method executes a collection of tasks but it waits for all tasks to complete and doesn't return the result of the fastest one.`
+
+- D) invokeAny()
+  - `Correct: The invokeAny() method executes a collection of Callable tasks and returns the result of the fastest one that completes.`
