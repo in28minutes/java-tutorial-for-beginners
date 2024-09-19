@@ -9704,7 +9704,7 @@ In this step, we:
 	sb ==> "TEst 123"
 	jshell> sb.setCharAt(1, 'e');
 	sb ==> "Test 123"
-	jshell> StringBuilder sbldr = new StringBuffer("TEst");
+	jshell> StringBuilder sbldr = new StringBuilder("TEst");
 	sbldr ==> "TEst"
 	jshell>
 
@@ -9792,7 +9792,7 @@ Wrapper classes are immutable. Hence, above approach is efficient and accurate.
 	jshell> Integer integer4 = Integer.valueOf(5);
 	integer4 ==> 5
 	jshell> integer1 == integer2
-	$1 ==> true
+	$1 ==> false
 	jshell> integer3 == integer4
 	$2 ==> true
 	jshell>
