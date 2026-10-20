@@ -8755,21 +8755,21 @@ _default_
 	}
 
 		public static void puzzleFour() {
-			int number = 10;
-			switch(number) {
-				System.out.println("default");
-				break;
-				case 1:
-					System.out.println(1);
-					break;
-				case 2:
-					System.out.println(2);
-					break;
-				case 3:
-					System.out.println(3);
-					break;
-				default:	
-			}
+		int number = 10;
+		switch(number) {
+        case 1:
+        System.out.println(1);
+        break;
+        case 2:
+        System.out.println(2);
+        break;
+        case 3:
+        System.out.println(3);
+        break;
+        default:
+        System.out.println("default");
+        break;
+}
 		}
 	}
 
